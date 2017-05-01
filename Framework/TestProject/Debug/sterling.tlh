@@ -1,0 +1,3481 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (182a116a).
+//
+// c:\rsquared\framework\testproject\debug\sterling.tlh
+//
+// C++ source equivalent of Win32 type library C:\\Windows\SysWOW64\Sti\Sterling.tlb
+// compiler-generated file created 07/11/13 at 17:11:49 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("c418adda-61cc-4854-b69e-87f8bf6d7a0e"))
+/* LIBID */ __SterlingLib;
+enum STIOrderStatus;
+enum STIPriceTypes;
+enum STIRejectReason;
+struct __declspec(uuid("b9919086-687b-4117-9b2a-d0c9dfe34979"))
+/* dual interface */ ISTIOrderUpdateMsg;
+struct __declspec(uuid("d83313cb-a1b7-4130-b161-824507ecbc83"))
+/* dual interface */ ISTIOrder;
+struct structSTIOrder;
+struct __declspec(uuid("803f925b-8c91-431f-ae55-c079fdc0137a"))
+/* dual interface */ ISTITradeUpdateMsg;
+struct __declspec(uuid("6626a80a-8ba6-431f-ab5c-f942880e3fdd"))
+/* dual interface */ ISTIOrderRejectMsg;
+struct __declspec(uuid("56d4dd56-17b7-4734-95cf-eba8b05c0f4d"))
+/* dual interface */ ISTIOrderConfirmMsg;
+struct __declspec(uuid("52da1024-3469-4260-9a71-e5ed514383b7"))
+/* dispinterface */ _ISTIPositionEvents;
+struct structSTIPositionUpdate;
+struct __declspec(uuid("9db44389-ec8c-4de9-bd52-843c33d67484"))
+/* dispinterface */ _ISTIBookEvents;
+struct structSTIBookUpdate;
+struct __declspec(uuid("7482011f-7414-460b-92a8-693f1fdb8c27"))
+/* dispinterface */ _ISTIQuoteEvents;
+struct structSTIQuoteUpdate;
+struct structSTIQuoteSnap;
+struct structSTIQuoteRqst;
+struct structSTIGreeksUpdate;
+struct structSTINewsUpdate;
+struct __declspec(uuid("192b9f3e-df39-41a5-95e0-0333b061cab8"))
+/* dispinterface */ _ISTIEventsEvents;
+struct structSTITradeUpdate;
+struct structSTIOrderUpdate;
+struct structSTIOrderReject;
+struct structSTIOrderConfirm;
+struct structSTILink;
+struct structSTIDrop;
+struct __declspec(uuid("66246b80-4eba-11de-8a39-0800200c9a66"))
+/* dispinterface */ _ISTIAcctMaintEvents;
+struct structSTIAcctUpdate;
+struct __declspec(uuid("18a8b57b-d223-4796-9948-e2426ed7c9e7"))
+/* dual interface */ ISTIEvents;
+struct __declspec(uuid("6d471b07-7372-4fc0-82ca-aab4b6eae91c"))
+/* dual interface */ ISTIOrderMaint;
+struct structSTIOrderFilter;
+struct structSTITradeFilter;
+struct structSTICancelAll;
+struct __declspec(uuid("4c21cf91-e578-460a-9aa5-f95a24d7b69a"))
+/* dual interface */ ISTIApp;
+struct __declspec(uuid("74871167-237a-458a-8809-dc75ac53994c"))
+/* dual interface */ ISTIBook;
+struct __declspec(uuid("76133572-27f7-45db-bf63-7a0a1e8065c4"))
+/* dual interface */ ISTIPosition;
+struct __declspec(uuid("f8d282cc-fee7-45ec-a080-4276e43e8214"))
+/* dual interface */ ISTIQuote;
+struct structSTIQuoteRegEx;
+struct structSTIMdxRegEx;
+struct __declspec(uuid("2265e0d0-4eb6-11de-8a39-0800200c9a66"))
+/* dual interface */ ISTIAcctMaint;
+struct /* coclass */ STIOrderUpdateMsg;
+struct /* coclass */ STITradeUpdateMsg;
+struct /* coclass */ STIOrderRejectMsg;
+struct /* coclass */ STIOrderConfirmMsg;
+struct /* coclass */ STIOrder;
+struct /* coclass */ STIEvents;
+struct /* coclass */ STIOrderMaint;
+struct /* coclass */ STIApp;
+struct /* coclass */ STIBook;
+struct /* coclass */ STIPosition;
+struct /* coclass */ STIQuote;
+struct /* coclass */ STIAcctMaint;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ISTIOrderUpdateMsg, __uuidof(ISTIOrderUpdateMsg));
+_COM_SMARTPTR_TYPEDEF(ISTIOrder, __uuidof(ISTIOrder));
+_COM_SMARTPTR_TYPEDEF(ISTITradeUpdateMsg, __uuidof(ISTITradeUpdateMsg));
+_COM_SMARTPTR_TYPEDEF(ISTIOrderRejectMsg, __uuidof(ISTIOrderRejectMsg));
+_COM_SMARTPTR_TYPEDEF(ISTIOrderConfirmMsg, __uuidof(ISTIOrderConfirmMsg));
+_COM_SMARTPTR_TYPEDEF(_ISTIPositionEvents, __uuidof(_ISTIPositionEvents));
+_COM_SMARTPTR_TYPEDEF(_ISTIBookEvents, __uuidof(_ISTIBookEvents));
+_COM_SMARTPTR_TYPEDEF(_ISTIQuoteEvents, __uuidof(_ISTIQuoteEvents));
+_COM_SMARTPTR_TYPEDEF(_ISTIEventsEvents, __uuidof(_ISTIEventsEvents));
+_COM_SMARTPTR_TYPEDEF(_ISTIAcctMaintEvents, __uuidof(_ISTIAcctMaintEvents));
+_COM_SMARTPTR_TYPEDEF(ISTIEvents, __uuidof(ISTIEvents));
+_COM_SMARTPTR_TYPEDEF(ISTIOrderMaint, __uuidof(ISTIOrderMaint));
+_COM_SMARTPTR_TYPEDEF(ISTIApp, __uuidof(ISTIApp));
+_COM_SMARTPTR_TYPEDEF(ISTIBook, __uuidof(ISTIBook));
+_COM_SMARTPTR_TYPEDEF(ISTIPosition, __uuidof(ISTIPosition));
+_COM_SMARTPTR_TYPEDEF(ISTIQuote, __uuidof(ISTIQuote));
+_COM_SMARTPTR_TYPEDEF(ISTIAcctMaint, __uuidof(ISTIAcctMaint));
+
+//
+// Type library items
+//
+
+enum STIOrderStatus
+{
+    osSTIUnknown = 0,
+    osSTIPendingCancel = 1,
+    osSTIPendingReplace = 2,
+    osSTIDoneForDay = 3,
+    osSTICalculated = 4,
+    osSTIFilled = 5,
+    osSTIStopped = 6,
+    osSTISuspended = 7,
+    osSTICanceled = 8,
+    osSTIExpired = 9,
+    osSTIPartiallyFilled = 10,
+    osSTIReplaced = 11,
+    osSTIRejected = 12,
+    osSTINew = 13,
+    osSTIPendingNew = 14,
+    osSTIAcceptedForBidding = 15,
+    osSTIAdjusted = 16,
+    osSTIStatused = 17
+};
+
+enum STIPriceTypes
+{
+    ptSTIUnknown = 0,
+    ptSTIMkt = 1,
+    ptSTIMktClo = 2,
+    ptSTIMktOb = 3,
+    ptSTIMktWow = 4,
+    ptSTILmt = 5,
+    ptSTILmtClo = 6,
+    ptSTILmtStp = 7,
+    ptSTILmtStpLmt = 8,
+    ptSTILmtOb = 9,
+    ptSTIWow = 10,
+    ptSTILmtWow = 11,
+    ptSTIBas = 12,
+    ptSTIClo = 13,
+    ptSTIPegged = 14,
+    ptSTISvrStp = 100,
+    ptSTISvrStpLmt = 101,
+    ptSTITrailStp = 102,
+    ptSTILast = 103
+};
+
+enum STIRejectReason
+{
+    rrSTIUnknown = 0,
+    rrSTIUnknownPid = 1,
+    rrSTIInvalidPassword = 2,
+    rrSTIAccessDenied = 3,
+    rrSTINotFound = 4,
+    rrSTICannotRoute = 5,
+    rrSTIPendingCancel = 6,
+    rrSTIPendingReplace = 7,
+    rrSTIOrderClosed = 8,
+    rrSTICannotCreate = 9,
+    rrSTIDupeClOrdId = 10,
+    rrSTINoSeqNoAvailable = 11,
+    rrSTIInvalidAcct = 12,
+    rrSTIInvalidDest = 13,
+    rrSTIError = 14,
+    rrSTIDupeSeqNo = 15,
+    rrSTINoChange = 16,
+    rrSTIInvalidSeqNo = 17,
+    rrSTIInvalidQty = 18,
+    rrSTITltc = 19,
+    rrSTIShareLimit = 20,
+    rrSTIDollarLimit = 21,
+    rrSTIBuyingPower = 22,
+    rrSTITenSecRule = 23,
+    rrSTINotSupported = 24,
+    rrSTIDupeAcct = 25,
+    rrSTIInvalidGroupId = 26,
+    rrSTIDupeStation = 27,
+    rrSTIPosTradingLmt = 28,
+    rrSTITltcMoc = 29,
+    rrSTIHardToBorrow = 30,
+    rrSTIVersion = 31,
+    rrSTIDupeLogin = 32,
+    rrSTIInvalidSym = 33,
+    rrSTINxRules = 34,
+    rrSTIBulletNotRequired = 35,
+    rrSTILast = 36
+};
+
+struct __declspec(uuid("b9919086-687b-4117-9b2a-d0c9dfe34979"))
+ISTIOrderUpdateMsg : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAction))
+    _bstr_t Action;
+    __declspec(property(get=GetUserID))
+    _bstr_t UserID;
+    __declspec(property(get=GetAccount))
+    _bstr_t Account;
+    __declspec(property(get=GetSeqNo))
+    long SeqNo;
+    __declspec(property(get=GetSide))
+    _bstr_t Side;
+    __declspec(property(get=GetSymbol))
+    _bstr_t Symbol;
+    __declspec(property(get=GetQuantity))
+    long Quantity;
+    __declspec(property(get=GetMinQuantity))
+    long MinQuantity;
+    __declspec(property(get=GetLvsQuantity))
+    long LvsQuantity;
+    __declspec(property(get=GetLmtPrice))
+    double LmtPrice;
+    __declspec(property(get=GetStpPrice))
+    double StpPrice;
+    __declspec(property(get=GetPriceType))
+    enum STIPriceTypes PriceType;
+    __declspec(property(get=GetClOrderID))
+    _bstr_t ClOrderID;
+    __declspec(property(get=GetExchClOrderID))
+    _bstr_t ExchClOrderID;
+    __declspec(property(get=GetExchOrderID))
+    _bstr_t ExchOrderID;
+    __declspec(property(get=GetUrStpdPrice))
+    double UrStpdPrice;
+    __declspec(property(get=GetTif))
+    _bstr_t Tif;
+    __declspec(property(get=GetDestination))
+    _bstr_t Destination;
+    __declspec(property(get=GetExecBroker))
+    _bstr_t ExecBroker;
+    __declspec(property(get=GetExecInst))
+    _bstr_t ExecInst;
+    __declspec(property(get=GetOrderStatus))
+    enum STIOrderStatus OrderStatus;
+    __declspec(property(get=GetAvgExecPrice))
+    double AvgExecPrice;
+    __declspec(property(get=GetCumExecQuantity))
+    long CumExecQuantity;
+    __declspec(property(get=GetOrderTime))
+    _bstr_t OrderTime;
+    __declspec(property(get=GetUpdateTime))
+    _bstr_t UpdateTime;
+    __declspec(property(get=GetLogMessage))
+    _bstr_t LogMessage;
+    __declspec(property(get=GetOrderRecordID))
+    long OrderRecordID;
+    __declspec(property(get=GetDbsNo))
+    long DbsNo;
+    __declspec(property(get=GetInstrument))
+    _bstr_t Instrument;
+    __declspec(property(get=GetDisplay))
+    long Display;
+    __declspec(property(get=GetRefreshQty))
+    long RefreshQty;
+    __declspec(property(get=GetDiscretion))
+    double Discretion;
+    __declspec(property(get=GetPegDiff))
+    double PegDiff;
+    __declspec(property(get=GetSvrStpReleased))
+    VARIANT_BOOL SvrStpReleased;
+    __declspec(property(get=GetBatchID))
+    _bstr_t BatchID;
+    __declspec(property(get=GetStrategy))
+    _bstr_t Strategy;
+    __declspec(property(get=GetStartTime))
+    _bstr_t StartTime;
+    __declspec(property(get=GetEndTime))
+    _bstr_t EndTime;
+    __declspec(property(get=GetPairId))
+    _bstr_t PairId;
+    __declspec(property(get=GetDuration))
+    long Duration;
+    __declspec(property(get=GetMaxPctVolume))
+    long MaxPctVolume;
+    __declspec(property(get=GetMinPctVolume))
+    long MinPctVolume;
+    __declspec(property(get=GetExecAggression))
+    long ExecAggression;
+    __declspec(property(get=GetPingInterval))
+    long PingInterval;
+    __declspec(property(get=GetRefreshInterval))
+    long RefreshInterval;
+    __declspec(property(get=GetPctPerSlice))
+    double PctPerSlice;
+    __declspec(property(get=GetPremium))
+    double Premium;
+    __declspec(property(get=GetRatio))
+    double Ratio;
+    __declspec(property(get=GetCashComponent))
+    double CashComponent;
+    __declspec(property(get=GetUser))
+    _bstr_t User;
+    __declspec(property(get=GetPriceTolerance))
+    long PriceTolerance;
+    __declspec(property(get=GetTrailAmt))
+    double TrailAmt;
+    __declspec(property(get=GetTrailInc))
+    double TrailInc;
+    __declspec(property(get=GetTrailId))
+    long TrailId;
+    __declspec(property(get=GetQtyToleranceSize))
+    long QtyToleranceSize;
+    __declspec(property(get=GetMarketStructure))
+    long MarketStructure;
+    __declspec(property(get=GetOrderCompletion))
+    long OrderCompletion;
+    __declspec(property(get=GetAuction))
+    long Auction;
+    __declspec(property(get=GetQtyTolerancePct))
+    long QtyTolerancePct;
+    __declspec(property(get=GetSizeLow))
+    long SizeLow;
+    __declspec(property(get=GetSizeMax))
+    long SizeMax;
+    __declspec(property(get=GetTilt))
+    double Tilt;
+    __declspec(property(get=GetTargetPctVolume))
+    double TargetPctVolume;
+    __declspec(property(get=GetTargetPrice))
+    double TargetPrice;
+    __declspec(property(get=GetReactPrice))
+    double ReactPrice;
+    __declspec(property(get=GetMaxHighPctDeviation))
+    double MaxHighPctDeviation;
+    __declspec(property(get=GetMaxLowPctDeviation))
+    double MaxLowPctDeviation;
+    __declspec(property(get=GetExecPriceLmt))
+    double ExecPriceLmt;
+    __declspec(property(get=GetAvgPriceLmt))
+    double AvgPriceLmt;
+    __declspec(property(get=GetMoo))
+    VARIANT_BOOL Moo;
+    __declspec(property(get=GetMoc))
+    VARIANT_BOOL Moc;
+    __declspec(property(get=GetOpportunisticTrade))
+    VARIANT_BOOL OpportunisticTrade;
+    __declspec(property(get=GetTakeLiquidity))
+    VARIANT_BOOL TakeLiquidity;
+    __declspec(property(get=GetStrPriceType))
+    _bstr_t StrPriceType;
+    __declspec(property(get=GetSorPreference))
+    _bstr_t SorPreference;
+    __declspec(property(get=GetUnderlying))
+    _bstr_t Underlying;
+    __declspec(property(get=GetMaturity))
+    _bstr_t Maturity;
+    __declspec(property(get=GetStrikePrice))
+    double StrikePrice;
+    __declspec(property(get=GetOpenClose))
+    _bstr_t OpenClose;
+    __declspec(property(get=GetPutCall))
+    _bstr_t PutCall;
+    __declspec(property(get=GetCoverUncover))
+    _bstr_t CoverUncover;
+    __declspec(property(get=GetCurrency))
+    _bstr_t Currency;
+    __declspec(property(get=GetSettCurrency))
+    _bstr_t SettCurrency;
+    __declspec(property(get=GetFutSettDate))
+    _bstr_t FutSettDate;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetAction ( );
+    _bstr_t GetUserID ( );
+    _bstr_t GetAccount ( );
+    long GetSeqNo ( );
+    _bstr_t GetSide ( );
+    _bstr_t GetSymbol ( );
+    long GetQuantity ( );
+    long GetMinQuantity ( );
+    long GetLvsQuantity ( );
+    double GetLmtPrice ( );
+    double GetStpPrice ( );
+    enum STIPriceTypes GetPriceType ( );
+    _bstr_t GetClOrderID ( );
+    _bstr_t GetExchClOrderID ( );
+    _bstr_t GetExchOrderID ( );
+    double GetUrStpdPrice ( );
+    _bstr_t GetTif ( );
+    _bstr_t GetDestination ( );
+    _bstr_t GetExecBroker ( );
+    _bstr_t GetExecInst ( );
+    enum STIOrderStatus GetOrderStatus ( );
+    double GetAvgExecPrice ( );
+    long GetCumExecQuantity ( );
+    _bstr_t GetOrderTime ( );
+    _bstr_t GetUpdateTime ( );
+    _bstr_t GetLogMessage ( );
+    long GetOrderRecordID ( );
+    long GetDbsNo ( );
+    _bstr_t GetInstrument ( );
+    long GetDisplay ( );
+    long GetRefreshQty ( );
+    double GetDiscretion ( );
+    double GetPegDiff ( );
+    VARIANT_BOOL GetSvrStpReleased ( );
+    _bstr_t GetBatchID ( );
+    _bstr_t GetStrategy ( );
+    _bstr_t GetStartTime ( );
+    _bstr_t GetEndTime ( );
+    _bstr_t GetPairId ( );
+    long GetDuration ( );
+    long GetMaxPctVolume ( );
+    long GetMinPctVolume ( );
+    long GetExecAggression ( );
+    long GetPingInterval ( );
+    long GetRefreshInterval ( );
+    double GetPctPerSlice ( );
+    double GetPremium ( );
+    double GetRatio ( );
+    double GetCashComponent ( );
+    _bstr_t GetUser ( );
+    long GetPriceTolerance ( );
+    double GetTrailAmt ( );
+    double GetTrailInc ( );
+    long GetTrailId ( );
+    long GetQtyToleranceSize ( );
+    long GetMarketStructure ( );
+    long GetOrderCompletion ( );
+    long GetAuction ( );
+    long GetQtyTolerancePct ( );
+    long GetSizeLow ( );
+    long GetSizeMax ( );
+    double GetTilt ( );
+    double GetTargetPctVolume ( );
+    double GetTargetPrice ( );
+    double GetReactPrice ( );
+    double GetMaxHighPctDeviation ( );
+    double GetMaxLowPctDeviation ( );
+    double GetExecPriceLmt ( );
+    double GetAvgPriceLmt ( );
+    VARIANT_BOOL GetMoo ( );
+    VARIANT_BOOL GetMoc ( );
+    VARIANT_BOOL GetOpportunisticTrade ( );
+    VARIANT_BOOL GetTakeLiquidity ( );
+    _bstr_t GetStrPriceType ( );
+    _bstr_t GetSorPreference ( );
+    _bstr_t GetUnderlying ( );
+    _bstr_t GetMaturity ( );
+    double GetStrikePrice ( );
+    _bstr_t GetOpenClose ( );
+    _bstr_t GetPutCall ( );
+    _bstr_t GetCoverUncover ( );
+    _bstr_t GetCurrency ( );
+    _bstr_t GetSettCurrency ( );
+    _bstr_t GetFutSettDate ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Action (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_UserID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Account (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_SeqNo (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Side (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Symbol (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Quantity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MinQuantity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_LvsQuantity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_LmtPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_StpPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_PriceType (
+        /*[out,retval]*/ enum STIPriceTypes * pVal ) = 0;
+      virtual HRESULT __stdcall get_ClOrderID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExchClOrderID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExchOrderID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_UrStpdPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Tif (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Destination (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecBroker (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecInst (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_OrderStatus (
+        /*[out,retval]*/ enum STIOrderStatus * pVal ) = 0;
+      virtual HRESULT __stdcall get_AvgExecPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_CumExecQuantity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_OrderTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_UpdateTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_LogMessage (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_OrderRecordID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_DbsNo (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Instrument (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Display (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_RefreshQty (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Discretion (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_PegDiff (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_SvrStpReleased (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_BatchID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Strategy (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_StartTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_EndTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_PairId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Duration (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxPctVolume (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MinPctVolume (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecAggression (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_PingInterval (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_RefreshInterval (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_PctPerSlice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Premium (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Ratio (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_CashComponent (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_User (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_PriceTolerance (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_TrailAmt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_TrailInc (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_TrailId (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_QtyToleranceSize (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MarketStructure (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_OrderCompletion (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Auction (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_QtyTolerancePct (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_SizeLow (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_SizeMax (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Tilt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_TargetPctVolume (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_TargetPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_ReactPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxHighPctDeviation (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxLowPctDeviation (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecPriceLmt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_AvgPriceLmt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Moo (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_Moc (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_OpportunisticTrade (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_TakeLiquidity (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_StrPriceType (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_SorPreference (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Underlying (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Maturity (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_StrikePrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_OpenClose (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_PutCall (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_CoverUncover (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Currency (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_SettCurrency (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_FutSettDate (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("5d4a5558-619f-48ab-8e64-0cab14a92f6f"))
+structSTIOrder
+{
+    BSTR bstrSide;
+    long nQuantity;
+    BSTR bstrSymbol;
+    BSTR bstrAccount;
+    BSTR bstrDestination;
+    BSTR bstrTif;
+    long nPriceType;
+    double fStpPrice;
+    double fLmtPrice;
+    BSTR bstrClOrderId;
+    BSTR bstrInstrument;
+    VARIANT_BOOL bPriceCheck;
+    VARIANT_BOOL bPriceQtyOverride;
+    long nDisplay;
+    VARIANT_BOOL bPossDupe;
+    BSTR bstrAccountType;
+    BSTR bstrExecInst;
+    BSTR bstrExecBroker;
+    long nMinQuantity;
+    BSTR bstrListingExchange;
+    long nRefreshQty;
+    double fDiscretion;
+    double fPegDiff;
+    BSTR bstrBatchId;
+    BSTR bstrStrategy;
+    BSTR bstrStartTime;
+    BSTR bstrEndTime;
+    BSTR bstrPairId;
+    long nDuration;
+    long nMaxPctVolume;
+    long nMinPctVolume;
+    long nExecAggression;
+    long nPingInterval;
+    long nRefreshInterval;
+    double fPctPerSlice;
+    double fPremium;
+    double fRatio;
+    double fCashComponent;
+    BSTR bstrUser;
+    long nPriceTolerance;
+    double fTrailAmt;
+    double fTrailInc;
+    long nQtyToleranceSize;
+    long nMarketStructure;
+    long nOrderCompletion;
+    long nAuction;
+    long nQtyTolerancePct;
+    long nSizeLow;
+    long nSizeMax;
+    double fTilt;
+    double fTargetPctVolume;
+    double fTargetPrice;
+    double fReactPrice;
+    double fMaxHighPctDeviation;
+    double fMaxLowPctDeviation;
+    double fExecPriceLmt;
+    double fAvgPriceLmt;
+    VARIANT_BOOL bMoo;
+    VARIANT_BOOL bMoc;
+    VARIANT_BOOL bOpportunisticTrade;
+    VARIANT_BOOL bTakeLiquidity;
+    BSTR bstrStrPriceType;
+    BSTR bstrSorPreference;
+    BSTR bstrLocateBroker;
+    long nLvsQty;
+    BSTR bstrUnderlying;
+    BSTR bstrMaturity;
+    double fStrikePrice;
+    BSTR bstrOpenClose;
+    BSTR bstrPutCall;
+    BSTR bstrCoverUncover;
+    BSTR bstrCurrency;
+    BSTR bstrSettCurrency;
+    BSTR bstrFutSettDate;
+    long nParentRecordId;
+    long nLocateQty;
+    BSTR bstrLocateTime;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("d83313cb-a1b7-4130-b161-824507ecbc83"))
+ISTIOrder : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAccount,put=PutAccount))
+    _bstr_t Account;
+    __declspec(property(get=GetSide,put=PutSide))
+    _bstr_t Side;
+    __declspec(property(get=GetListingExchange,put=PutListingExchange))
+    _bstr_t ListingExchange;
+    __declspec(property(get=GetSymbol,put=PutSymbol))
+    _bstr_t Symbol;
+    __declspec(property(get=GetQuantity,put=PutQuantity))
+    long Quantity;
+    __declspec(property(get=GetMinQuantity,put=PutMinQuantity))
+    long MinQuantity;
+    __declspec(property(get=GetLmtPrice,put=PutLmtPrice))
+    double LmtPrice;
+    __declspec(property(get=GetStpPrice,put=PutStpPrice))
+    double StpPrice;
+    __declspec(property(get=GetPriceType,put=PutPriceType))
+    enum STIPriceTypes PriceType;
+    __declspec(property(get=GetClOrderID,put=PutClOrderID))
+    _bstr_t ClOrderID;
+    __declspec(property(get=GetTif,put=PutTif))
+    _bstr_t Tif;
+    __declspec(property(get=GetDestination,put=PutDestination))
+    _bstr_t Destination;
+    __declspec(property(get=GetExecBroker,put=PutExecBroker))
+    _bstr_t ExecBroker;
+    __declspec(property(get=GetExecInst,put=PutExecInst))
+    _bstr_t ExecInst;
+    __declspec(property(get=GetAccountType,put=PutAccountType))
+    _bstr_t AccountType;
+    __declspec(property(get=GetPossDupe,put=PutPossDupe))
+    VARIANT_BOOL PossDupe;
+    __declspec(property(get=GetDisplay,put=PutDisplay))
+    long Display;
+    __declspec(property(get=GetPriceQtyOverride,put=PutPriceQtyOverride))
+    VARIANT_BOOL PriceQtyOverride;
+    __declspec(property(get=GetPriceCheck,put=PutPriceCheck))
+    VARIANT_BOOL PriceCheck;
+    __declspec(property(get=GetInstrument,put=PutInstrument))
+    _bstr_t Instrument;
+    __declspec(property(get=GetRefreshQty,put=PutRefreshQty))
+    long RefreshQty;
+    __declspec(property(get=GetDiscretion,put=PutDiscretion))
+    double Discretion;
+    __declspec(property(get=GetPegDiff,put=PutPegDiff))
+    double PegDiff;
+    __declspec(property(get=GetNxRules,put=PutNxRules))
+    long NxRules;
+    __declspec(property(get=GetSecurityLocated,put=PutSecurityLocated))
+    VARIANT_BOOL SecurityLocated;
+    __declspec(property(get=GetBatchID,put=PutBatchID))
+    _bstr_t BatchID;
+    __declspec(property(get=GetStrategy,put=PutStrategy))
+    _bstr_t Strategy;
+    __declspec(property(get=GetStartTime,put=PutStartTime))
+    _bstr_t StartTime;
+    __declspec(property(get=GetEndTime,put=PutEndTime))
+    _bstr_t EndTime;
+    __declspec(property(get=GetPairId,put=PutPairId))
+    _bstr_t PairId;
+    __declspec(property(get=GetDuration,put=PutDuration))
+    long Duration;
+    __declspec(property(get=GetMaxPctVolume,put=PutMaxPctVolume))
+    long MaxPctVolume;
+    __declspec(property(get=GetMinPctVolume,put=PutMinPctVolume))
+    long MinPctVolume;
+    __declspec(property(get=GetExecAggression,put=PutExecAggression))
+    long ExecAggression;
+    __declspec(property(get=GetPingInterval,put=PutPingInterval))
+    long PingInterval;
+    __declspec(property(get=GetRefreshInterval,put=PutRefreshInterval))
+    long RefreshInterval;
+    __declspec(property(get=GetPctPerSlice,put=PutPctPerSlice))
+    double PctPerSlice;
+    __declspec(property(get=GetPremium,put=PutPremium))
+    double Premium;
+    __declspec(property(get=GetRatio,put=PutRatio))
+    double Ratio;
+    __declspec(property(get=GetCashComponent,put=PutCashComponent))
+    double CashComponent;
+    __declspec(property(get=GetUser,put=PutUser))
+    _bstr_t User;
+    __declspec(property(get=GetPriceTolerance,put=PutPriceTolerance))
+    long PriceTolerance;
+    __declspec(property(get=GetTrailAmt,put=PutTrailAmt))
+    double TrailAmt;
+    __declspec(property(get=GetTrailInc,put=PutTrailInc))
+    double TrailInc;
+    __declspec(property(get=GetLocateBroker,put=PutLocateBroker))
+    _bstr_t LocateBroker;
+    __declspec(property(get=GetQtyToleranceSize,put=PutQtyToleranceSize))
+    long QtyToleranceSize;
+    __declspec(property(get=GetMarketStructure,put=PutMarketStructure))
+    long MarketStructure;
+    __declspec(property(get=GetOrderCompletion,put=PutOrderCompletion))
+    long OrderCompletion;
+    __declspec(property(get=GetAuction,put=PutAuction))
+    long Auction;
+    __declspec(property(get=GetQtyTolerancePct,put=PutQtyTolerancePct))
+    long QtyTolerancePct;
+    __declspec(property(get=GetSizeLow,put=PutSizeLow))
+    long SizeLow;
+    __declspec(property(get=GetSizeMax,put=PutSizeMax))
+    long SizeMax;
+    __declspec(property(get=GetTilt,put=PutTilt))
+    double Tilt;
+    __declspec(property(get=GetTargetPctVolume,put=PutTargetPctVolume))
+    double TargetPctVolume;
+    __declspec(property(get=GetTargetPrice,put=PutTargetPrice))
+    double TargetPrice;
+    __declspec(property(get=GetReactPrice,put=PutReactPrice))
+    double ReactPrice;
+    __declspec(property(get=GetMaxHighPctDeviation,put=PutMaxHighPctDeviation))
+    double MaxHighPctDeviation;
+    __declspec(property(get=GetMaxLowPctDeviation,put=PutMaxLowPctDeviation))
+    double MaxLowPctDeviation;
+    __declspec(property(get=GetExecPriceLmt,put=PutExecPriceLmt))
+    double ExecPriceLmt;
+    __declspec(property(get=GetAvgPriceLmt,put=PutAvgPriceLmt))
+    double AvgPriceLmt;
+    __declspec(property(get=GetMoo,put=PutMoo))
+    VARIANT_BOOL Moo;
+    __declspec(property(get=GetMoc,put=PutMoc))
+    VARIANT_BOOL Moc;
+    __declspec(property(get=GetOpportunisticTrade,put=PutOpportunisticTrade))
+    VARIANT_BOOL OpportunisticTrade;
+    __declspec(property(get=GetTakeLiquidity,put=PutTakeLiquidity))
+    VARIANT_BOOL TakeLiquidity;
+    __declspec(property(get=GetStrPriceType,put=PutStrPriceType))
+    _bstr_t StrPriceType;
+    __declspec(property(get=GetSorPreference,put=PutSorPreference))
+    _bstr_t SorPreference;
+    __declspec(property(get=GetUnderlying,put=PutUnderlying))
+    _bstr_t Underlying;
+    __declspec(property(get=GetMaturity,put=PutMaturity))
+    _bstr_t Maturity;
+    __declspec(property(get=GetStrikePrice,put=PutStrikePrice))
+    double StrikePrice;
+    __declspec(property(get=GetOpenClose,put=PutOpenClose))
+    _bstr_t OpenClose;
+    __declspec(property(get=GetPutCall,put=PutPutCall))
+    _bstr_t PutCall;
+    __declspec(property(get=GetCoverUncover,put=PutCoverUncover))
+    _bstr_t CoverUncover;
+    __declspec(property(get=GetLvsQty,put=PutLvsQty))
+    long LvsQty;
+    __declspec(property(get=GetCurrency,put=PutCurrency))
+    _bstr_t Currency;
+    __declspec(property(get=GetSettCurrency,put=PutSettCurrency))
+    _bstr_t SettCurrency;
+    __declspec(property(get=GetFutSettDate,put=PutFutSettDate))
+    _bstr_t FutSettDate;
+    __declspec(property(get=GetParentRecordId,put=PutParentRecordId))
+    long ParentRecordId;
+    __declspec(property(get=GetLocateQty,put=PutLocateQty))
+    long LocateQty;
+    __declspec(property(get=GetLocateTime,put=PutLocateTime))
+    _bstr_t LocateTime;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetAccount ( );
+    void PutAccount (
+        _bstr_t pVal );
+    _bstr_t GetSide ( );
+    void PutSide (
+        _bstr_t pVal );
+    _bstr_t GetListingExchange ( );
+    void PutListingExchange (
+        _bstr_t pVal );
+    _bstr_t GetSymbol ( );
+    void PutSymbol (
+        _bstr_t pVal );
+    long GetQuantity ( );
+    void PutQuantity (
+        long pVal );
+    long GetMinQuantity ( );
+    void PutMinQuantity (
+        long pVal );
+    double GetLmtPrice ( );
+    void PutLmtPrice (
+        double pVal );
+    double GetStpPrice ( );
+    void PutStpPrice (
+        double pVal );
+    enum STIPriceTypes GetPriceType ( );
+    void PutPriceType (
+        enum STIPriceTypes pVal );
+    _bstr_t GetClOrderID ( );
+    void PutClOrderID (
+        _bstr_t pVal );
+    _bstr_t GetTif ( );
+    void PutTif (
+        _bstr_t pVal );
+    _bstr_t GetDestination ( );
+    void PutDestination (
+        _bstr_t pVal );
+    long SubmitOrder ( );
+    _bstr_t GetExecBroker ( );
+    void PutExecBroker (
+        _bstr_t pVal );
+    _bstr_t GetExecInst ( );
+    void PutExecInst (
+        _bstr_t pVal );
+    _bstr_t GetAccountType ( );
+    void PutAccountType (
+        _bstr_t pVal );
+    VARIANT_BOOL GetPossDupe ( );
+    void PutPossDupe (
+        VARIANT_BOOL pVal );
+    long GetDisplay ( );
+    void PutDisplay (
+        long pVal );
+    VARIANT_BOOL GetPriceQtyOverride ( );
+    void PutPriceQtyOverride (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetPriceCheck ( );
+    void PutPriceCheck (
+        VARIANT_BOOL pVal );
+    _bstr_t GetInstrument ( );
+    void PutInstrument (
+        _bstr_t pVal );
+    long GetRefreshQty ( );
+    void PutRefreshQty (
+        long pVal );
+    double GetDiscretion ( );
+    void PutDiscretion (
+        double pVal );
+    double GetPegDiff ( );
+    void PutPegDiff (
+        double pVal );
+    long GetNxRules ( );
+    void PutNxRules (
+        long pVal );
+    VARIANT_BOOL GetSecurityLocated ( );
+    void PutSecurityLocated (
+        VARIANT_BOOL pVal );
+    _bstr_t GetBatchID ( );
+    void PutBatchID (
+        _bstr_t pVal );
+    _bstr_t GetStrategy ( );
+    void PutStrategy (
+        _bstr_t pVal );
+    _bstr_t GetStartTime ( );
+    void PutStartTime (
+        _bstr_t pVal );
+    _bstr_t GetEndTime ( );
+    void PutEndTime (
+        _bstr_t pVal );
+    _bstr_t GetPairId ( );
+    void PutPairId (
+        _bstr_t pVal );
+    long GetDuration ( );
+    void PutDuration (
+        long pVal );
+    long GetMaxPctVolume ( );
+    void PutMaxPctVolume (
+        long pVal );
+    long GetMinPctVolume ( );
+    void PutMinPctVolume (
+        long pVal );
+    long GetExecAggression ( );
+    void PutExecAggression (
+        long pVal );
+    long GetPingInterval ( );
+    void PutPingInterval (
+        long pVal );
+    long GetRefreshInterval ( );
+    void PutRefreshInterval (
+        long pVal );
+    double GetPctPerSlice ( );
+    void PutPctPerSlice (
+        double pVal );
+    double GetPremium ( );
+    void PutPremium (
+        double pVal );
+    double GetRatio ( );
+    void PutRatio (
+        double pVal );
+    double GetCashComponent ( );
+    void PutCashComponent (
+        double pVal );
+    _bstr_t GetUser ( );
+    void PutUser (
+        _bstr_t pVal );
+    long GetPriceTolerance ( );
+    void PutPriceTolerance (
+        long pVal );
+    double GetTrailAmt ( );
+    void PutTrailAmt (
+        double pVal );
+    double GetTrailInc ( );
+    void PutTrailInc (
+        double pVal );
+    _bstr_t GetLocateBroker ( );
+    void PutLocateBroker (
+        _bstr_t pVal );
+    long GetQtyToleranceSize ( );
+    void PutQtyToleranceSize (
+        long pVal );
+    long GetMarketStructure ( );
+    void PutMarketStructure (
+        long pVal );
+    long GetOrderCompletion ( );
+    void PutOrderCompletion (
+        long pVal );
+    long GetAuction ( );
+    void PutAuction (
+        long pVal );
+    long GetQtyTolerancePct ( );
+    void PutQtyTolerancePct (
+        long pVal );
+    long GetSizeLow ( );
+    void PutSizeLow (
+        long pVal );
+    long GetSizeMax ( );
+    void PutSizeMax (
+        long pVal );
+    double GetTilt ( );
+    void PutTilt (
+        double pVal );
+    double GetTargetPctVolume ( );
+    void PutTargetPctVolume (
+        double pVal );
+    double GetTargetPrice ( );
+    void PutTargetPrice (
+        double pVal );
+    double GetReactPrice ( );
+    void PutReactPrice (
+        double pVal );
+    double GetMaxHighPctDeviation ( );
+    void PutMaxHighPctDeviation (
+        double pVal );
+    double GetMaxLowPctDeviation ( );
+    void PutMaxLowPctDeviation (
+        double pVal );
+    double GetExecPriceLmt ( );
+    void PutExecPriceLmt (
+        double pVal );
+    double GetAvgPriceLmt ( );
+    void PutAvgPriceLmt (
+        double pVal );
+    VARIANT_BOOL GetMoo ( );
+    void PutMoo (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetMoc ( );
+    void PutMoc (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetOpportunisticTrade ( );
+    void PutOpportunisticTrade (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetTakeLiquidity ( );
+    void PutTakeLiquidity (
+        VARIANT_BOOL pVal );
+    _bstr_t GetStrPriceType ( );
+    void PutStrPriceType (
+        _bstr_t pVal );
+    _bstr_t GetSorPreference ( );
+    void PutSorPreference (
+        _bstr_t pVal );
+    _bstr_t GetUnderlying ( );
+    void PutUnderlying (
+        _bstr_t pVal );
+    _bstr_t GetMaturity ( );
+    void PutMaturity (
+        _bstr_t pVal );
+    double GetStrikePrice ( );
+    void PutStrikePrice (
+        double pVal );
+    _bstr_t GetOpenClose ( );
+    void PutOpenClose (
+        _bstr_t pVal );
+    _bstr_t GetPutCall ( );
+    void PutPutCall (
+        _bstr_t pVal );
+    _bstr_t GetCoverUncover ( );
+    void PutCoverUncover (
+        _bstr_t pVal );
+    long ReplaceOrder (
+        long lOldOrderRecId,
+        _bstr_t bstrOldClOrderId );
+    long MaintainOrder (
+        _bstr_t bstrKey,
+        long lOrderRecId,
+        _bstr_t bstrClOrderId );
+    long MaintainTrade (
+        _bstr_t bstrKey,
+        long lOrderRecId,
+        _bstr_t bstrClOrderId,
+        long lTradeRecId,
+        _bstr_t bstrAction );
+    long GetLvsQty ( );
+    void PutLvsQty (
+        long pVal );
+    _bstr_t GetCurrency ( );
+    void PutCurrency (
+        _bstr_t pVal );
+    _bstr_t GetSettCurrency ( );
+    void PutSettCurrency (
+        _bstr_t pVal );
+    _bstr_t GetFutSettDate ( );
+    void PutFutSettDate (
+        _bstr_t pVal );
+    long GetParentRecordId ( );
+    void PutParentRecordId (
+        long pVal );
+    HRESULT SetFlag (
+        long lFlag );
+    long GetLocateQty ( );
+    void PutLocateQty (
+        long pVal );
+    _bstr_t GetLocateTime ( );
+    void PutLocateTime (
+        _bstr_t pVal );
+    long SubmitOrderStruct (
+        struct structSTIOrder * pOrder );
+    HRESULT ClearOrderStruct (
+        struct structSTIOrder * pOrder );
+    long ReplaceOrderStruct (
+        struct structSTIOrder * pOrder,
+        long lOldOrderRecId,
+        _bstr_t bstrOldClOrderId );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Account (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Account (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Side (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Side (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ListingExchange (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ListingExchange (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Symbol (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Symbol (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Quantity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Quantity (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_MinQuantity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_MinQuantity (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LmtPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_LmtPrice (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_StpPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_StpPrice (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_PriceType (
+        /*[out,retval]*/ enum STIPriceTypes * pVal ) = 0;
+      virtual HRESULT __stdcall put_PriceType (
+        /*[in]*/ enum STIPriceTypes pVal ) = 0;
+      virtual HRESULT __stdcall get_ClOrderID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ClOrderID (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Tif (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Tif (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Destination (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Destination (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_SubmitOrder (
+        /*[out,retval]*/ long * RetVal ) = 0;
+      virtual HRESULT __stdcall get_ExecBroker (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ExecBroker (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecInst (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ExecInst (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_AccountType (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_AccountType (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PossDupe (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_PossDupe (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Display (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Display (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_PriceQtyOverride (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_PriceQtyOverride (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_PriceCheck (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_PriceCheck (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Instrument (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Instrument (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_RefreshQty (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_RefreshQty (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Discretion (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_Discretion (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_PegDiff (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_PegDiff (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_NxRules (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_NxRules (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_SecurityLocated (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_SecurityLocated (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_BatchID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BatchID (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Strategy (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Strategy (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_StartTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_StartTime (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_EndTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_EndTime (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PairId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_PairId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Duration (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Duration (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxPctVolume (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxPctVolume (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_MinPctVolume (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_MinPctVolume (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecAggression (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ExecAggression (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_PingInterval (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_PingInterval (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_RefreshInterval (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_RefreshInterval (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_PctPerSlice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_PctPerSlice (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_Premium (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_Premium (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_Ratio (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_Ratio (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_CashComponent (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_CashComponent (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_User (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_User (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PriceTolerance (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_PriceTolerance (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_TrailAmt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_TrailAmt (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_TrailInc (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_TrailInc (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_LocateBroker (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LocateBroker (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_QtyToleranceSize (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_QtyToleranceSize (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_MarketStructure (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_MarketStructure (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_OrderCompletion (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_OrderCompletion (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Auction (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Auction (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_QtyTolerancePct (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_QtyTolerancePct (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_SizeLow (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_SizeLow (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_SizeMax (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_SizeMax (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Tilt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_Tilt (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_TargetPctVolume (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_TargetPctVolume (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_TargetPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_TargetPrice (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ReactPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ReactPrice (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxHighPctDeviation (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxHighPctDeviation (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxLowPctDeviation (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxLowPctDeviation (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecPriceLmt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ExecPriceLmt (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_AvgPriceLmt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_AvgPriceLmt (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_Moo (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_Moo (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Moc (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_Moc (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_OpportunisticTrade (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_OpportunisticTrade (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_TakeLiquidity (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_TakeLiquidity (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_StrPriceType (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_StrPriceType (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SorPreference (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SorPreference (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Underlying (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Underlying (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Maturity (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Maturity (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_StrikePrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_StrikePrice (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_OpenClose (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_OpenClose (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PutCall (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_PutCall (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_CoverUncover (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CoverUncover (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_ReplaceOrder (
+        /*[in]*/ long lOldOrderRecId,
+        /*[in]*/ BSTR bstrOldClOrderId,
+        /*[out,retval]*/ long * lRetVal ) = 0;
+      virtual HRESULT __stdcall raw_MaintainOrder (
+        /*[in]*/ BSTR bstrKey,
+        /*[in]*/ long lOrderRecId,
+        /*[in]*/ BSTR bstrClOrderId,
+        /*[out,retval]*/ long * lRetVal ) = 0;
+      virtual HRESULT __stdcall raw_MaintainTrade (
+        /*[in]*/ BSTR bstrKey,
+        /*[in]*/ long lOrderRecId,
+        /*[in]*/ BSTR bstrClOrderId,
+        /*[in]*/ long lTradeRecId,
+        /*[in]*/ BSTR bstrAction,
+        /*[out,retval]*/ long * lRetVal ) = 0;
+      virtual HRESULT __stdcall get_LvsQty (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LvsQty (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Currency (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Currency (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SettCurrency (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SettCurrency (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_FutSettDate (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_FutSettDate (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ParentRecordId (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ParentRecordId (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall raw_SetFlag (
+        /*[in]*/ long lFlag ) = 0;
+      virtual HRESULT __stdcall get_LocateQty (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LocateQty (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LocateTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LocateTime (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_SubmitOrderStruct (
+        /*[in]*/ struct structSTIOrder * pOrder,
+        /*[out,retval]*/ long * RetVal ) = 0;
+      virtual HRESULT __stdcall raw_ClearOrderStruct (
+        /*[in,out]*/ struct structSTIOrder * pOrder ) = 0;
+      virtual HRESULT __stdcall raw_ReplaceOrderStruct (
+        /*[in]*/ struct structSTIOrder * pOrder,
+        /*[in]*/ long lOldOrderRecId,
+        /*[in]*/ BSTR bstrOldClOrderId,
+        /*[out,retval]*/ long * lRetVal ) = 0;
+};
+
+struct __declspec(uuid("803f925b-8c91-431f-ae55-c079fdc0137a"))
+ISTITradeUpdateMsg : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAction))
+    _bstr_t Action;
+    __declspec(property(get=GetUserID))
+    _bstr_t UserID;
+    __declspec(property(get=GetAccount))
+    _bstr_t Account;
+    __declspec(property(get=GetSeqNo))
+    long SeqNo;
+    __declspec(property(get=GetSide))
+    _bstr_t Side;
+    __declspec(property(get=GetSymbol))
+    _bstr_t Symbol;
+    __declspec(property(get=GetQuantity))
+    long Quantity;
+    __declspec(property(get=GetLvsQuantity))
+    long LvsQuantity;
+    __declspec(property(get=GetExecPrice))
+    double ExecPrice;
+    __declspec(property(get=GetLmtPrice))
+    double LmtPrice;
+    __declspec(property(get=GetStpPrice))
+    double StpPrice;
+    __declspec(property(get=GetPriceType))
+    enum STIPriceTypes PriceType;
+    __declspec(property(get=GetClOrderID))
+    _bstr_t ClOrderID;
+    __declspec(property(get=GetExchClOrderID))
+    _bstr_t ExchClOrderID;
+    __declspec(property(get=GetExchOrderID))
+    _bstr_t ExchOrderID;
+    __declspec(property(get=GetExchExecID))
+    _bstr_t ExchExecID;
+    __declspec(property(get=GetTif))
+    _bstr_t Tif;
+    __declspec(property(get=GetDestination))
+    _bstr_t Destination;
+    __declspec(property(get=GetExecBroker))
+    _bstr_t ExecBroker;
+    __declspec(property(get=GetExecInst))
+    _bstr_t ExecInst;
+    __declspec(property(get=GetOrderTime))
+    _bstr_t OrderTime;
+    __declspec(property(get=GetTradeTime))
+    _bstr_t TradeTime;
+    __declspec(property(get=GetUpdateTime))
+    _bstr_t UpdateTime;
+    __declspec(property(get=GetLogMessage))
+    _bstr_t LogMessage;
+    __declspec(property(get=GetOrderRecordID))
+    long OrderRecordID;
+    __declspec(property(get=GetTradeRecordID))
+    long TradeRecordID;
+    __declspec(property(get=GetDbsNo))
+    long DbsNo;
+    __declspec(property(get=GetAccountType))
+    _bstr_t AccountType;
+    __declspec(property(get=GetSpecialist))
+    _bstr_t Specialist;
+    __declspec(property(get=GetContra))
+    _bstr_t Contra;
+    __declspec(property(get=GetPossDupe))
+    VARIANT_BOOL PossDupe;
+    __declspec(property(get=GetClearable))
+    VARIANT_BOOL Clearable;
+    __declspec(property(get=GetEcnFee))
+    VARIANT_BOOL EcnFee;
+    __declspec(property(get=GetInstrument))
+    _bstr_t Instrument;
+    __declspec(property(get=GetDiscretion))
+    double Discretion;
+    __declspec(property(get=GetPegDiff))
+    double PegDiff;
+    __declspec(property(get=GetBatchID))
+    _bstr_t BatchID;
+    __declspec(property(get=GetUnderlying))
+    _bstr_t Underlying;
+    __declspec(property(get=GetMaturity))
+    _bstr_t Maturity;
+    __declspec(property(get=GetStrikePrice))
+    double StrikePrice;
+    __declspec(property(get=GetOpenClose))
+    _bstr_t OpenClose;
+    __declspec(property(get=GetPutCall))
+    _bstr_t PutCall;
+    __declspec(property(get=GetCoverUncover))
+    _bstr_t CoverUncover;
+    __declspec(property(get=GetCurrency))
+    _bstr_t Currency;
+    __declspec(property(get=GetSettCurrency))
+    _bstr_t SettCurrency;
+    __declspec(property(get=GetFutSettDate))
+    _bstr_t FutSettDate;
+    __declspec(property(get=GetLiquidity))
+    _bstr_t Liquidity;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetAction ( );
+    _bstr_t GetUserID ( );
+    _bstr_t GetAccount ( );
+    long GetSeqNo ( );
+    _bstr_t GetSide ( );
+    _bstr_t GetSymbol ( );
+    long GetQuantity ( );
+    long GetLvsQuantity ( );
+    double GetExecPrice ( );
+    double GetLmtPrice ( );
+    double GetStpPrice ( );
+    enum STIPriceTypes GetPriceType ( );
+    _bstr_t GetClOrderID ( );
+    _bstr_t GetExchClOrderID ( );
+    _bstr_t GetExchOrderID ( );
+    _bstr_t GetExchExecID ( );
+    _bstr_t GetTif ( );
+    _bstr_t GetDestination ( );
+    _bstr_t GetExecBroker ( );
+    _bstr_t GetExecInst ( );
+    _bstr_t GetOrderTime ( );
+    _bstr_t GetTradeTime ( );
+    _bstr_t GetUpdateTime ( );
+    _bstr_t GetLogMessage ( );
+    long GetOrderRecordID ( );
+    long GetTradeRecordID ( );
+    long GetDbsNo ( );
+    _bstr_t GetAccountType ( );
+    _bstr_t GetSpecialist ( );
+    _bstr_t GetContra ( );
+    VARIANT_BOOL GetPossDupe ( );
+    VARIANT_BOOL GetClearable ( );
+    VARIANT_BOOL GetEcnFee ( );
+    _bstr_t GetInstrument ( );
+    double GetDiscretion ( );
+    double GetPegDiff ( );
+    _bstr_t GetBatchID ( );
+    _bstr_t GetUnderlying ( );
+    _bstr_t GetMaturity ( );
+    double GetStrikePrice ( );
+    _bstr_t GetOpenClose ( );
+    _bstr_t GetPutCall ( );
+    _bstr_t GetCoverUncover ( );
+    _bstr_t GetCurrency ( );
+    _bstr_t GetSettCurrency ( );
+    _bstr_t GetFutSettDate ( );
+    _bstr_t GetLiquidity ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Action (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_UserID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Account (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_SeqNo (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Side (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Symbol (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Quantity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_LvsQuantity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_LmtPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_StpPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_PriceType (
+        /*[out,retval]*/ enum STIPriceTypes * pVal ) = 0;
+      virtual HRESULT __stdcall get_ClOrderID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExchClOrderID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExchOrderID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExchExecID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Tif (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Destination (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecBroker (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecInst (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_OrderTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_TradeTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_UpdateTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_LogMessage (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_OrderRecordID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_TradeRecordID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_DbsNo (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_AccountType (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Specialist (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Contra (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_PossDupe (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_Clearable (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_EcnFee (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_Instrument (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Discretion (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_PegDiff (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_BatchID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Underlying (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Maturity (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_StrikePrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_OpenClose (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_PutCall (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_CoverUncover (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Currency (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_SettCurrency (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_FutSettDate (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Liquidity (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("6626a80a-8ba6-431f-ab5c-f942880e3fdd"))
+ISTIOrderRejectMsg : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAccount))
+    _bstr_t Account;
+    __declspec(property(get=GetSide))
+    _bstr_t Side;
+    __declspec(property(get=GetListingExchange))
+    _bstr_t ListingExchange;
+    __declspec(property(get=GetSymbol))
+    _bstr_t Symbol;
+    __declspec(property(get=GetQuantity))
+    long Quantity;
+    __declspec(property(get=GetMinQuantity))
+    long MinQuantity;
+    __declspec(property(get=GetLmtPrice))
+    double LmtPrice;
+    __declspec(property(get=GetStpPrice))
+    double StpPrice;
+    __declspec(property(get=GetPriceType))
+    enum STIPriceTypes PriceType;
+    __declspec(property(get=GetClOrderID))
+    _bstr_t ClOrderID;
+    __declspec(property(get=GetTif))
+    _bstr_t Tif;
+    __declspec(property(get=GetDestination))
+    _bstr_t Destination;
+    __declspec(property(get=GetExecBroker))
+    _bstr_t ExecBroker;
+    __declspec(property(get=GetExecInst))
+    _bstr_t ExecInst;
+    __declspec(property(get=GetAccountType))
+    _bstr_t AccountType;
+    __declspec(property(get=GetPossDupe))
+    VARIANT_BOOL PossDupe;
+    __declspec(property(get=GetDisplay))
+    long Display;
+    __declspec(property(get=GetPriceQtyOverride))
+    VARIANT_BOOL PriceQtyOverride;
+    __declspec(property(get=GetPriceCheck))
+    VARIANT_BOOL PriceCheck;
+    __declspec(property(get=GetRejectReason))
+    enum STIRejectReason RejectReason;
+    __declspec(property(get=GetInstrument))
+    _bstr_t Instrument;
+    __declspec(property(get=GetRefreshQty))
+    long RefreshQty;
+    __declspec(property(get=GetDiscretion))
+    double Discretion;
+    __declspec(property(get=GetPegDiff))
+    double PegDiff;
+    __declspec(property(get=GetBatchID))
+    _bstr_t BatchID;
+    __declspec(property(get=GetStrategy))
+    _bstr_t Strategy;
+    __declspec(property(get=GetStartTime))
+    _bstr_t StartTime;
+    __declspec(property(get=GetEndTime))
+    _bstr_t EndTime;
+    __declspec(property(get=GetPairId))
+    _bstr_t PairId;
+    __declspec(property(get=GetDuration))
+    long Duration;
+    __declspec(property(get=GetMaxPctVolume))
+    long MaxPctVolume;
+    __declspec(property(get=GetMinPctVolume))
+    long MinPctVolume;
+    __declspec(property(get=GetExecAggression))
+    long ExecAggression;
+    __declspec(property(get=GetPingInterval))
+    long PingInterval;
+    __declspec(property(get=GetRefreshInterval))
+    long RefreshInterval;
+    __declspec(property(get=GetPctPerSlice))
+    double PctPerSlice;
+    __declspec(property(get=GetPremium))
+    double Premium;
+    __declspec(property(get=GetRatio))
+    double Ratio;
+    __declspec(property(get=GetCashComponent))
+    double CashComponent;
+    __declspec(property(get=GetUser))
+    _bstr_t User;
+    __declspec(property(get=GetPriceTolerance))
+    long PriceTolerance;
+    __declspec(property(get=GetTrailAmt))
+    double TrailAmt;
+    __declspec(property(get=GetTrailInc))
+    double TrailInc;
+    __declspec(property(get=GetQtyToleranceSize))
+    long QtyToleranceSize;
+    __declspec(property(get=GetMarketStructure))
+    long MarketStructure;
+    __declspec(property(get=GetOrderCompletion))
+    long OrderCompletion;
+    __declspec(property(get=GetAuction))
+    long Auction;
+    __declspec(property(get=GetQtyTolerancePct))
+    long QtyTolerancePct;
+    __declspec(property(get=GetSizeLow))
+    long SizeLow;
+    __declspec(property(get=GetSizeMax))
+    long SizeMax;
+    __declspec(property(get=GetTilt))
+    double Tilt;
+    __declspec(property(get=GetTargetPctVolume))
+    double TargetPctVolume;
+    __declspec(property(get=GetTargetPrice))
+    double TargetPrice;
+    __declspec(property(get=GetReactPrice))
+    double ReactPrice;
+    __declspec(property(get=GetMaxHighPctDeviation))
+    double MaxHighPctDeviation;
+    __declspec(property(get=GetMaxLowPctDeviation))
+    double MaxLowPctDeviation;
+    __declspec(property(get=GetExecPriceLmt))
+    double ExecPriceLmt;
+    __declspec(property(get=GetAvgPriceLmt))
+    double AvgPriceLmt;
+    __declspec(property(get=GetMoo))
+    VARIANT_BOOL Moo;
+    __declspec(property(get=GetMoc))
+    VARIANT_BOOL Moc;
+    __declspec(property(get=GetOpportunisticTrade))
+    VARIANT_BOOL OpportunisticTrade;
+    __declspec(property(get=GetTakeLiquidity))
+    VARIANT_BOOL TakeLiquidity;
+    __declspec(property(get=GetStrPriceType))
+    _bstr_t StrPriceType;
+    __declspec(property(get=GetSorPreference))
+    _bstr_t SorPreference;
+    __declspec(property(get=GetUnderlying))
+    _bstr_t Underlying;
+    __declspec(property(get=GetMaturity))
+    _bstr_t Maturity;
+    __declspec(property(get=GetStrikePrice))
+    double StrikePrice;
+    __declspec(property(get=GetOpenClose))
+    _bstr_t OpenClose;
+    __declspec(property(get=GetPutCall))
+    _bstr_t PutCall;
+    __declspec(property(get=GetCoverUncover))
+    _bstr_t CoverUncover;
+    __declspec(property(get=GetCurrency))
+    _bstr_t Currency;
+    __declspec(property(get=GetSettCurrency))
+    _bstr_t SettCurrency;
+    __declspec(property(get=GetFutSettDate))
+    _bstr_t FutSettDate;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetAccount ( );
+    _bstr_t GetSide ( );
+    _bstr_t GetListingExchange ( );
+    _bstr_t GetSymbol ( );
+    long GetQuantity ( );
+    long GetMinQuantity ( );
+    double GetLmtPrice ( );
+    double GetStpPrice ( );
+    enum STIPriceTypes GetPriceType ( );
+    _bstr_t GetClOrderID ( );
+    _bstr_t GetTif ( );
+    _bstr_t GetDestination ( );
+    _bstr_t GetExecBroker ( );
+    _bstr_t GetExecInst ( );
+    _bstr_t GetAccountType ( );
+    VARIANT_BOOL GetPossDupe ( );
+    long GetDisplay ( );
+    VARIANT_BOOL GetPriceQtyOverride ( );
+    VARIANT_BOOL GetPriceCheck ( );
+    enum STIRejectReason GetRejectReason ( );
+    _bstr_t GetInstrument ( );
+    long GetRefreshQty ( );
+    double GetDiscretion ( );
+    double GetPegDiff ( );
+    _bstr_t GetBatchID ( );
+    _bstr_t GetStrategy ( );
+    _bstr_t GetStartTime ( );
+    _bstr_t GetEndTime ( );
+    _bstr_t GetPairId ( );
+    long GetDuration ( );
+    long GetMaxPctVolume ( );
+    long GetMinPctVolume ( );
+    long GetExecAggression ( );
+    long GetPingInterval ( );
+    long GetRefreshInterval ( );
+    double GetPctPerSlice ( );
+    double GetPremium ( );
+    double GetRatio ( );
+    double GetCashComponent ( );
+    _bstr_t GetUser ( );
+    long GetPriceTolerance ( );
+    double GetTrailAmt ( );
+    double GetTrailInc ( );
+    long GetQtyToleranceSize ( );
+    long GetMarketStructure ( );
+    long GetOrderCompletion ( );
+    long GetAuction ( );
+    long GetQtyTolerancePct ( );
+    long GetSizeLow ( );
+    long GetSizeMax ( );
+    double GetTilt ( );
+    double GetTargetPctVolume ( );
+    double GetTargetPrice ( );
+    double GetReactPrice ( );
+    double GetMaxHighPctDeviation ( );
+    double GetMaxLowPctDeviation ( );
+    double GetExecPriceLmt ( );
+    double GetAvgPriceLmt ( );
+    VARIANT_BOOL GetMoo ( );
+    VARIANT_BOOL GetMoc ( );
+    VARIANT_BOOL GetOpportunisticTrade ( );
+    VARIANT_BOOL GetTakeLiquidity ( );
+    _bstr_t GetStrPriceType ( );
+    _bstr_t GetSorPreference ( );
+    _bstr_t GetUnderlying ( );
+    _bstr_t GetMaturity ( );
+    double GetStrikePrice ( );
+    _bstr_t GetOpenClose ( );
+    _bstr_t GetPutCall ( );
+    _bstr_t GetCoverUncover ( );
+    _bstr_t GetCurrency ( );
+    _bstr_t GetSettCurrency ( );
+    _bstr_t GetFutSettDate ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Account (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Side (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ListingExchange (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Symbol (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Quantity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MinQuantity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_LmtPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_StpPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_PriceType (
+        /*[out,retval]*/ enum STIPriceTypes * pVal ) = 0;
+      virtual HRESULT __stdcall get_ClOrderID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Tif (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Destination (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecBroker (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecInst (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_AccountType (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_PossDupe (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_Display (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_PriceQtyOverride (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_PriceCheck (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_RejectReason (
+        /*[out,retval]*/ enum STIRejectReason * pVal ) = 0;
+      virtual HRESULT __stdcall get_Instrument (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_RefreshQty (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Discretion (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_PegDiff (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_BatchID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Strategy (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_StartTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_EndTime (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_PairId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Duration (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxPctVolume (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MinPctVolume (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecAggression (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_PingInterval (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_RefreshInterval (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_PctPerSlice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Premium (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Ratio (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_CashComponent (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_User (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_PriceTolerance (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_TrailAmt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_TrailInc (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_QtyToleranceSize (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MarketStructure (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_OrderCompletion (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Auction (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_QtyTolerancePct (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_SizeLow (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_SizeMax (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Tilt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_TargetPctVolume (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_TargetPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_ReactPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxHighPctDeviation (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxLowPctDeviation (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExecPriceLmt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_AvgPriceLmt (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Moo (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_Moc (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_OpportunisticTrade (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_TakeLiquidity (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_StrPriceType (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_SorPreference (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Underlying (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Maturity (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_StrikePrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_OpenClose (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_PutCall (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_CoverUncover (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Currency (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_SettCurrency (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_FutSettDate (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("56d4dd56-17b7-4734-95cf-eba8b05c0f4d"))
+ISTIOrderConfirmMsg : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAccount))
+    _bstr_t Account;
+    __declspec(property(get=GetExchClOrderID))
+    _bstr_t ExchClOrderID;
+    __declspec(property(get=GetExchOrderID))
+    _bstr_t ExchOrderID;
+    __declspec(property(get=GetOrderRecordID))
+    long OrderRecordID;
+    __declspec(property(get=GetMsgConfirm))
+    _bstr_t MsgConfirm;
+    __declspec(property(get=GetClOrderID))
+    _bstr_t ClOrderID;
+    __declspec(property(get=GetInstrument))
+    _bstr_t Instrument;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetAccount ( );
+    _bstr_t GetExchClOrderID ( );
+    _bstr_t GetExchOrderID ( );
+    long GetOrderRecordID ( );
+    _bstr_t GetMsgConfirm ( );
+    _bstr_t GetClOrderID ( );
+    _bstr_t GetInstrument ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Account (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExchClOrderID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExchOrderID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_OrderRecordID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MsgConfirm (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ClOrderID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Instrument (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("52da1024-3469-4260-9a71-e5ed514383b7"))
+_ISTIPositionEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnSTIPositionUpdate (
+        struct structSTIPositionUpdate * structPositionUpdate );
+    HRESULT OnSTIShutdown ( );
+    HRESULT OnSTIPositionUpdateXML (
+        BSTR * bstrPosition );
+};
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("5d4a5548-619f-48ab-8e64-0cab14a92f6f"))
+structSTIPositionUpdate
+{
+    BSTR bstrAcct;
+    BSTR bstrSym;
+    long nSharesBot;
+    long nSharesSld;
+    long nTicketsBot;
+    long nTicketsSld;
+    double fDollarsBot;
+    double fDollarsSld;
+    double fReal;
+    double fPositionCost;
+    long nOpeningPosition;
+    long nSharesSldLong;
+    long nSharesSldShort;
+    long nTicketsSldLong;
+    long nTicketsSldShort;
+    double fDollarsSldLong;
+    double fDollarsSldShort;
+    VARIANT_BOOL bMsgSnapShot;
+    long nBullets;
+    long nConversion;
+    VARIANT_BOOL bLast;
+    double fClosePrice;
+    BSTR bstrInstrument;
+    long nSharesPerContract;
+    long nPremiumMultiplier;
+    double fBaseCurMultiplier;
+    double fPremiumMultiplier;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("9db44389-ec8c-4de9-bd52-843c33d67484"))
+_ISTIBookEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnSTIBookUpdate (
+        struct structSTIBookUpdate * structBookUpdate );
+    HRESULT OnSTIShutdown ( );
+    HRESULT OnSTIBookUpdateXML (
+        BSTR * bstrBook );
+};
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("5d4a5549-619f-48ab-8e64-0cab14a92f6f"))
+structSTIBookUpdate
+{
+    VARIANT_BOOL bMsgSnapShot;
+    BSTR bstrSymbol;
+    BSTR bstrSide;
+    long nQty;
+    double fPrice;
+    BSTR bstrTime;
+    BSTR bstrOrigin;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("7482011f-7414-460b-92a8-693f1fdb8c27"))
+_ISTIQuoteEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnSTIQuoteUpdate (
+        struct structSTIQuoteUpdate * structQuoteUpdate );
+    HRESULT OnSTIQuoteSnap (
+        struct structSTIQuoteSnap * structQuoteSnap );
+    HRESULT OnSTIShutdown ( );
+    HRESULT OnSTIQuoteRqst (
+        struct structSTIQuoteRqst * structQuoteRqst );
+    HRESULT OnSTIGreeksUpdate (
+        struct structSTIGreeksUpdate * structGreeksUpdate );
+    HRESULT OnSTINewsUpdate (
+        struct structSTINewsUpdate * structNewsUpdate );
+    HRESULT OnSTIQuoteUpdateXML (
+        BSTR * bstrQuote );
+    HRESULT OnSTIQuoteSnapXML (
+        BSTR * bstrQuote );
+    HRESULT OnSTIQuoteRqstXML (
+        BSTR * bstrQuote );
+    HRESULT OnSTIGreeksUpdateXML (
+        BSTR * bstrQuote );
+    HRESULT OnSTINewsUpdateXML (
+        BSTR * bstrQuote );
+};
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("5d4a5541-619f-48ab-8e64-0cab14a92f6f"))
+structSTIQuoteUpdate
+{
+    BSTR bstrSymbol;
+    BSTR bstrLastExch;
+    double fLastPrice;
+    long nLastSize;
+    BSTR bstrBbo;
+    BSTR bstrBidExch;
+    double fBidPrice;
+    long nBidSize;
+    BSTR bstrAskExch;
+    double fAskPrice;
+    long nAskSize;
+    double fHighPrice;
+    double fLowPrice;
+    double fOpenPrice;
+    long nCumVolume;
+    BSTR bstrTradeCondition;
+    long nQuoteCondition;
+    double fIndicatorHigh;
+    double fIndicatorLow;
+    long nMktImbalance;
+    VARIANT_BOOL bValidMktImb;
+    long nIntradayMktImbalance;
+    VARIANT_BOOL bValidIntradayMktImb;
+    double fVwap;
+    BSTR bstrUpdateTime;
+    BSTR bstrExch;
+    VARIANT_BOOL bValidIndicators;
+    BSTR bstrHaltResumeStatus;
+    BSTR bstrHaltResumeReason;
+    VARIANT_BOOL bLastPrice;
+    VARIANT_BOOL bBidPrice;
+    VARIANT_BOOL bAskPrice;
+    VARIANT_BOOL bHighPrice;
+    VARIANT_BOOL bLowPrice;
+    VARIANT_BOOL bOpenPrice;
+    long nMdxMsgType;
+    long nImbalance;
+    VARIANT_BOOL bMdxSnapShot;
+    long nOpenInterest;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("5d4a5543-619f-48ab-8e64-0cab14a92f6f"))
+structSTIQuoteSnap
+{
+    BSTR bstrSymbol;
+    BSTR bstrListingExch;
+    BSTR bstrLastExch;
+    double fLastPrice;
+    long nLastSize;
+    BSTR bstrBbo;
+    BSTR bstrBidExch;
+    double fBidPrice;
+    long nBidSize;
+    BSTR bstrAskExch;
+    double fAskPrice;
+    long nAskSize;
+    double fHighPrice;
+    double fLowPrice;
+    double fOpenPrice;
+    double fClosePrice;
+    long nCumVolume;
+    BSTR bstrTradeCondition;
+    long nQuoteCondition;
+    BSTR bstrCompanyName;
+    double f52WeekHigh;
+    double f52WeekLow;
+    double fEps;
+    long nSharesOutstanding;
+    long nSpCode;
+    double fBeta;
+    BSTR bstrExDivDate;
+    long nDivFreq;
+    double fDivAmt;
+    long nAvgVolume;
+    BSTR bstrCusip;
+    double fVwap;
+    BSTR bstrUpdateTime;
+    BSTR bstrExch;
+    long nSharesPerContract;
+    VARIANT_BOOL bLastPrice;
+    VARIANT_BOOL bBidPrice;
+    VARIANT_BOOL bAskPrice;
+    VARIANT_BOOL bHighPrice;
+    VARIANT_BOOL bLowPrice;
+    VARIANT_BOOL bOpenPrice;
+    long nPremiumMultiplier;
+    BSTR bstrUnderlying;
+    long nOpenInterest;
+    double fPremiumMultiplier;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("5d4a5551-619f-48ab-8e64-0cab14a92f6f"))
+structSTIQuoteRqst
+{
+    BSTR bstrSymbol;
+    BSTR bstrExch;
+    BSTR bstrInst;
+    long nLevel;
+    VARIANT_BOOL bReg;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("5d4a5552-619f-48ab-8e64-0cab14a92f6f"))
+structSTIGreeksUpdate
+{
+    BSTR bstrSymbol;
+    double fDelta;
+    double fGamma;
+    double fTheta;
+    double fVega;
+    double fRho;
+    double fTheoPrice;
+    double fImpVol;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("5d4a5553-619f-48ab-8e64-0cab14a92f6f"))
+structSTINewsUpdate
+{
+    BSTR bstrService;
+    BSTR bstrArticleDate;
+    BSTR bstrSeq;
+    BSTR bstrDisplayTime;
+    BSTR bstrKeys;
+    BSTR bstrHeadline;
+    VARIANT_BOOL bHot;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("192b9f3e-df39-41a5-95e0-0333b061cab8"))
+_ISTIEventsEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnSTITradeUpdateMsg (
+        struct ISTITradeUpdateMsg * oSTITradeUpdateMsg );
+    HRESULT OnSTIOrderUpdateMsg (
+        struct ISTIOrderUpdateMsg * oSTIOrderUpdateMsg );
+    HRESULT OnSTIOrderRejectMsg (
+        struct ISTIOrderRejectMsg * oSTIOrderRejectMsg );
+    HRESULT OnSTIOrderConfirmMsg (
+        struct ISTIOrderConfirmMsg * oSTIOrderConfirmMsg );
+    HRESULT OnSTITradeUpdate (
+        struct structSTITradeUpdate * structTradeUpdate );
+    HRESULT OnSTIOrderUpdate (
+        struct structSTIOrderUpdate * structOrderUpdate );
+    HRESULT OnSTIOrderReject (
+        struct structSTIOrderReject * structOrderReject );
+    HRESULT OnSTIOrderConfirm (
+        struct structSTIOrderConfirm * structOrderConfirm );
+    HRESULT OnSTIShutdown ( );
+    HRESULT OnSTILinkSymChange (
+        struct structSTILink * structLink );
+    HRESULT OnSTIDrop (
+        struct structSTIDrop * structDrop );
+    HRESULT OnSTITradeUpdateXML (
+        BSTR * bstrTrade );
+    HRESULT OnSTIOrderUpdateXML (
+        BSTR * bstrOrder );
+    HRESULT OnSTIOrderRejectXML (
+        BSTR * bstrOrder );
+    HRESULT OnSTIOrderConfirmXML (
+        BSTR * bstrOrder );
+};
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("5d4a5544-619f-48ab-8e64-0cab14a92f6f"))
+structSTITradeUpdate
+{
+    BSTR bstrAction;
+    BSTR bstrUserId;
+    BSTR bstrAccount;
+    long nSeqNo;
+    BSTR bstrSide;
+    BSTR bstrSymbol;
+    long nQuantity;
+    long nLvsQuantity;
+    double fExecPrice;
+    double fLmtPrice;
+    double fStpPrice;
+    long nPriceType;
+    BSTR bstrClOrderId;
+    BSTR bstrExchClOrderId;
+    BSTR bstrExchOrderId;
+    BSTR bstrExchExecId;
+    BSTR bstrTif;
+    BSTR bstrDestination;
+    BSTR bstrExecBroker;
+    BSTR bstrExecInst;
+    BSTR bstrOrderTime;
+    BSTR bstrTradeTime;
+    BSTR bstrUpdateTime;
+    BSTR bstrLogMessage;
+    long nOrderRecordId;
+    long nTradeRecordId;
+    long nDbsNo;
+    BSTR bstrAccountType;
+    BSTR bstrSpecialist;
+    BSTR bstrContra;
+    VARIANT_BOOL bPossDupe;
+    VARIANT_BOOL bClearable;
+    VARIANT_BOOL bEcnFee;
+    BSTR bstrInstrument;
+    double fDiscretion;
+    double fPegDiff;
+    BSTR bstrBatchId;
+    BSTR bstrUnderlying;
+    BSTR bstrMaturity;
+    double fStrikePrice;
+    BSTR bstrOpenClose;
+    BSTR bstrPutCall;
+    BSTR bstrCoverUncover;
+    BSTR bstrCurrency;
+    BSTR bstrSettCurrency;
+    BSTR bstrFutSettDate;
+    BSTR bstrLiquidity;
+    BSTR bstrExchOrderId2;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("5d4a5545-619f-48ab-8e64-0cab14a92f6f"))
+structSTIOrderUpdate
+{
+    BSTR bstrAction;
+    BSTR bstrUserId;
+    BSTR bstrAccount;
+    long nSeqNo;
+    BSTR bstrSide;
+    BSTR bstrSymbol;
+    long nQuantity;
+    long nMinQuantity;
+    long nLvsQuantity;
+    double fLmtPrice;
+    double fStpPrice;
+    long nPriceType;
+    BSTR bstrClOrderId;
+    BSTR bstrExchClOrderId;
+    BSTR bstrExchOrderId;
+    double fUrStpdPrice;
+    BSTR bstrTif;
+    BSTR bstrDestination;
+    BSTR bstrExecBroker;
+    BSTR bstrExecInst;
+    long nOrderStatus;
+    double fAvgExecPrice;
+    long nCumExecQuantity;
+    BSTR bstrOrderTime;
+    BSTR bstrUpdateTime;
+    BSTR bstrLogMessage;
+    long nOrderRecordId;
+    long nDbsNo;
+    BSTR bstrInstrument;
+    long nDisplay;
+    long nRefreshQty;
+    double fDiscretion;
+    double fPegDiff;
+    VARIANT_BOOL bSvrStpReleased;
+    BSTR bstrBatchId;
+    BSTR bstrStrategy;
+    BSTR bstrStartTime;
+    BSTR bstrEndTime;
+    BSTR bstrPairId;
+    long nDuration;
+    long nMaxPctVolume;
+    long nMinPctVolume;
+    long nExecAggression;
+    long nPingInterval;
+    long nRefreshInterval;
+    double fPctPerSlice;
+    double fPremium;
+    double fRatio;
+    double fCashComponent;
+    BSTR bstrUser;
+    long nPriceTolerance;
+    double fTrailAmt;
+    double fTrailInc;
+    long nTrailId;
+    double fTilt;
+    long nQtyToleranceSize;
+    long nMarketStructure;
+    long nOrderCompletion;
+    long nAuction;
+    double fTargetPctVolume;
+    double fTargetPrice;
+    BSTR bstrPriceType;
+    double fReactPrice;
+    long nQtyTolerancePct;
+    BSTR bstrSorPreference;
+    double fMaxHighPctDeviation;
+    double fMaxLowPctDeviation;
+    double fExecPriceLmt;
+    double fAvgPriceLmt;
+    VARIANT_BOOL bMoo;
+    VARIANT_BOOL bMoc;
+    VARIANT_BOOL bOpportunisticTrade;
+    VARIANT_BOOL bTakeLiquidity;
+    long nSizeLow;
+    long nSizeMax;
+    BSTR bstrUnderlying;
+    BSTR bstrMaturity;
+    double fStrikePrice;
+    BSTR bstrOpenClose;
+    BSTR bstrPutCall;
+    BSTR bstrCoverUncover;
+    BSTR bstrCurrency;
+    BSTR bstrSettCurrency;
+    BSTR bstrFutSettDate;
+    BSTR bstrExchOrderId2;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("5d4a5546-619f-48ab-8e64-0cab14a92f6f"))
+structSTIOrderReject
+{
+    BSTR bstrAccount;
+    BSTR bstrSide;
+    BSTR bstrListingExchange;
+    BSTR bstrSymbol;
+    long nQuantity;
+    long nMinQuantity;
+    double fLmtPrice;
+    double fStpPrice;
+    long nPriceType;
+    BSTR bstrClOrderId;
+    BSTR bstrTif;
+    BSTR bstrDestination;
+    BSTR bstrExecBroker;
+    BSTR bstrExecInst;
+    BSTR bstrAccountType;
+    VARIANT_BOOL bPossDupe;
+    long nDisplay;
+    VARIANT_BOOL bPriceQtyOverride;
+    VARIANT_BOOL bPriceCheck;
+    long nRejectReason;
+    BSTR bstrInstrument;
+    long nRefreshQty;
+    double fDiscretion;
+    double fPegDiff;
+    BSTR bstrBatchId;
+    BSTR bstrStrategy;
+    BSTR bstrStartTime;
+    BSTR bstrEndTime;
+    BSTR bstrPairId;
+    long nDuration;
+    long nMaxPctVolume;
+    long nMinPctVolume;
+    long nExecAggression;
+    long nPingInterval;
+    long nRefreshInterval;
+    double fPctPerSlice;
+    double fPremium;
+    double fRatio;
+    double fCashComponent;
+    BSTR bstrUser;
+    long nPriceTolerance;
+    double fTrailAmt;
+    double fTrailInc;
+    double fTilt;
+    long nQtyToleranceSize;
+    long nMarketStructure;
+    long nOrderCompletion;
+    long nAuction;
+    double fTargetPctVolume;
+    double fTargetPrice;
+    BSTR bstrPriceType;
+    double fReactPrice;
+    long nQtyTolerancePct;
+    BSTR bstrSorPreference;
+    double fMaxHighPctDeviation;
+    double fMaxLowPctDeviation;
+    double fExecPriceLmt;
+    double fAvgPriceLmt;
+    VARIANT_BOOL bMoo;
+    VARIANT_BOOL bMoc;
+    VARIANT_BOOL bOpportunisticTrade;
+    VARIANT_BOOL bTakeLiquidity;
+    long nSizeLow;
+    long nSizeMax;
+    BSTR bstrUnderlying;
+    BSTR bstrMaturity;
+    double fStrikePrice;
+    BSTR bstrOpenClose;
+    BSTR bstrPutCall;
+    BSTR bstrCoverUncover;
+    BSTR bstrCurrency;
+    BSTR bstrSettCurrency;
+    BSTR bstrFutSettDate;
+    BSTR bstrText;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("5d4a5547-619f-48ab-8e64-0cab14a92f6f"))
+structSTIOrderConfirm
+{
+    BSTR bstrAccount;
+    BSTR bstrExchClOrderId;
+    BSTR bstrExchOrderId;
+    long nOrderRecordId;
+    BSTR bstrMsgConfirm;
+    BSTR bstrClOrderId;
+    BSTR bstrInstrument;
+    BSTR bstrExchOrderId2;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("5d4a5550-619f-48ab-8e64-0cab14a92f6f"))
+structSTILink
+{
+    long nGroup;
+    BSTR bstrSymbol;
+    BSTR bstrUnderlying;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("5d4a5557-619f-48ab-8e64-0cab14a92f6f"))
+structSTIDrop
+{
+    long nGroup;
+    BSTR bstrSymbol;
+    BSTR bstrUnderlying;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("66246b80-4eba-11de-8a39-0800200c9a66"))
+_ISTIAcctMaintEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnSTIAcctUpdate (
+        struct structSTIAcctUpdate * structAcctUpdate );
+    HRESULT OnSTIShutdown ( );
+    HRESULT OnSTIAcctUpdateXML (
+        BSTR * bstrAcct );
+};
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("5d4a5554-619f-48ab-8e64-0cab14a92f6f"))
+structSTIAcctUpdate
+{
+    BSTR bstrAcct;
+    long lStatus;
+    double fMaxLoss;
+    double fDayBp;
+    double fNightBp;
+    double fDayFloatBp;
+    double fNightFloatBp;
+    VARIANT_BOOL bSetStatusFlag;
+    VARIANT_BOOL bSetMaxLossFlag;
+    VARIANT_BOOL bSetDayBpFlag;
+    VARIANT_BOOL bSetNightBpFlag;
+    VARIANT_BOOL bSetDayFloatBpFlag;
+    VARIANT_BOOL bSetNightFloatBpFlag;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("18a8b57b-d223-4796-9948-e2426ed7c9e7"))
+ISTIEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT SetOrderEventsAsStructs (
+        VARIANT_BOOL bStruct );
+    long GetQueueCount ( );
+    HRESULT Destroy ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_SetOrderEventsAsStructs (
+        /*[in]*/ VARIANT_BOOL bStruct ) = 0;
+      virtual HRESULT __stdcall raw_GetQueueCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_Destroy ( ) = 0;
+};
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("5d4a5555-619f-48ab-8e64-0cab14a92f6f"))
+structSTIOrderFilter
+{
+    BSTR bstrInstrument;
+    BSTR bstrSymbol;
+    BSTR bstrAccount;
+    VARIANT_BOOL bOpenOnly;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("5d4a5556-619f-48ab-8e64-0cab14a92f6f"))
+structSTITradeFilter
+{
+    BSTR bstrInstrument;
+    BSTR bstrSymbol;
+    BSTR bstrAccount;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("5d4a5561-619f-48ab-8e64-0cab14a92f6f"))
+structSTICancelAll
+{
+    BSTR bstrInstrument;
+    BSTR bstrSymbol;
+    BSTR bstrAccount;
+    VARIANT_BOOL bExtendingOnly;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("6d471b07-7372-4fc0-82ca-aab4b6eae91c"))
+ISTIOrderMaint : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CancelOrder (
+        _bstr_t bstrAccount,
+        long OrderRecordID,
+        _bstr_t bstrOldClOrderId,
+        _bstr_t bstrClOrderId );
+    struct structSTIOrderUpdate GetOrderInfo (
+        _bstr_t bstrClOrderId );
+    long GetOrderList (
+        VARIANT_BOOL bOpenOnly,
+        SAFEARRAY * * arrayOrder );
+    HRESULT CancelFuturesOrder (
+        _bstr_t bstrAccount,
+        long OrderRecordID,
+        _bstr_t bstrOldClOrderId,
+        _bstr_t bstrClOrderId );
+    HRESULT CancelOptionsOrder (
+        _bstr_t bstrAccount,
+        long OrderRecordID,
+        _bstr_t bstrOldClOrderId,
+        _bstr_t bstrClOrderId );
+    HRESULT CancelForexOrder (
+        _bstr_t bstrAccount,
+        long OrderRecordID,
+        _bstr_t bstrOldClOrderId,
+        _bstr_t bstrClOrderId );
+    long GetEquityTradeList (
+        SAFEARRAY * * arrayTrade );
+    long GetFuturesTradeList (
+        SAFEARRAY * * arrayTrade );
+    long GetOptionsTradeList (
+        SAFEARRAY * * arrayTrade );
+    long GetForexTradeList (
+        SAFEARRAY * * arrayTrade );
+    long GetFuturesOrderList (
+        VARIANT_BOOL bOpenOnly,
+        SAFEARRAY * * arrayOrder );
+    long GetOptionsOrderList (
+        VARIANT_BOOL bOpenOnly,
+        SAFEARRAY * * arrayOrder );
+    long GetForexOrderList (
+        VARIANT_BOOL bOpenOnly,
+        SAFEARRAY * * arrayOrder );
+    long CancelOrderEx (
+        _bstr_t bstrAccount,
+        long OrderRecordID,
+        _bstr_t bstrOldClOrderId,
+        _bstr_t bstrClOrderId,
+        _bstr_t bstrInst );
+    long GetOrderListEx (
+        struct structSTIOrderFilter * pFilter,
+        SAFEARRAY * * arrayOrder );
+    long GetTradeListEx (
+        struct structSTITradeFilter * pFilter,
+        SAFEARRAY * * arrayTrade );
+    HRESULT CancelAllOrders (
+        struct structSTICancelAll * pStruct );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_CancelOrder (
+        /*[in]*/ BSTR bstrAccount,
+        /*[in]*/ long OrderRecordID,
+        /*[in]*/ BSTR bstrOldClOrderId,
+        /*[in]*/ BSTR bstrClOrderId ) = 0;
+      virtual HRESULT __stdcall raw_GetOrderInfo (
+        /*[in]*/ BSTR bstrClOrderId,
+        /*[out,retval]*/ struct structSTIOrderUpdate * structOrder ) = 0;
+      virtual HRESULT __stdcall raw_GetOrderList (
+        /*[in]*/ VARIANT_BOOL bOpenOnly,
+        /*[in,out]*/ SAFEARRAY * * arrayOrder,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_CancelFuturesOrder (
+        /*[in]*/ BSTR bstrAccount,
+        /*[in]*/ long OrderRecordID,
+        /*[in]*/ BSTR bstrOldClOrderId,
+        /*[in]*/ BSTR bstrClOrderId ) = 0;
+      virtual HRESULT __stdcall raw_CancelOptionsOrder (
+        /*[in]*/ BSTR bstrAccount,
+        /*[in]*/ long OrderRecordID,
+        /*[in]*/ BSTR bstrOldClOrderId,
+        /*[in]*/ BSTR bstrClOrderId ) = 0;
+      virtual HRESULT __stdcall raw_CancelForexOrder (
+        /*[in]*/ BSTR bstrAccount,
+        /*[in]*/ long OrderRecordID,
+        /*[in]*/ BSTR bstrOldClOrderId,
+        /*[in]*/ BSTR bstrClOrderId ) = 0;
+      virtual HRESULT __stdcall raw_GetEquityTradeList (
+        /*[in,out]*/ SAFEARRAY * * arrayTrade,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_GetFuturesTradeList (
+        /*[in,out]*/ SAFEARRAY * * arrayTrade,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_GetOptionsTradeList (
+        /*[in,out]*/ SAFEARRAY * * arrayTrade,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_GetForexTradeList (
+        /*[in,out]*/ SAFEARRAY * * arrayTrade,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_GetFuturesOrderList (
+        /*[in]*/ VARIANT_BOOL bOpenOnly,
+        /*[in,out]*/ SAFEARRAY * * arrayOrder,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_GetOptionsOrderList (
+        /*[in]*/ VARIANT_BOOL bOpenOnly,
+        /*[in,out]*/ SAFEARRAY * * arrayOrder,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_GetForexOrderList (
+        /*[in]*/ VARIANT_BOOL bOpenOnly,
+        /*[in,out]*/ SAFEARRAY * * arrayOrder,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_CancelOrderEx (
+        /*[in]*/ BSTR bstrAccount,
+        /*[in]*/ long OrderRecordID,
+        /*[in]*/ BSTR bstrOldClOrderId,
+        /*[in]*/ BSTR bstrClOrderId,
+        /*[in]*/ BSTR bstrInst,
+        /*[out,retval]*/ long * lRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetOrderListEx (
+        /*[in]*/ struct structSTIOrderFilter * pFilter,
+        /*[in,out]*/ SAFEARRAY * * arrayOrder,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_GetTradeListEx (
+        /*[in]*/ struct structSTITradeFilter * pFilter,
+        /*[in,out]*/ SAFEARRAY * * arrayTrade,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_CancelAllOrders (
+        /*[in]*/ struct structSTICancelAll * pStruct ) = 0;
+};
+
+struct __declspec(uuid("4c21cf91-e578-460a-9aa5-f95a24d7b69a"))
+ISTIApp : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT SwitchLinkGroupSymbol (
+        long nLinkGroup,
+        _bstr_t bstrSym,
+        _bstr_t bstrExch );
+    _bstr_t GetTraderName ( );
+    long GetDestinationList (
+        SAFEARRAY * * arrayDests );
+    VARIANT_BOOL IsApiEnabled ( );
+    HRESULT SetModeXML (
+        VARIANT_BOOL bXML );
+    _bstr_t GetServerTime ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_SwitchLinkGroupSymbol (
+        /*[in]*/ long nLinkGroup,
+        /*[in]*/ BSTR bstrSym,
+        /*[in]*/ BSTR bstrExch ) = 0;
+      virtual HRESULT __stdcall raw_GetTraderName (
+        /*[out,retval]*/ BSTR * bstrString ) = 0;
+      virtual HRESULT __stdcall raw_GetDestinationList (
+        /*[in,out]*/ SAFEARRAY * * arrayDests,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_IsApiEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * bEnabled ) = 0;
+      virtual HRESULT __stdcall raw_SetModeXML (
+        /*[in]*/ VARIANT_BOOL bXML ) = 0;
+      virtual HRESULT __stdcall raw_GetServerTime (
+        /*[out,retval]*/ BSTR * bstrDateTime ) = 0;
+};
+
+struct __declspec(uuid("74871167-237a-458a-8809-dc75ac53994c"))
+ISTIBook : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT RegisterForTopOfBookMsgs (
+        _bstr_t bstrSymbol,
+        _bstr_t bstrBook );
+    HRESULT DeRegisterForTopOfBookMsgs (
+        _bstr_t bstrSymbol,
+        _bstr_t bstrBook );
+    HRESULT DeRegisterForAllTopOfBookMsgs ( );
+    _bstr_t GetBookInfo (
+        _bstr_t bstrSymbol,
+        _bstr_t bstrBook );
+    struct structSTIBookUpdate GetBookInfoStruct (
+        VARIANT_BOOL bBid,
+        _bstr_t bstrSymbol,
+        _bstr_t bstrBook );
+    long GetQueueCount ( );
+    HRESULT Destroy ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_RegisterForTopOfBookMsgs (
+        /*[in]*/ BSTR bstrSymbol,
+        /*[in]*/ BSTR bstrBook ) = 0;
+      virtual HRESULT __stdcall raw_DeRegisterForTopOfBookMsgs (
+        BSTR bstrSymbol,
+        BSTR bstrBook ) = 0;
+      virtual HRESULT __stdcall raw_DeRegisterForAllTopOfBookMsgs ( ) = 0;
+      virtual HRESULT __stdcall raw_GetBookInfo (
+        /*[in]*/ BSTR bstrSymbol,
+        /*[in]*/ BSTR bstrBook,
+        /*[out,retval]*/ BSTR * bstrString ) = 0;
+      virtual HRESULT __stdcall raw_GetBookInfoStruct (
+        /*[in]*/ VARIANT_BOOL bBid,
+        /*[in]*/ BSTR bstrSymbol,
+        /*[in]*/ BSTR bstrBook,
+        /*[out,retval]*/ struct structSTIBookUpdate * structBookUpdate ) = 0;
+      virtual HRESULT __stdcall raw_GetQueueCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_Destroy ( ) = 0;
+};
+
+struct __declspec(uuid("76133572-27f7-45db-bf63-7a0a1e8065c4"))
+ISTIPosition : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT RegisterForPositions ( );
+    HRESULT DeRegisterPositions ( );
+    HRESULT GetCurrentPositions ( );
+    _bstr_t GetPositionInfo (
+        _bstr_t bstrSymbol,
+        _bstr_t bstrExch,
+        _bstr_t bstrAccount );
+    struct structSTIPositionUpdate GetPositionInfoStruct (
+        _bstr_t bstrSymbol,
+        _bstr_t bstrExch,
+        _bstr_t bstrAccount );
+    long GetQueueCount ( );
+    long GetPositionList (
+        SAFEARRAY * * arrayPos );
+    HRESULT Destroy ( );
+    long GetOptionsPosList (
+        _bstr_t bstrUnderlyingSym,
+        SAFEARRAY * * arrayPos );
+    long GetPosListBySym (
+        _bstr_t bstrSymbol,
+        SAFEARRAY * * arrayPos );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_RegisterForPositions ( ) = 0;
+      virtual HRESULT __stdcall raw_DeRegisterPositions ( ) = 0;
+      virtual HRESULT __stdcall raw_GetCurrentPositions ( ) = 0;
+      virtual HRESULT __stdcall raw_GetPositionInfo (
+        /*[in]*/ BSTR bstrSymbol,
+        /*[in]*/ BSTR bstrExch,
+        /*[in]*/ BSTR bstrAccount,
+        /*[out,retval]*/ BSTR * bstrString ) = 0;
+      virtual HRESULT __stdcall raw_GetPositionInfoStruct (
+        /*[in]*/ BSTR bstrSymbol,
+        /*[in]*/ BSTR bstrExch,
+        /*[in]*/ BSTR bstrAccount,
+        /*[out,retval]*/ struct structSTIPositionUpdate * structPositionUpdate ) = 0;
+      virtual HRESULT __stdcall raw_GetQueueCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_GetPositionList (
+        /*[in,out]*/ SAFEARRAY * * arrayPos,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_Destroy ( ) = 0;
+      virtual HRESULT __stdcall raw_GetOptionsPosList (
+        /*[in]*/ BSTR bstrUnderlyingSym,
+        /*[in,out]*/ SAFEARRAY * * arrayPos,
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_GetPosListBySym (
+        /*[in]*/ BSTR bstrSymbol,
+        /*[in,out]*/ SAFEARRAY * * arrayPos,
+        /*[out,retval]*/ long * lCount ) = 0;
+};
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("5d4a5559-619f-48ab-8e64-0cab14a92f6f"))
+structSTIQuoteRegEx
+{
+    BSTR bstrSymbol;
+    BSTR bstrExch;
+    VARIANT_BOOL bReg;
+    long nUpdateID;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("5d4a5560-619f-48ab-8e64-0cab14a92f6f"))
+structSTIMdxRegEx
+{
+    VARIANT_BOOL bReg;
+    VARIANT_BOOL bAllSyms;
+    VARIANT_BOOL bNewOnly;
+    BSTR bstrExchanges;
+    BSTR bstrMsgTypes;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("f8d282cc-fee7-45ec-a080-4276e43e8214"))
+ISTIQuote : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetSymbol,put=PutSymbol))
+    _bstr_t Symbol;
+    __declspec(property(get=GetExch,put=PutExch))
+    _bstr_t Exch;
+    __declspec(property(get=GetBidPrice,put=PutBidPrice))
+    double BidPrice;
+    __declspec(property(get=GetAskPrice,put=PutAskPrice))
+    double AskPrice;
+    __declspec(property(get=GetBidSize,put=PutBidSize))
+    long BidSize;
+    __declspec(property(get=GetAskSize,put=PutAskSize))
+    long AskSize;
+    __declspec(property(get=GetLastPrice,put=PutLastPrice))
+    double LastPrice;
+    __declspec(property(get=GetDefaultQty,put=PutDefaultQty))
+    long DefaultQty;
+    __declspec(property(get=GetDefaultAcct,put=PutDefaultAcct))
+    _bstr_t DefaultAcct;
+    __declspec(property(get=GetDefaultDest,put=PutDefaultDest))
+    _bstr_t DefaultDest;
+    __declspec(property(get=GetLastSize,put=PutLastSize))
+    long LastSize;
+    __declspec(property(get=GetLevel,put=PutLevel))
+    long Level;
+    __declspec(property(get=GetUpdateID,put=PutUpdateID))
+    long UpdateID;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT RegisterQuote (
+        _bstr_t bstrSymbol,
+        _bstr_t bstrExch );
+    HRESULT DeRegisterQuote (
+        _bstr_t bstrSymbol,
+        _bstr_t bstrExch );
+    HRESULT DeRegisterAllQuotes ( );
+    HRESULT RegisterForMdx (
+        VARIANT_BOOL bMdx );
+    HRESULT RegisterForAllMdx (
+        VARIANT_BOOL bMdx );
+    long GetQueueCount ( );
+    long SubmitQuote (
+        _bstr_t bstrKey );
+    _bstr_t GetSymbol ( );
+    void PutSymbol (
+        _bstr_t pVal );
+    _bstr_t GetExch ( );
+    void PutExch (
+        _bstr_t pVal );
+    double GetBidPrice ( );
+    void PutBidPrice (
+        double pVal );
+    double GetAskPrice ( );
+    void PutAskPrice (
+        double pVal );
+    long GetBidSize ( );
+    void PutBidSize (
+        long pVal );
+    long GetAskSize ( );
+    void PutAskSize (
+        long pVal );
+    double GetLastPrice ( );
+    void PutLastPrice (
+        double pVal );
+    HRESULT Destroy ( );
+    long GetDefaultQty ( );
+    void PutDefaultQty (
+        long pVal );
+    _bstr_t GetDefaultAcct ( );
+    void PutDefaultAcct (
+        _bstr_t pVal );
+    HRESULT SetTradesOnly (
+        VARIANT_BOOL bTrades );
+    _bstr_t GetDefaultDest ( );
+    void PutDefaultDest (
+        _bstr_t pVal );
+    long GetLastSize ( );
+    void PutLastSize (
+        long pVal );
+    long GetLevel ( );
+    void PutLevel (
+        long pVal );
+    long SubmitQuoteStruct (
+        _bstr_t bstrKey,
+        struct structSTIQuoteUpdate * pQuote );
+    HRESULT RegisterForAllNews (
+        VARIANT_BOOL bNews );
+    HRESULT RegisterForNewMdx (
+        VARIANT_BOOL bMdx,
+        VARIANT_BOOL bAllSyms );
+    HRESULT RegisterQuoteEx (
+        struct structSTIQuoteRegEx * pQuote );
+    long GetUpdateID ( );
+    void PutUpdateID (
+        long pVal );
+    HRESULT RegisterMdxEx (
+        struct structSTIMdxRegEx * pMdx );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_RegisterQuote (
+        /*[in]*/ BSTR bstrSymbol,
+        /*[in]*/ BSTR bstrExch ) = 0;
+      virtual HRESULT __stdcall raw_DeRegisterQuote (
+        /*[in]*/ BSTR bstrSymbol,
+        /*[in]*/ BSTR bstrExch ) = 0;
+      virtual HRESULT __stdcall raw_DeRegisterAllQuotes ( ) = 0;
+      virtual HRESULT __stdcall raw_RegisterForMdx (
+        /*[in]*/ VARIANT_BOOL bMdx ) = 0;
+      virtual HRESULT __stdcall raw_RegisterForAllMdx (
+        /*[in]*/ VARIANT_BOOL bMdx ) = 0;
+      virtual HRESULT __stdcall raw_GetQueueCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_SubmitQuote (
+        /*[in]*/ BSTR bstrKey,
+        /*[out,retval]*/ long * RetVal ) = 0;
+      virtual HRESULT __stdcall get_Symbol (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Symbol (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Exch (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Exch (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_BidPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_BidPrice (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_AskPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_AskPrice (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_BidSize (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_BidSize (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_AskSize (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_AskSize (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LastPrice (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_LastPrice (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall raw_Destroy ( ) = 0;
+      virtual HRESULT __stdcall get_DefaultQty (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefaultQty (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_DefaultAcct (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefaultAcct (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_SetTradesOnly (
+        /*[in]*/ VARIANT_BOOL bTrades ) = 0;
+      virtual HRESULT __stdcall get_DefaultDest (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefaultDest (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_LastSize (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LastSize (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Level (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Level (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall raw_SubmitQuoteStruct (
+        /*[in]*/ BSTR bstrKey,
+        /*[in]*/ struct structSTIQuoteUpdate * pQuote,
+        /*[out,retval]*/ long * RetVal ) = 0;
+      virtual HRESULT __stdcall raw_RegisterForAllNews (
+        /*[in]*/ VARIANT_BOOL bNews ) = 0;
+      virtual HRESULT __stdcall raw_RegisterForNewMdx (
+        /*[in]*/ VARIANT_BOOL bMdx,
+        /*[in]*/ VARIANT_BOOL bAllSyms ) = 0;
+      virtual HRESULT __stdcall raw_RegisterQuoteEx (
+        /*[in]*/ struct structSTIQuoteRegEx * pQuote ) = 0;
+      virtual HRESULT __stdcall get_UpdateID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_UpdateID (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall raw_RegisterMdxEx (
+        /*[in]*/ struct structSTIMdxRegEx * pMdx ) = 0;
+};
+
+struct __declspec(uuid("2265e0d0-4eb6-11de-8a39-0800200c9a66"))
+ISTIAcctMaint : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long MaintainAccount (
+        struct structSTIAcctUpdate * pAcctUpdate );
+    HRESULT ClearAccountUpdateStruct (
+        struct structSTIAcctUpdate * pAcctUpdate );
+    long GetQueueCount ( );
+    HRESULT Destroy ( );
+    long GetAccountList (
+        SAFEARRAY * * arrayAccts );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_MaintainAccount (
+        /*[in]*/ struct structSTIAcctUpdate * pAcctUpdate,
+        /*[out,retval]*/ long * RetVal ) = 0;
+      virtual HRESULT __stdcall raw_ClearAccountUpdateStruct (
+        /*[in,out]*/ struct structSTIAcctUpdate * pAcctUpdate ) = 0;
+      virtual HRESULT __stdcall raw_GetQueueCount (
+        /*[out,retval]*/ long * lCount ) = 0;
+      virtual HRESULT __stdcall raw_Destroy ( ) = 0;
+      virtual HRESULT __stdcall raw_GetAccountList (
+        /*[in,out]*/ SAFEARRAY * * arrayAccts,
+        /*[out,retval]*/ long * lCount ) = 0;
+};
+
+struct __declspec(uuid("9833c7ce-5223-4323-a0a6-a39b6a575ffd"))
+STIOrderUpdateMsg;
+    // [ default ] interface ISTIOrderUpdateMsg
+
+struct __declspec(uuid("b252ec95-124e-4087-9600-85a58b170ffe"))
+STITradeUpdateMsg;
+    // [ default ] interface ISTITradeUpdateMsg
+
+struct __declspec(uuid("89b00179-9c02-4f3d-84cd-14982ad65dc0"))
+STIOrderRejectMsg;
+    // [ default ] interface ISTIOrderRejectMsg
+
+struct __declspec(uuid("3e133a9d-b4ab-4431-b7da-7d27c9a71c10"))
+STIOrderConfirmMsg;
+    // [ default ] interface ISTIOrderConfirmMsg
+
+struct __declspec(uuid("4e58088e-7275-4eaa-8958-a9ccc971dde9"))
+STIOrder;
+    // [ default ] interface ISTIOrder
+
+struct __declspec(uuid("5e89f49b-6a12-420f-8570-e510ef1b580a"))
+STIEvents;
+    // [ default ] interface ISTIEvents
+    // [ default, source ] dispinterface _ISTIEventsEvents
+
+struct __declspec(uuid("b9a792c1-9922-4df7-b4ac-994ec261d92c"))
+STIOrderMaint;
+    // [ default ] interface ISTIOrderMaint
+
+struct __declspec(uuid("56b7daf0-5105-469a-bf74-2294cac8479d"))
+STIApp;
+    // [ default ] interface ISTIApp
+
+struct __declspec(uuid("5b7e12c7-955f-49dd-a3e1-977005c3b838"))
+STIBook;
+    // [ default ] interface ISTIBook
+    // [ default, source ] dispinterface _ISTIBookEvents
+
+struct __declspec(uuid("f14f2f5b-6141-4f7c-a266-6c31124bdd00"))
+STIPosition;
+    // [ default ] interface ISTIPosition
+    // [ default, source ] dispinterface _ISTIPositionEvents
+
+struct __declspec(uuid("8eb74552-c174-4d51-819b-9e65a8916273"))
+STIQuote;
+    // [ default ] interface ISTIQuote
+    // [ default, source ] dispinterface _ISTIQuoteEvents
+
+struct __declspec(uuid("45696700-4ebb-11de-8a39-0800200c9a66"))
+STIAcctMaint;
+    // [ default ] interface ISTIAcctMaint
+    // [ default, source ] dispinterface _ISTIAcctMaintEvents
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\rsquared\framework\testproject\debug\sterling.tli"
+
+#pragma pack(pop)

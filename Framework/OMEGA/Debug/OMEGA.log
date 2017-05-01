@@ -1,0 +1,201 @@
+﻿Build started 11/1/2013 10:00:50 AM.
+     1>Project "C:\rsquared\Framework\OMEGA\OMEGA.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\OMEGA.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.4\include /I.\GeneratedFiles\Debug /IC:\Qt\4.8.4\include\QtCore /IC:\Qt\4.8.4\include\QtGui /I"..\..\External\boost-win-1.47-32bit-vs2010\include\boost-1_47" /I"..\..\External\ta-lib-0.4.0-msvc\ta-lib\c\include\\" /I"..\..\External\Qpid-32Bit\Debug\include\\" /I"..\..\External\protoc-2.5.0-win32\protobuf-2.5.0-src\src\\" /I"..\..\External\MySQLBuild-32Bit\Include\\" /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\Debug\moc_Network.cpp GeneratedFiles\Debug\moc_OptionQuoter.cpp GeneratedFiles\Debug\moc_omega.cpp "MySQL-OMEGA.cpp" Network.cpp OptionQuoter.cpp main.cpp omega.cpp /bigobj 
+         moc_Network.cpp
+         moc_OptionQuoter.cpp
+         moc_omega.cpp
+         MySQL-OMEGA.cpp
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(1010): warning C4996: 'std::_Swap_ranges': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(995) : see declaration of 'std::_Swap_ranges'
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/uuid/uuid.hpp(151) : see reference to function template instantiation '_FwdIt2 std::swap_ranges<boost::uuids::uuid::iterator,boost::uuids::uuid::iterator>(_FwdIt1,_FwdIt1,_FwdIt2)' being compiled
+                 with
+                 [
+                     _FwdIt2=boost::uuids::uuid::iterator,
+                     _FwdIt1=boost::uuids::uuid::iterator
+                 ]
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(3063): warning C4996: 'std::_Equal1': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(3048) : see declaration of 'std::_Equal1'
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/uuid/uuid.hpp(161) : see reference to function template instantiation 'bool std::equal<boost::uuids::uuid::const_iterator,boost::uuids::uuid::const_iterator>(_InIt1,_InIt1,_InIt2)' being compiled
+                 with
+                 [
+                     _InIt1=boost::uuids::uuid::const_iterator,
+                     _InIt2=boost::uuids::uuid::const_iterator
+                 ]
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(686): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3719) : see reference to function template instantiation 'bool std::_Debug_lt_pred<_Pr,double,double>(_Pr,_Ty1 &,_Ty2 &,std::_Dbfile_t,std::_Dbline_t)' being compiled
+                 with
+                 [
+                     _Pr=Framework::NOmega::VectorSort,
+                     _Ty1=double,
+                     _Ty2=double
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3776) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2> std::_Unguarded_partition<_RanIt,_Pr>(_RanIt,_RanIt,_Pr)' being compiled
+                 with
+                 [
+                     _Ty1=double *,
+                     _Ty2=double *,
+                     _RanIt=double *,
+                     _Pr=Framework::NOmega::VectorSort
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3806) : see reference to function template instantiation 'void std::_Sort<double*,__w64 int,_Pr>(_RanIt,_RanIt,_Diff,_Pr)' being compiled
+                 with
+                 [
+                     _Pr=Framework::NOmega::VectorSort,
+                     _RanIt=double *,
+                     _Diff=__w64 int
+                 ]
+                 MySQL-OMEGA.cpp(153) : see reference to function template instantiation 'void std::sort<std::_Vector_iterator<_Myvec>,Framework::NOmega::VectorSort>(_RanIt,_RanIt,_Pr)' being compiled
+                 with
+                 [
+                     _Myvec=std::_Vector_val<double,std::allocator<double>>,
+                     _RanIt=std::_Vector_iterator<std::_Vector_val<double,std::allocator<double>>>,
+                     _Pr=Framework::NOmega::VectorSort
+                 ]
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(686): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(688): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(688): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+         Network.cpp
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(1010): warning C4996: 'std::_Swap_ranges': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(995) : see declaration of 'std::_Swap_ranges'
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/uuid/uuid.hpp(151) : see reference to function template instantiation '_FwdIt2 std::swap_ranges<boost::uuids::uuid::iterator,boost::uuids::uuid::iterator>(_FwdIt1,_FwdIt1,_FwdIt2)' being compiled
+                 with
+                 [
+                     _FwdIt2=boost::uuids::uuid::iterator,
+                     _FwdIt1=boost::uuids::uuid::iterator
+                 ]
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(3063): warning C4996: 'std::_Equal1': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(3048) : see declaration of 'std::_Equal1'
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/uuid/uuid.hpp(161) : see reference to function template instantiation 'bool std::equal<boost::uuids::uuid::const_iterator,boost::uuids::uuid::const_iterator>(_InIt1,_InIt1,_InIt2)' being compiled
+                 with
+                 [
+                     _InIt1=boost::uuids::uuid::const_iterator,
+                     _InIt2=boost::uuids::uuid::const_iterator
+                 ]
+         OptionQuoter.cpp
+     1>OptionQuoter.cpp(279): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(381): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(389): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(432): warning C4482: nonstandard extension used: enum 'Qt::CheckState' used in qualified name
+     1>OptionQuoter.cpp(485): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(492): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(493): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(498): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(506): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(525): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(526): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(537): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(542): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(547): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(564): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(570): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(576): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(632): warning C4482: nonstandard extension used: enum 'Qt::CheckState' used in qualified name
+     1>OptionQuoter.cpp(708): warning C4482: nonstandard extension used: enum 'Serializable::CustROrder_ser_EPriceType' used in qualified name
+     1>OptionQuoter.cpp(751): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(762): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(803): warning C4482: nonstandard extension used: enum 'Serializable::CustROrder_ser_EPriceType' used in qualified name
+     1>OptionQuoter.cpp(838): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(849): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(884): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(887): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(892): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(908): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(911): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(915): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(925): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(942): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(944): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(944): warning C4482: nonstandard extension used: enum 'Qt::CheckState' used in qualified name
+     1>OptionQuoter.cpp(946): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(965): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(969): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(972): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(996): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(997): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(998): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(1068): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(1100): warning C4482: nonstandard extension used: enum 'SPX_ALGO1_NEUTRAL::EnumAction' used in qualified name
+     1>OptionQuoter.cpp(1104): warning C4482: nonstandard extension used: enum 'SPX_ALGO1_NEUTRAL::EnumAction' used in qualified name
+     1>OptionQuoter.cpp(1567): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(1570): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(1570): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(1571): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(1010): warning C4996: 'std::_Swap_ranges': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(995) : see declaration of 'std::_Swap_ranges'
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/uuid/uuid.hpp(151) : see reference to function template instantiation '_FwdIt2 std::swap_ranges<boost::uuids::uuid::iterator,boost::uuids::uuid::iterator>(_FwdIt1,_FwdIt1,_FwdIt2)' being compiled
+                 with
+                 [
+                     _FwdIt2=boost::uuids::uuid::iterator,
+                     _FwdIt1=boost::uuids::uuid::iterator
+                 ]
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(3063): warning C4996: 'std::_Equal1': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(3048) : see declaration of 'std::_Equal1'
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/uuid/uuid.hpp(161) : see reference to function template instantiation 'bool std::equal<boost::uuids::uuid::const_iterator,boost::uuids::uuid::const_iterator>(_InIt1,_InIt1,_InIt2)' being compiled
+                 with
+                 [
+                     _InIt1=boost::uuids::uuid::const_iterator,
+                     _InIt2=boost::uuids::uuid::const_iterator
+                 ]
+         main.cpp
+         omega.cpp
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2239): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2224) : see declaration of 'std::_Copy_impl'
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/algorithm/string/detail/classification.hpp(102) : see reference to function template instantiation '_OutIt std::copy<const char*,char*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=char *,
+                     _InIt=const char *
+                 ]
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/algorithm/string/classification.hpp(206) : see reference to function template instantiation 'boost::algorithm::detail::is_any_ofF<CharT>::is_any_ofF<boost::iterator_range<IteratorT>>(const RangeT &)' being compiled
+                 with
+                 [
+                     CharT=char,
+                     IteratorT=const char *,
+                     RangeT=boost::iterator_range<const char *>
+                 ]
+                 omega.cpp(133) : see reference to function template instantiation 'boost::algorithm::detail::is_any_ofF<CharT> boost::algorithm::is_any_of<const char[4]>(RangeT (&))' being compiled
+                 with
+                 [
+                     CharT=char,
+                     RangeT=const char [4]
+                 ]
+         Generating Code...
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\rsquared\Framework\Win32\Debug\\OMEGA.exe" /NOLOGO /LIBPATH:C:\Qt\4.8.4\lib /LIBPATH:"..\..\External\boost-win-1.47-32bit-vs2010\lib\\" /LIBPATH:"..\..\External\Qpid-32Bit\Debug\lib\\" /LIBPATH:"..\..\External\protoc-2.5.0-win32\protobuf-2.5.0-src\vsprojects\Debug\\" /LIBPATH:"..\..\External\MySQLBuild-32Bit\Lib\Debug" qtmaind.lib QtCored4.lib QtGuid4.lib qpidmessagingd.lib qpidclientd.lib qpidcommond.lib qpidtypesd.lib libprotobuf.lib libmysql.lib mysqlcppconn.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\OMEGA.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\rsquared\Framework\Win32\Debug\OMEGA.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\rsquared\Framework\Win32\Debug\OMEGA.lib" /MACHINE:X86 Debug\OMEGA.res
+         Debug\Filter.obj
+         Debug\moc_Network.obj
+         Debug\moc_omega.obj
+         Debug\moc_OptionQuoter.obj
+         Debug\moc_SymbolLoad.obj
+         Debug\moc_TimedMessage.obj
+         Debug\qrc_omega.obj
+         Debug\main.obj
+         "Debug\MySQL-OMEGA.obj"
+         Debug\Network.obj
+         Debug\omega.obj
+         Debug\OptionQuoter.obj
+         Debug\OptionTick.pb.obj
+         Debug\RecordTracker.obj
+         Debug\RTypes.pb.obj
+         Debug\SymbolLoad.obj
+         Debug\Utility.obj
+         LINK : C:\rsquared\Framework\Win32\Debug\\OMEGA.exe not found or not built by the last incremental link; performing full link
+         OMEGA.vcxproj -> C:\rsquared\Framework\Win32\Debug\OMEGA.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\rsquared\Framework\Win32\Debug\\OMEGA.exe;#1" /manifest Debug\OMEGA.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\OMEGA.unsuccessfulbuild".
+         Touching "Debug\OMEGA.lastbuildstate".
+     1>Done Building Project "C:\rsquared\Framework\OMEGA\OMEGA.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:58.69

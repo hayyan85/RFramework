@@ -1,0 +1,20 @@
+package Serializable;
+
+message StockTick_ser
+{
+optional float Bid = 1 ;
+optional float Ask= 2 ;
+optional float Last = 3;
+optional float DailyHigh = 4 ;
+optional float DailyLow = 5 ;
+optional float BidSize = 6 ;
+optional float AskSize = 7 ;
+optional int32 Volume = 8;
+optional int32 DVolume = 9;
+optional int32 TotalTrades = 10 ;
+optional float LmtPrice = 11;
+optional string ExDivDate = 12 ;
+optional float  ExDivPercentage = 13;
+optional float  ExDivAmount = 14; 
+optional string symbol = 15 ;
+}

@@ -1,0 +1,129 @@
+﻿Build started 6/20/2013 12:51:47 AM.
+     1>Project "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\log4cplus.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\log4cplus.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\log4cplus.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\include /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /GL /D LOG4CPLUS_BUILD_DLL /D NDEBUG /D _SECURE_SCL=0 /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32_WINNT=0x0501 /D WINVER=0x0501 /D INSIDE_LOG4CPLUS /D _SCL_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MD /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\\" /Fd"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus.c.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\appender.cxx ..\src\clogger.cxx ..\src\configurator.cxx ..\src\fileinfo.cxx "..\src\global-init.cxx" ..\src\hierarchy.cxx ..\src\hierarchylocker.cxx ..\src\layout.cxx ..\src\lockfile.cxx ..\src\log4judpappender.cxx ..\src\logger.cxx ..\src\loggingevent.cxx ..\src\loggingmacros.cxx ..\src\mdc.cxx ..\src\ndc.cxx ..\src\patternlayout.cxx ..\src\version.cxx ..\src\asyncappender.cxx ..\src\consoleappender.cxx ..\src\fileappender.cxx ..\src\nteventlogappender.cxx ..\src\nullappender.cxx ..\src\socketappender.cxx ..\src\syslogappender.cxx ..\src\win32consoleappender.cxx ..\src\win32debugappender.cxx ..\src\env.cxx ..\src\factory.cxx ..\src\filter.cxx ..\src\loggerimpl.cxx ..\src\loglevel.cxx ..\src\objectregistry.cxx ..\src\rootlogger.cxx ..\src\syncprims.cxx ..\src\threads.cxx ..\src\tls.cxx ..\src\appenderattachableimpl.cxx ..\src\loglog.cxx ..\src\logloguser.cxx ..\src\pointer.cxx ..\src\property.cxx ..\src\queue.cxx ..\src\sleep.cxx ..\src\snprintf.cxx "..\src\socket-win32.cxx" ..\src\socket.cxx ..\src\socketbuffer.cxx "..\src\stringhelper-clocale.cxx" "..\src\stringhelper-cxxlocale.cxx" "..\src\stringhelper-iconv.cxx" ..\src\stringhelper.cxx ..\src\timehelper.cxx
+         appender.cxx
+         clogger.cxx
+         configurator.cxx
+         fileinfo.cxx
+         global-init.cxx
+         hierarchy.cxx
+         hierarchylocker.cxx
+         layout.cxx
+         lockfile.cxx
+         log4judpappender.cxx
+         logger.cxx
+         loggingevent.cxx
+         loggingmacros.cxx
+         mdc.cxx
+         ndc.cxx
+         patternlayout.cxx
+         version.cxx
+         asyncappender.cxx
+         consoleappender.cxx
+         fileappender.cxx
+         Compiling...
+         nteventlogappender.cxx
+         nullappender.cxx
+         socketappender.cxx
+         syslogappender.cxx
+         win32consoleappender.cxx
+         win32debugappender.cxx
+         env.cxx
+         factory.cxx
+         filter.cxx
+         loggerimpl.cxx
+         loglevel.cxx
+         objectregistry.cxx
+         rootlogger.cxx
+         syncprims.cxx
+         threads.cxx
+         tls.cxx
+         appenderattachableimpl.cxx
+         loglog.cxx
+         logloguser.cxx
+         pointer.cxx
+         Compiling...
+         property.cxx
+         queue.cxx
+         sleep.cxx
+         snprintf.cxx
+         socket-win32.cxx
+         socket.cxx
+         socketbuffer.cxx
+         stringhelper-clocale.cxx
+         stringhelper-cxxlocale.cxx
+         stringhelper-iconv.cxx
+         stringhelper.cxx
+         timehelper.cxx
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus.dll" /INCREMENTAL:NO /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\log4cplus.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus.pdb" /OPT:REF /OPT:NOICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus.lib" /MACHINE:X86 /DLL "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\appender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\clogger.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\configurator.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\fileinfo.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\global-init.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\hierarchy.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\hierarchylocker.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\layout.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\lockfile.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\log4judpappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\logger.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\loggingevent.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\loggingmacros.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\mdc.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\ndc.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\patternlayout.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\version.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\asyncappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\consoleappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\fileappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\nteventlogappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\nullappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\socketappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\syslogappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\win32consoleappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\win32debugappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\env.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\factory.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\filter.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\loggerimpl.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\loglevel.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\objectregistry.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\rootlogger.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\syncprims.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\threads.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\tls.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\appenderattachableimpl.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\loglog.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\logloguser.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\pointer.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\property.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\queue.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\sleep.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\snprintf.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\socket-win32.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\socket.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\socketbuffer.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\stringhelper-clocale.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\stringhelper-cxxlocale.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\stringhelper-iconv.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\stringhelper.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\timehelper.obj"
+            Creating library C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus.lib and object C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus.exp
+         Generating code
+         Finished generating code
+         log4cplus.vcxproj -> C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus.dll;#2" /manifest "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\log4cplus.dll.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\log4cplus.unsuccessfulbuild".
+         Touching "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplus.Release\log4cplus.lastbuildstate".
+     1>Done Building Project "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\log4cplus.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:30.59

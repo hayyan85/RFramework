@@ -1,0 +1,125 @@
+﻿Build started 11/1/2013 10:46:31 AM.
+     1>Project "C:\rsquared\Framework\OMEGA\OMEGA.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\OMEGA.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Release\OMEGA.unsuccessfulbuild".
+       CustomBuild:
+         Moc'ing omega.h...
+         Uic'ing omega.ui...
+         Moc'ing OptionQuoter.h...
+         Moc'ing TimedMessage.h...
+         Moc'ing Network.h...
+         Moc'ing SymbolLoad.h...
+         Rcc'ing omega.qrc...
+         Uic'ing SymbolLoad.ui...
+         Uic'ing OptionQuoter.ui...
+     1>C:\rsquared\Framework\OMEGA\OptionQuoter.ui : warning : The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget1'.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.4\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.4\include\QtCore /IC:\Qt\4.8.4\include\QtGui /I"..\..\External\boost-win-1.47-32bit-vs2010\include\boost-1_47" /I"..\..\External\Qpid-32Bit\Debug\include\\" /I"..\..\External\protoc-2.5.0-win32\protobuf-2.5.0-src\src\\" /I"..\..\External\MySQLBuild-32Bit\Include" /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Filter.cpp GeneratedFiles\Release\moc_Network.cpp GeneratedFiles\Release\moc_omega.cpp GeneratedFiles\Release\moc_OptionQuoter.cpp GeneratedFiles\Release\moc_SymbolLoad.cpp GeneratedFiles\Release\moc_TimedMessage.cpp main.cpp "MySQL-OMEGA.cpp" Network.cpp omega.cpp OptionQuoter.cpp OptionTick.pb.cc RecordTracker.cpp RTypes.pb.cc SymbolLoad.cpp Utility.cpp
+         Filter.cpp
+     1>Filter.cpp(158): warning C4482: nonstandard extension used: enum 'FilterCriteria::BidAsk' used in qualified name
+     1>Filter.cpp(163): warning C4482: nonstandard extension used: enum 'FilterCriteria::BidAsk' used in qualified name
+     1>Filter.cpp(169): warning C4482: nonstandard extension used: enum 'FilterCriteria::BidAsk' used in qualified name
+     1>Filter.cpp(174): warning C4482: nonstandard extension used: enum 'FilterCriteria::BidAsk' used in qualified name
+         moc_Network.cpp
+         moc_omega.cpp
+         moc_OptionQuoter.cpp
+         moc_SymbolLoad.cpp
+         moc_TimedMessage.cpp
+         main.cpp
+         MySQL-OMEGA.cpp
+         Network.cpp
+         omega.cpp
+         OptionQuoter.cpp
+     1>OptionQuoter.cpp(279): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(381): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(389): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(432): warning C4482: nonstandard extension used: enum 'Qt::CheckState' used in qualified name
+     1>OptionQuoter.cpp(485): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(492): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(493): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(498): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(506): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(525): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(526): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(537): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(542): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(547): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(564): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(570): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(576): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(632): warning C4482: nonstandard extension used: enum 'Qt::CheckState' used in qualified name
+     1>OptionQuoter.cpp(708): warning C4482: nonstandard extension used: enum 'Serializable::CustROrder_ser_EPriceType' used in qualified name
+     1>OptionQuoter.cpp(751): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(762): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(803): warning C4482: nonstandard extension used: enum 'Serializable::CustROrder_ser_EPriceType' used in qualified name
+     1>OptionQuoter.cpp(838): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(849): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(884): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(887): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(892): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(908): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(911): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(915): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(925): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(942): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(944): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(944): warning C4482: nonstandard extension used: enum 'Qt::CheckState' used in qualified name
+     1>OptionQuoter.cpp(946): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(965): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(969): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(972): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(996): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(997): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(998): warning C4482: nonstandard extension used: enum 'OptionQuoter::InputRows' used in qualified name
+     1>OptionQuoter.cpp(1068): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(1100): warning C4482: nonstandard extension used: enum 'SPX_ALGO1_NEUTRAL::EnumAction' used in qualified name
+     1>OptionQuoter.cpp(1104): warning C4482: nonstandard extension used: enum 'SPX_ALGO1_NEUTRAL::EnumAction' used in qualified name
+     1>OptionQuoter.cpp(1567): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(1570): warning C4482: nonstandard extension used: enum 'OptionQuoter::MType' used in qualified name
+     1>OptionQuoter.cpp(1570): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+     1>OptionQuoter.cpp(1571): warning C4482: nonstandard extension used: enum 'OptionQuoter::OrderTrackerColEnum' used in qualified name
+         OptionTick.pb.cc
+         RecordTracker.cpp
+         RTypes.pb.cc
+         SymbolLoad.cpp
+         Utility.cpp
+         Generating Code...
+     1>c:\rsquared\framework\omega\filter.cpp(180): warning C4715: 'FilterCriteria::RetrieveLookUpSymbolValue' : not all control paths return a value
+     1>c:\rsquared\framework\omega\filter.cpp(45): warning C4715: 'FilterCriteria::Invert_Comparison_Sign' : not all control paths return a value
+     1>c:\rsquared\framework\omega\filter.cpp(66): warning C4715: 'FilterCriteria::Invert_Binary_Operator_Sign' : not all control paths return a value
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.4\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.4\include\QtCore /IC:\Qt\4.8.4\include\QtGui /I"..\..\External\boost-win-1.47-32bit-vs2010\include\boost-1_47" /I"..\..\External\Qpid-32Bit\Debug\include\\" /I"..\..\External\protoc-2.5.0-win32\protobuf-2.5.0-src\src\\" /I"..\..\External\MySQLBuild-32Bit\Include" /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_omega.cpp
+         qrc_omega.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /l"0x0409" /nologo /fo"Release\OMEGA.res" OMEGA.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\rsquared\Framework\Win32\Release\\OMEGA.exe" /NOLOGO /LIBPATH:C:\Qt\4.8.4\lib /LIBPATH:"..\..\External\boost-win-1.47-32bit-vs2010\lib\\" /LIBPATH:"..\..\External\Qpid-32Bit\Release\\" /LIBPATH:"..\..\External\MySQLBuild-32Bit\Lib\Release\\" /LIBPATH:"..\..\External\protoc-2.5.0-win32\protobuf-2.5.0-src\vsprojects\Release\\" qtmain.lib QtCore4.lib QtGui4.lib qpidmessaging.lib qpidclient.lib qpidcommon.lib qpidtypes.lib libprotobuf.lib mysqlcppconn.lib libmysql.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\OMEGA.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\rsquared\Framework\Win32\Release\OMEGA.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\rsquared\Framework\Win32\Release\OMEGA.lib" /MACHINE:X86 Release\OMEGA.res
+         Release\Filter.obj
+         Release\qrc_omega.obj
+         Release\moc_Network.obj
+         Release\moc_omega.obj
+         Release\moc_OptionQuoter.obj
+         Release\moc_SymbolLoad.obj
+         Release\moc_TimedMessage.obj
+         Release\main.obj
+         "Release\MySQL-OMEGA.obj"
+         Release\Network.obj
+         Release\omega.obj
+         Release\OptionQuoter.obj
+         Release\OptionTick.pb.obj
+         Release\RecordTracker.obj
+         Release\RTypes.pb.obj
+         Release\SymbolLoad.obj
+         Release\Utility.obj
+         OMEGA.vcxproj -> C:\rsquared\Framework\Win32\Release\OMEGA.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\rsquared\Framework\Win32\Release\\OMEGA.exe;#1" /manifest Release\OMEGA.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\OMEGA.unsuccessfulbuild".
+         Touching "Release\OMEGA.lastbuildstate".
+     1>Done Building Project "C:\rsquared\Framework\OMEGA\OMEGA.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:02:19.27

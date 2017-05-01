@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="Eclipse">
+    <file>Images/expired.png</file>
+    <file>Images/downArrow.png</file>
+    <file>Images/about.png</file>
+    <file>Images/Exit.png</file>
+    <file>Images/img_option.png</file>
+    <file>Images/line_chart.png</file>
+    <file>Images/option_scan.png</file>
+    <file>Images/stock_scanner.png</file>
+    <file>Images/MainEclipse.png</file>
+    <file>r2-logo.png</file>
+  </qresource>
+</RCC>

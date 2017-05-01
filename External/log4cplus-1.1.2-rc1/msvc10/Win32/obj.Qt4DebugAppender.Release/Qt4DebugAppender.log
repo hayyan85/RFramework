@@ -1,0 +1,13 @@
+﻿Build started 6/20/2013 12:52:18 AM.
+     1>Project "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Qt4DebugAppender.vcxproj" on node 3 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.Qt4DebugAppender.Release\Qt4DebugAppender.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\include /IC:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include /IC:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\Qt /IC:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /GL /D NDEBUG /D _SECURE_SCL=0 /D _HAS_ITERATOR_DEBUGGING=0 /D INSIDE_LOG4CPLUS_QT4DEBUGAPPENDER /D LOG4CPLUS_QT4DEBUGAPPENDER_BUILD_DLL /D LOG4CPLUS_BUILD_DLL /D QT_SHARED /D QT_THREAD_SUPPORT /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.Qt4DebugAppender.Release\\" /Fd"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus-Qt4DebugAppender.pdb" /Gd /TP /analyze- /errorReport:prompt ..\qt4debugappender\qt4debugappender.cxx
+         qt4debugappender.cxx
+     1>..\qt4debugappender\qt4debugappender.cxx(38): fatal error C1083: Cannot open include file: 'QtGlobal': No such file or directory
+     1>Done Building Project "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Qt4DebugAppender.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.98

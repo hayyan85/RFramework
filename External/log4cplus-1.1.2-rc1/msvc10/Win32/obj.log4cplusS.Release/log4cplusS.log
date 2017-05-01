@@ -1,0 +1,123 @@
+﻿Build started 6/20/2013 12:51:47 AM.
+     1>Project "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\log4cplusS.vcxproj" on node 3 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\log4cplusS.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\include /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /GL /D LOG4CPLUS_STATIC /D NDEBUG /D _SECURE_SCL=0 /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32_WINNT=0x0501 /D WINVER=0x0501 /D INSIDE_LOG4CPLUS /D _SCL_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D _MBCS /GF /Gm- /EHsc /MD /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\\" /Fd"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplusS.c.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\appender.cxx ..\src\clogger.cxx ..\src\configurator.cxx ..\src\fileinfo.cxx "..\src\global-init.cxx" ..\src\hierarchy.cxx ..\src\hierarchylocker.cxx ..\src\layout.cxx ..\src\lockfile.cxx ..\src\log4judpappender.cxx ..\src\logger.cxx ..\src\loggingevent.cxx ..\src\loggingmacros.cxx ..\src\mdc.cxx ..\src\ndc.cxx ..\src\patternlayout.cxx ..\src\property.cxx ..\src\version.cxx ..\src\asyncappender.cxx ..\src\consoleappender.cxx ..\src\fileappender.cxx ..\src\nteventlogappender.cxx ..\src\nullappender.cxx ..\src\socketappender.cxx ..\src\syslogappender.cxx ..\src\win32consoleappender.cxx ..\src\win32debugappender.cxx ..\src\env.cxx ..\src\appenderattachableimpl.cxx ..\src\loglog.cxx ..\src\logloguser.cxx ..\src\pointer.cxx ..\src\queue.cxx ..\src\sleep.cxx ..\src\snprintf.cxx "..\src\socket-win32.cxx" ..\src\socket.cxx ..\src\socketbuffer.cxx "..\src\stringhelper-clocale.cxx" "..\src\stringhelper-cxxlocale.cxx" "..\src\stringhelper-iconv.cxx" ..\src\stringhelper.cxx ..\src\timehelper.cxx ..\src\factory.cxx ..\src\filter.cxx ..\src\loggerimpl.cxx ..\src\loglevel.cxx ..\src\objectregistry.cxx ..\src\rootlogger.cxx ..\src\syncprims.cxx ..\src\threads.cxx ..\src\tls.cxx
+         appender.cxx
+         clogger.cxx
+         configurator.cxx
+         fileinfo.cxx
+         global-init.cxx
+         hierarchy.cxx
+         hierarchylocker.cxx
+         layout.cxx
+         lockfile.cxx
+         log4judpappender.cxx
+         logger.cxx
+         loggingevent.cxx
+         loggingmacros.cxx
+         mdc.cxx
+         ndc.cxx
+         patternlayout.cxx
+         property.cxx
+         version.cxx
+         asyncappender.cxx
+         consoleappender.cxx
+         Compiling...
+         fileappender.cxx
+         nteventlogappender.cxx
+         nullappender.cxx
+         socketappender.cxx
+         syslogappender.cxx
+         win32consoleappender.cxx
+         win32debugappender.cxx
+         env.cxx
+         appenderattachableimpl.cxx
+         loglog.cxx
+         logloguser.cxx
+         pointer.cxx
+         queue.cxx
+         sleep.cxx
+         snprintf.cxx
+         socket-win32.cxx
+         socket.cxx
+         socketbuffer.cxx
+         stringhelper-clocale.cxx
+         stringhelper-cxxlocale.cxx
+         Compiling...
+         stringhelper-iconv.cxx
+         stringhelper.cxx
+         timehelper.cxx
+         factory.cxx
+         filter.cxx
+         loggerimpl.cxx
+         loglevel.cxx
+         objectregistry.cxx
+         rootlogger.cxx
+         syncprims.cxx
+         threads.cxx
+         tls.cxx
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplusS.lib" ws2_32.lib /NOLOGO "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\appender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\clogger.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\configurator.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\fileinfo.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\global-init.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\hierarchy.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\hierarchylocker.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\layout.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\lockfile.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\log4judpappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\logger.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\loggingevent.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\loggingmacros.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\mdc.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\ndc.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\patternlayout.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\property.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\version.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\asyncappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\consoleappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\fileappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\nteventlogappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\nullappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\socketappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\syslogappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\win32consoleappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\win32debugappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\env.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\appenderattachableimpl.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\loglog.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\logloguser.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\pointer.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\queue.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\sleep.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\snprintf.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\socket-win32.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\socket.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\socketbuffer.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\stringhelper-clocale.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\stringhelper-cxxlocale.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\stringhelper-iconv.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\stringhelper.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\timehelper.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\factory.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\filter.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\loggerimpl.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\loglevel.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\objectregistry.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\rootlogger.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\syncprims.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\threads.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\tls.obj"
+         tls.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+         log4cplusS.vcxproj -> C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplusS.lib
+       FinalizeBuildStatus:
+         Deleting file "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\log4cplusS.unsuccessfulbuild".
+         Touching "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.log4cplusS.Release\log4cplusS.lastbuildstate".
+     1>Done Building Project "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\log4cplusS.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:25.39

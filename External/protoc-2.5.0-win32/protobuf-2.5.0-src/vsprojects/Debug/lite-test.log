@@ -1,0 +1,24 @@
+﻿Build started 7/7/2013 4:58:58 PM.
+     1>Project "C:\protoc-2.5.0-win32\protobuf-2.5.0-src\vsprojects\lite-test.vcxproj" on node 5 (rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppClean.targets(74,5): warning : The process cannot access the file 'C:\protoc-2.5.0-win32\protobuf-2.5.0-src\vsprojects\Debug\vc100.idb' because it is being used by another process.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppClean.targets(74,5): warning : The process cannot access the file 'C:\PROTOC-2.5.0-WIN32\PROTOBUF-2.5.0-SRC\VSPROJECTS\DEBUG\VC100.PDB' because it is being used by another process.
+     1>InitializeBuildStatus:
+         Creating "Debug\lite-test.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ComputeCustomBuildOutput:
+         Creating directory "C:\protoc-2.5.0-win32\protobuf-2.5.0-src\vsprojects\google\protobuf\".
+       CustomBuild:
+         Generating unittest_lite.pb.{h,cc}...
+         'Debug\protoc' is not recognized as an internal or external command,
+         operable program or batch file.
+         Generating unittest_import_lite.pb.{h,cc}...
+         'Debug\protoc' is not recognized as an internal or external command,
+         operable program or batch file.
+         Generating unittest_import_public_lite.pb.{h,cc}...
+         'Debug\protoc' is not recognized as an internal or external command,
+         operable program or batch file.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(151,5): error MSB6006: "cmd.exe" exited with code 9009.
+     1>Done Building Project "C:\protoc-2.5.0-win32\protobuf-2.5.0-src\vsprojects\lite-test.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.15

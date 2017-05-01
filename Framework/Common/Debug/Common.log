@@ -1,0 +1,18 @@
+﻿Build started 10/14/2013 12:28:26 PM.
+     1>Project "C:\rsquared\Framework\Common\Common.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Common.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Lib:
+         All outputs are up-to-date.
+         Common.vcxproj -> C:\rsquared\Framework\Debug\Common.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\Common.unsuccessfulbuild".
+         Touching "Debug\Common.lastbuildstate".
+     1>Done Building Project "C:\rsquared\Framework\Common\Common.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.16

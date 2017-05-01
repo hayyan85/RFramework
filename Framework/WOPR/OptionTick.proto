@@ -1,0 +1,46 @@
+package Serializable;
+
+message OptionTick_ser
+{
+required string symbol = 1 ;
+optional bool  isTraded = 2  		 [default = false]; 
+optional bool isQuote = 3     		 [default = false]; 
+optional string isType = 4 ;   
+optional float TradePrice = 5        [default = 0]; //Close //Last
+optional int32 TradeVolume = 6;
+optional string  TradeExch = 7;    
+optional float bid = 8        		 [default = 0]; 
+optional int32 BidSize = 9  		 [default = 0]; 
+optional string BidExch = 10;      
+optional string BidTime = 11 ;      
+optional float ask = 12       		 [default = 0]; 
+optional int32  AskSize = 13   		 [default = 0]; 
+optional float AskExch = 14    		 [default = 0]; 
+optional string AskTime = 15;      
+optional int32  DailyVolume = 16   	 [default = 0]; 
+optional float DailyHigh = 17     	 [default = 0]; 
+optional float DailyLow = 18   	     [default = 0]; 
+optional int32  DailyTrades = 19     [default = 0]; 
+optional string TimeStamp = 20;       
+optional int32  OpenInterest = 21    [default = 0]; 
+optional string ExpDate = 22 ;
+optional float Strike = 23   		[default = 0]; 
+optional int32  TickID = 24    		[default = 0]; 
+optional float Bid_Imp_volatility = 25    		 [default = 0];
+optional float Ask_Imp_volatility = 26   		 [default = 0];
+optional float MP_Imp_volatility = 27    		 [default = 0];
+optional float Exp_Time_Left = 28       		 [default = 0];
+
+optional int32 BidTrade = 29 [default = 0];
+optional int32 NTrade = 30 [default = 0];
+optional int32 AskTrade = 31 [default = 0];
+optional int32 BidVol = 32 [default = 0];
+optional int32 NVol = 33 [default = 0];
+optional int32 AskVol = 34 [default = 0];
+
+}
+
+message Option_collection_ser
+{
+repeated OptionTick_ser option_tick_collection = 1;
+}

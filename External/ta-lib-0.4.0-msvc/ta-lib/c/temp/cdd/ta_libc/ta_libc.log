@@ -1,0 +1,14 @@
+﻿Build started 4/29/2013 04:24:08 PM.
+     1>Project "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_libc\ta_libc.vcxproj" on node 4 (rebuild target(s)).
+     1>CoreClean:
+         del .\..\..\..\..\lib\ta_libc_cdd.lib
+       Rebuild:
+         lib /OUT:.\..\..\..\..\lib\ta_libc_cdd.lib .\..\..\..\..\lib\ta_abstract_cdd.lib .\..\..\..\..\lib\ta_common_cdd.lib .\..\..\..\..\lib\ta_func_cdd.lib
+         Microsoft (R) Library Manager Version 10.00.30319.01
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+     1>Done Building Project "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_libc\ta_libc.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.29

@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="OMEGA">
+    <file>Images/unchecked_1.png</file>
+    <file>Images/right.png</file>
+    <file>Images/wrong.png</file>
+    <file>Images/mouse_over.png</file>
+    <file>Images/uncheck.png</file>
+    <file>Images/checked.png</file>
+    <file>Images/downArrow.png</file>
+    <file>Images/pause.png</file>
+    <file>Images/stop.png</file>
+    <file>Images/OmegaMain.png</file>
+    <file>Images/Optionquoter.png</file>
+    <file>r2-logo.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,24 @@
+﻿Build started 6/20/2013 12:52:18 AM.
+     1>Project "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\CLFSAppender.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.CLFSAppender.Release\CLFSAppender.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\include /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /GL /D NDEBUG /D _SECURE_SCL=0 /D _HAS_ITERATOR_DEBUGGING=0 /D INSIDE_LOG4CPLUS_CLFSAPPENDER /D LOG4CPLUS_CLFSAPPENDER_BUILD_DLL /D LOG4CPLUS_BUILD_DLL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.CLFSAppender.Release\\" /Fd"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus-CLFSAppender.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\clfsappender.cxx
+         clfsappender.cxx
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus-CLFSAppender.dll" /NOLOGO /LIBPATH:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release" clfsw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.CLFSAppender.Release\log4cplus-CLFSAppender.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus-CLFSAppender.pdb" /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus-CLFSAppender.lib" /MACHINE:X86 /DLL "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.CLFSAppender.Release\clfsappender.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus.lib"
+            Creating library C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus-CLFSAppender.lib and object C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus-CLFSAppender.exp
+         Generating code
+         Finished generating code
+         CLFSAppender.vcxproj -> C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus-CLFSAppender.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus-CLFSAppender.dll;#2" /manifest "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.CLFSAppender.Release\log4cplus-CLFSAppender.dll.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.CLFSAppender.Release\CLFSAppender.unsuccessfulbuild".
+         Touching "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.CLFSAppender.Release\CLFSAppender.lastbuildstate".
+     1>Done Building Project "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\CLFSAppender.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.75

@@ -1,0 +1,84 @@
+﻿Build started 4/29/2013 04:24:08 PM.
+     1>Project "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_regtest\ta_regtest.vcxproj" on node 3 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\..\..\..\..\temp\cdd\ta_regtest\ta_regtest.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\..\..\..\..\src\ta_common /I.\..\..\..\..\src\tools\ta_regtest /I.\..\..\..\..\src\ta_func /I.\..\..\..\..\include /Zi /nologo /W3 /WX /Od /Oy- /D TA_DEBUG /D _DEBUG /D WIN32 /D _MBCS /D _CONSOLE /D QT_THREAD_SUPPORT /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\..\..\..\..\temp\cdd\ta_regtest/" /Fd".\..\..\..\..\temp\cdd\ta_regtest/vc100.pdb" /FR".\..\..\..\..\temp\cdd\ta_regtest/" /Gd /TC /analyze- /errorReport:prompt ..\..\..\..\src\tools\ta_regtest\ta_regtest.c ..\..\..\..\src\tools\ta_regtest\test_abstract.c ..\..\..\..\src\tools\ta_regtest\test_data.c ..\..\..\..\src\tools\ta_regtest\test_internals.c ..\..\..\..\src\tools\ta_regtest\test_util.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_1in_1out.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_1in_2out.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_adx.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_bbands.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_candlestick.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_ma.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_macd.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_minmax.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_mom.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_per_ema.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_per_hl.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_per_hlc.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_per_hlcv.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_per_ohlc.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_po.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_rsi.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_sar.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_stddev.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_stoch.c ..\..\..\..\src\tools\ta_regtest\ta_test_func\test_trange.c
+         test_trange.c
+         test_stoch.c
+         test_stddev.c
+         test_sar.c
+         test_rsi.c
+         test_po.c
+         test_per_ohlc.c
+         test_per_hlcv.c
+         test_per_hlc.c
+         test_per_hl.c
+         test_per_ema.c
+         test_mom.c
+         test_minmax.c
+         test_macd.c
+         test_ma.c
+         test_candlestick.c
+         test_bbands.c
+         test_adx.c
+         test_1in_2out.c
+         test_1in_1out.c
+         Generating Code...
+         Compiling...
+         test_util.c
+         test_internals.c
+         test_data.c
+         test_abstract.c
+         ta_regtest.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_regtest\.\..\..\..\..\bin\ta_regtest.exe) does not match the Linker's OutputFile property value (C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\bin\ta_regtest_cdd.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(ta_regtest) does not match the Linker's OutputFile property value (ta_regtest_cdd). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\..\..\..\..\bin\ta_regtest_cdd.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:.\..\..\..\..\lib ta_libc_cdd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\..\..\..\..\temp\cdd\ta_regtest/ta_regtest_cdd.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\..\..\..\..\temp\cdd\ta_regtest/ta_regtest_cdd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\..\..\..\..\bin\ta_regtest.lib" /MACHINE:X86 .\..\..\..\..\temp\cdd\ta_regtest/ta_regtest.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_abstract.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_data.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_internals.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_util.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_1in_1out.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_1in_2out.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_adx.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_bbands.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_candlestick.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_ma.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_macd.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_minmax.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_mom.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_per_ema.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_per_hl.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_per_hlc.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_per_hlcv.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_per_ohlc.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_po.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_rsi.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_sar.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_stddev.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_stoch.obj
+         .\..\..\..\..\temp\cdd\ta_regtest/test_trange.obj
+         "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\lib\ta_common_cdd.lib"
+         "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\lib\ta_abstract_cdd.lib"
+         "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\lib\ta_func_cdd.lib"
+         "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_libc\.\..\..\..\..\lib\ta_libc_cdd.lib"
+         ta_regtest.vcxproj -> C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_regtest\.\..\..\..\..\bin\ta_regtest.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\..\..\..\..\temp\cdd\ta_regtest/ta_regtest_cdd.embed.manifest" /outputresource:".\..\..\..\..\bin\ta_regtest_cdd.exe;#1" /manifest .\..\..\..\..\temp\cdd\ta_regtest/ta_regtest_cdd.intermediate.manifest
+       BscMake:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\..\..\..\..\temp\cdd\ta_regtest/ta_regtest_cdd.bsc" .\..\..\..\..\temp\cdd\ta_regtest/ta_regtest.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_abstract.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_data.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_internals.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_util.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_1in_1out.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_1in_2out.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_adx.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_bbands.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_candlestick.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_ma.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_macd.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_minmax.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_mom.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_per_ema.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_per_hl.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_per_hlc.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_per_hlcv.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_per_ohlc.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_po.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_rsi.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_sar.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_stddev.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_stoch.sbr .\..\..\..\..\temp\cdd\ta_regtest/test_trange.sbr
+       PostBuildEvent:
+         Description: Make a copy named ta_regtest.exe
+         copy .\..\..\..\..\bin\ta_regtest_cdd.exe .\..\..\..\..\bin\ta_regtest.exe
+         :VCEnd
+                 1 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file ".\..\..\..\..\temp\cdd\ta_regtest\ta_regtest.unsuccessfulbuild".
+         Touching ".\..\..\..\..\temp\cdd\ta_regtest\ta_regtest.lastbuildstate".
+     1>Done Building Project "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_regtest\ta_regtest.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.20

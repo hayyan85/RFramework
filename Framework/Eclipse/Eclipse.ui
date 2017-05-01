@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EclipseClass</class>
+ <widget class="QMainWindow" name="EclipseClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>385</width>
+    <height>255</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Eclipse</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="Eclipse.qrc">:/Eclipse/Images/MainEclipse.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>385</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuLaunch_Component">
+    <property name="title">
+     <string>Launch Component</string>
+    </property>
+    <addaction name="actionEquity_Scanner"/>
+    <addaction name="separator"/>
+    <addaction name="actionVolatility_Graph"/>
+    <addaction name="separator"/>
+    <addaction name="actionOption_Scanner"/>
+    <addaction name="separator"/>
+    <addaction name="actionExpiration_Graph"/>
+   </widget>
+   <widget class="QMenu" name="menuExit_ECLIPSE">
+    <property name="title">
+     <string>Exit Eclipse</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+   </widget>
+   <addaction name="menuLaunch_Component"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuExit_ECLIPSE"/>
+  </widget>
+  <action name="actionEquity_Scanner">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Eclipse.qrc">
+     <normaloff>:/Eclipse/Images/stock_scanner.png</normaloff>:/Eclipse/Images/stock_scanner.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Equity Scanner</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Equity Scanner</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionVolatility_Graph">
+   <property name="icon">
+    <iconset resource="Eclipse.qrc">
+     <normaloff>:/Eclipse/Images/line_chart.png</normaloff>:/Eclipse/Images/line_chart.png</iconset>
+   </property>
+   <property name="text">
+    <string>Volatility Graph</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionOption_Scanner">
+   <property name="icon">
+    <iconset resource="Eclipse.qrc">
+     <normaloff>:/Eclipse/Images/option_scan.png</normaloff>:/Eclipse/Images/option_scan.png</iconset>
+   </property>
+   <property name="text">
+    <string>Option Scanner</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionExpiration_Graph">
+   <property name="icon">
+    <iconset resource="Eclipse.qrc">
+     <normaloff>:/Eclipse/Images/expired.png</normaloff>:/Eclipse/Images/expired.png</iconset>
+   </property>
+   <property name="text">
+    <string>Expiration Graph</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Eclipse.qrc"/>
+  <include location="../WOPR/Wopr.qrc"/>
+  <include location="../OMEGA/omega.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,46 @@
+package Serializable;
+
+message HistoricalFields_ser
+{
+required string symbol = 1 ;
+optional int32  frequency = 2   [default = 0]; 
+optional double bar_high = 3    [default = 0]; 
+optional double bar_low = 4     [default = 0]; 
+optional double close = 5       [default = 0]; 
+optional string ftime = 6 ;       
+optional int32  index_no = 7    [default = 0];
+optional double lcg = 8         [default = 0]; 
+optional double scg = 9         [default = 0]; 
+optional int32  cgtrend = 10    [default = 0]; 
+
+
+optional double dailyHigh = 11  [default = 0]; 
+optional double dailyLow = 12   [default = 0]; 
+optional double HighZone = 13   [default = 0]; 
+optional double LowZone = 14    [default = 0]; 
+optional int32 hulltrend = 15   [default = 0]; 
+optional double Latr = 16       [default = 0]; 
+optional double Satr = 17       [default = 0]; 
+
+optional double slinSlope = 18  [default = 0]; 
+optional double llinSlope = 19  [default = 0]; 
+optional double r2Cyc5 = 20     [default = 0]; 
+optional double r2Cyc6 = 21     [default = 0]; 
+optional double r2Cyc7 = 22     [default = 0]; 
+optional double avgCyc = 23     [default = 0]; 
+optional double bid = 24        [default = 0]; 
+optional double ask = 25        [default = 0]; 
+
+
+optional double ba_spread = 26        [default = 0]; 
+optional double last = 27             [default = 0]; 
+optional double today_change = 28     [default = 0]; 
+optional double percent_change = 29   [default = 0]; 
+optional double trade_volume = 30     [default = 0]; 
+
+optional int64 barNumber = 31           [default = 0]; 
+optional double LRange = 32             [default = 0]; 
+optional double VClose = 33             [default = 0]; 
+optional double ValueStd = 34           [default = 0]; 
+optional double ValueIncrement = 35     [default = 0]; 
+}

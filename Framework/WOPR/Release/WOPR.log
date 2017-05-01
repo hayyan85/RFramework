@@ -1,0 +1,10 @@
+﻿Build started 10/30/2013 12:20:19 PM.
+     1>Project "C:\rsquared\Framework\WOPR\WOPR.vcxproj" on node 2 (ClCompile target(s)).
+     1>ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.4\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.4\include\QtCore /IC:\Qt\4.8.4\include\QtGui /IC:\Qt\4.8.4\include\QtNetwork /I"..\..\External\boost-win-1.47-32bit-vs2010\include\boost-1_47" /I"..\..\External\ta-lib-0.4.0-msvc\ta-lib\c\include\\" /I"..\..\External\Qpid-32Bit\Debug\include\\" /I..\Common\ /I"..\..\External\log4cplus-1.1.2-rc1\include" /I"..\..\External\protoc-2.5.0-win32\protobuf-2.5.0-src\src\\" /I"..\..\External\MySQLConnector-32Bit\Header\\" /I"..\..\External\MySQLBuild-32Bit\Include" /I"..\..\External\QuantLib-1.3\\" /I..\..\External\RealTick\include\ /Zi /nologo /W1 /WX- /O2 /Ot /Oy- /GL /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_NETWORK_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /openmp /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt FeedConnector_RealTick.cpp
+         FeedConnector_RealTick.cpp
+     1>Done Building Project "C:\rsquared\Framework\WOPR\WOPR.vcxproj" (ClCompile target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:33.67

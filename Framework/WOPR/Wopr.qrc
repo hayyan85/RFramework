@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="WOPR">
+    <file>r2-logo.png</file>
+    <file>WOPR.png</file>
+  </qresource>
+</RCC>

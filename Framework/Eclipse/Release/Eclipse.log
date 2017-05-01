@@ -1,0 +1,179 @@
+﻿Build started 10/23/2013 11:14:15 AM.
+     1>Project "C:\rsquared\Framework\Eclipse\Eclipse.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\Eclipse.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\Eclipse.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Moc'ing Eclipse.h...
+         Moc'ing VolatilityProxy.h...
+         Moc'ing ExpGraph.h...
+         Moc'ing ExpDateProxy.h...
+         Moc'ing OptionScanner.h...
+         Moc'ing OptionScannerProxy.h...
+         Moc'ing VolatilityGraph.h...
+         Moc'ing qcustomplot.h...
+         Moc'ing Network.h...
+         Uic'ing Eclipse.ui...
+         Rcc'ing Eclipse.qrc...
+         Uic'ing VolatilityGraph.ui...
+         Uic'ing OptionScanner.ui...
+     1>C:\rsquared\Framework\Eclipse\OptionScanner.ui : warning : The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget1'.
+     1>C:\rsquared\Framework\Eclipse\OptionScanner.ui : warning : The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget2'.
+     1>C:\rsquared\Framework\Eclipse\OptionScanner.ui : warning : The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget3'.
+         Uic'ing ExpGraph.ui...
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.4\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.4\include\QtCore /IC:\Qt\4.8.4\include\QtGui /I"..\..\External\boost-win-1.47-32bit-vs2010\include\boost-1_47" /I"..\..\External\Qpid-32Bit\Debug\include\\" /I..\Common\ /I"..\..\External\protoc-2.5.0-win32\protobuf-2.5.0-src\src\\" /I"..\..\External\MySQLBuild-32Bit\Include" /Zi /nologo /W1 /WX- /O2 /Ot /Oy- /GL /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /openmp /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Eclipse.cpp ExpDateProxy.cpp ExpGraph.cpp GeneratedFiles\Release\moc_Eclipse.cpp GeneratedFiles\Release\moc_ExpDateProxy.cpp GeneratedFiles\Release\moc_ExpGraph.cpp GeneratedFiles\Release\moc_Network.cpp GeneratedFiles\Release\moc_OptionScanner.cpp GeneratedFiles\Release\moc_OptionScannerProxy.cpp GeneratedFiles\Release\moc_qcustomplot.cpp GeneratedFiles\Release\moc_VolatilityGraph.cpp GeneratedFiles\Release\moc_VolatilityProxy.cpp main.cpp "MySQL-Eclipse.cpp" Network.cpp OptionScanner.cpp OptionScannerProxy.cpp OptionTick.pb.cc qcustomplot.cpp StockTick.pb.cc VolatilityGraph.cpp VolatilityProxy.cpp
+         Eclipse.cpp
+         ExpDateProxy.cpp
+         ExpGraph.cpp
+         Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+         - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+         - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+         Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+     1>ExpGraph.cpp(445): warning C4482: nonstandard extension used: enum 'QCPGraph::LineStyle' used in qualified name
+         moc_Eclipse.cpp
+         moc_ExpDateProxy.cpp
+         moc_ExpGraph.cpp
+         moc_Network.cpp
+         Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+         - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+         - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+         Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+         moc_OptionScanner.cpp
+         moc_OptionScannerProxy.cpp
+         moc_qcustomplot.cpp
+         moc_VolatilityGraph.cpp
+         moc_VolatilityProxy.cpp
+         main.cpp
+         MySQL-Eclipse.cpp
+         Network.cpp
+         Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+         - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+         - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+         Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+         OptionScanner.cpp
+         Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+         - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+         - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+         Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+     1>OptionScanner.cpp(206): warning C4482: nonstandard extension used: enum 'Qt::CheckState' used in qualified name
+     1>OptionScanner.cpp(259): warning C4482: nonstandard extension used: enum 'QMessageBox::StandardButton' used in qualified name
+     1>OptionScanner.cpp(298): warning C4482: nonstandard extension used: enum 'Qt::CheckState' used in qualified name
+     1>OptionScanner.cpp(308): warning C4482: nonstandard extension used: enum 'Qt::CheckState' used in qualified name
+     1>C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/mpl/print.hpp(51): warning C4308: negative integral constant converted to unsigned type
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/serialization/static_warning.hpp(92) : see reference to class template instantiation 'boost::mpl::print<T>' being compiled
+                 with
+                 [
+                     T=boost::serialization::BOOST_SERIALIZATION_STATIC_WARNING_LINE<98>
+                 ]
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/archive/detail/check.hpp(98) : see reference to class template instantiation 'boost::serialization::static_warning_test<B,L>' being compiled
+                 with
+                 [
+                     B=false,
+                     L=98
+                 ]
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/archive/detail/oserializer.hpp(313) : see reference to function template instantiation 'void boost::archive::detail::check_object_tracking<T>(void)' being compiled
+                 with
+                 [
+                     T=OptionScannerLayout
+                 ]
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/archive/detail/oserializer.hpp(525) : see reference to function template instantiation 'void boost::archive::detail::save_non_pointer_type<Archive>::invoke<T>(Archive &,T &)' being compiled
+                 with
+                 [
+                     Archive=boost::archive::text_oarchive,
+                     T=OptionScannerLayout
+                 ]
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/archive/detail/common_oarchive.hpp(69) : see reference to function template instantiation 'void boost::archive::save<Archive,T>(Archive &,T &)' being compiled
+                 with
+                 [
+                     Archive=boost::archive::text_oarchive,
+                     T=OptionScannerLayout
+                 ]
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/archive/basic_text_oarchive.hpp(80) : see reference to function template instantiation 'void boost::archive::detail::common_oarchive<Archive>::save_override<T>(T &,int)' being compiled
+                 with
+                 [
+                     Archive=boost::archive::text_oarchive,
+                     T=OptionScannerLayout
+                 ]
+                 C:\rsquared\External\boost-win-1.47-32bit-vs2010\include\boost-1_47\boost/archive/detail/interface_oarchive.hpp(63) : see reference to function template instantiation 'void boost::archive::basic_text_oarchive<Archive>::save_override<T>(T &,int)' being compiled
+                 with
+                 [
+                     Archive=boost::archive::text_oarchive,
+                     T=OptionScannerLayout
+                 ]
+                 OptionScanner.cpp(240) : see reference to function template instantiation 'Archive &boost::archive::detail::interface_oarchive<Archive>::operator <<<OptionScannerLayout>(T &)' being compiled
+                 with
+                 [
+                     Archive=boost::archive::text_oarchive,
+                     T=OptionScannerLayout
+                 ]
+         OptionScannerProxy.cpp
+         OptionTick.pb.cc
+         qcustomplot.cpp
+         StockTick.pb.cc
+         Compiling...
+         VolatilityGraph.cpp
+         Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+         - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+         - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+         Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+     1>VolatilityGraph.cpp(317): warning C4482: nonstandard extension used: enum 'QCPGraph::LineStyle' used in qualified name
+     1>VolatilityGraph.cpp(321): warning C4482: nonstandard extension used: enum 'QCPGraph::LineStyle' used in qualified name
+     1>VolatilityGraph.cpp(325): warning C4482: nonstandard extension used: enum 'QCPGraph::LineStyle' used in qualified name
+     1>VolatilityGraph.cpp(364): warning C4482: nonstandard extension used: enum 'QCPGraph::LineStyle' used in qualified name
+     1>VolatilityGraph.cpp(400): warning C4482: nonstandard extension used: enum 'QCPGraph::LineStyle' used in qualified name
+     1>VolatilityGraph.cpp(434): warning C4482: nonstandard extension used: enum 'QCPGraph::LineStyle' used in qualified name
+     1>VolatilityGraph.cpp(455): warning C4482: nonstandard extension used: enum 'VolatilityGraph::PlotType' used in qualified name
+     1>VolatilityGraph.cpp(502): warning C4482: nonstandard extension used: enum 'VolatilityGraph::PlotType' used in qualified name
+     1>VolatilityGraph.cpp(552): warning C4482: nonstandard extension used: enum 'VolatilityGraph::PlotType' used in qualified name
+     1>VolatilityGraph.cpp(566): warning C4482: nonstandard extension used: enum 'VolatilityGraph::PlotType' used in qualified name
+     1>VolatilityGraph.cpp(580): warning C4482: nonstandard extension used: enum 'VolatilityGraph::PlotType' used in qualified name
+     1>VolatilityGraph.cpp(786): warning C4482: nonstandard extension used: enum 'VolatilityGraph::PlotType' used in qualified name
+         VolatilityProxy.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.4\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.4\include\QtCore /IC:\Qt\4.8.4\include\QtGui /I"..\..\External\boost-win-1.47-32bit-vs2010\include\boost-1_47" /I"..\..\External\Qpid-32Bit\Debug\include\\" /I..\Common\ /I"..\..\External\protoc-2.5.0-win32\protobuf-2.5.0-src\src\\" /I"..\..\External\MySQLBuild-32Bit\Include" /Zi /nologo /W1 /WX- /O2 /Ot /Oy- /GL /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /openmp /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_Eclipse.cpp
+         qrc_Eclipse.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /l"0x0409" /nologo /fo"Release\Eclipse.res" Eclipse.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\rsquared\Framework\Win32\Release\\Eclipse.exe" /NOLOGO /LIBPATH:C:\Qt\4.8.4\lib /LIBPATH:"..\..\External\boost-win-1.47-32bit-vs2010\lib\\" /LIBPATH:"..\..\External\Qpid-32Bit\Release\\" /LIBPATH:"..\..\External\MySQLBuild-32Bit\Lib\Release\\" /LIBPATH:"..\..\External\protoc-2.5.0-win32\protobuf-2.5.0-src\vsprojects\Release\\" qtmain.lib QtCore4.lib QtGui4.lib qpidmessaging.lib qpidclient.lib qpidcommon.lib qpidtypes.lib libprotobuf.lib mysqlcppconn.lib libmysql.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Eclipse.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\rsquared\Framework\Win32\Release\Eclipse.pdb" /SUBSYSTEM:WINDOWS /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\rsquared\Framework\Win32\Release\Eclipse.lib" /MACHINE:X86 Release\Eclipse.res
+         Release\Eclipse.obj
+         Release\ExpDateProxy.obj
+         Release\ExpGraph.obj
+         Release\qrc_Eclipse.obj
+         Release\moc_Eclipse.obj
+         Release\moc_ExpDateProxy.obj
+         Release\moc_ExpGraph.obj
+         Release\moc_Network.obj
+         Release\moc_OptionScanner.obj
+         Release\moc_OptionScannerProxy.obj
+         Release\moc_qcustomplot.obj
+         Release\moc_VolatilityGraph.obj
+         Release\moc_VolatilityProxy.obj
+         Release\main.obj
+         "Release\MySQL-Eclipse.obj"
+         Release\Network.obj
+         Release\OptionScanner.obj
+         Release\OptionScannerProxy.obj
+         Release\OptionTick.pb.obj
+         Release\qcustomplot.obj
+         Release\StockTick.pb.obj
+         Release\VolatilityGraph.obj
+         Release\VolatilityProxy.obj
+            Creating library C:\rsquared\Framework\Win32\Release\Eclipse.lib and object C:\rsquared\Framework\Win32\Release\Eclipse.exp
+         Generating code
+     1>c:\rsquared\framework\eclipse\optionscanner.cpp(332): warning C4715: 'OptionScanner::ReturnColumnName' : not all control paths return a value
+     1>c:\rsquared\framework\eclipse\mysql-eclipse.cpp(277): warning C4715: 'Framework::NEclipse::DBaseConnection::GetUnderlineSymbols' : not all control paths return a value
+     1>c:\rsquared\framework\eclipse\mysql-eclipse.cpp(252): warning C4715: 'Framework::NEclipse::DBaseConnection::GetAllOptions' : not all control paths return a value
+         Finished generating code
+         Eclipse.vcxproj -> C:\rsquared\Framework\Win32\Release\Eclipse.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\rsquared\Framework\Win32\Release\\Eclipse.exe;#1" /manifest Release\Eclipse.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\Eclipse.unsuccessfulbuild".
+         Touching "Release\Eclipse.lastbuildstate".
+     1>Done Building Project "C:\rsquared\Framework\Eclipse\Eclipse.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:02:43.99

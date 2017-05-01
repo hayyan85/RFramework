@@ -1,0 +1,21 @@
+﻿Build started 6/20/2013 12:52:25 AM.
+     1>Project "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\tests\loglog_test.vcxproj" on node 4 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.loglog_test.Release\loglog_test.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\include /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D LOG4CPLUS_BUILD_DLL /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.loglog_test.Release\\" /Fd"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\loglog_test.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\tests\loglog_test\main.cxx
+         main.cxx
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\loglog_test.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release" log4cplus.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.loglog_test.Release\loglog_test.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\loglog_test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /IMPLIB:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\loglog_test.lib" /MACHINE:X86 "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.loglog_test.Release\main.obj"
+         "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\log4cplus.lib"
+         loglog_test.vcxproj -> C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\loglog_test.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\bin.Release\loglog_test.exe;#1" /manifest "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.loglog_test.Release\loglog_test.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.loglog_test.Release\loglog_test.unsuccessfulbuild".
+         Touching "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\Win32\obj.loglog_test.Release\loglog_test.lastbuildstate".
+     1>Done Building Project "C:\rsquared\External\log4cplus-1.1.2-rc1\msvc10\tests\loglog_test.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.02

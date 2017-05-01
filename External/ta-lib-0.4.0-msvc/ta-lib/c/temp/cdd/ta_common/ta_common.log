@@ -1,0 +1,29 @@
+﻿Build started 4/29/2013 04:23:49 PM.
+     1>Project "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_common\ta_common.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file ".\..\..\..\..\temp\cdd\ta_common\ta_common.lastbuildstate".
+       InitializeBuildStatus:
+         Creating ".\..\..\..\..\temp\cdd\ta_common\ta_common.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\..\include /I..\..\..\..\src\ta_common\imatix\sfl /I..\..\..\..\src\ta_common /I..\..\..\..\src\ta_common\mt /Zi /nologo /W3 /WX /Od /Oy- /D TA_DEBUG /D _DEBUG /D WIN32 /D _MBCS /D _LIB /D QT_THREAD_SUPPORT /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\..\..\..\..\temp\cdd\ta_common/" /Fd".\..\..\..\..\temp\cdd\ta_common/vc100.pdb" /FR".\..\..\..\..\temp\cdd\ta_common/" /Gd /TC /analyze- /errorReport:prompt ..\..\..\..\src\ta_common\ta_global.c ..\..\..\..\src\ta_common\ta_retcode.c ..\..\..\..\src\ta_common\ta_version.c
+         ta_global.c
+         ta_retcode.c
+         ta_version.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_common\.\..\..\..\..\lib\ta_common.lib) does not match the Library's OutputFile property value (C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\lib\ta_common_cdd.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(ta_common) does not match the Library's OutputFile property value (ta_common_cdd). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:".\..\..\..\..\lib/ta_common_cdd.lib" /NOLOGO .\..\..\..\..\temp\cdd\ta_common/ta_global.obj
+         .\..\..\..\..\temp\cdd\ta_common/ta_retcode.obj
+         .\..\..\..\..\temp\cdd\ta_common/ta_version.obj
+         ta_common.vcxproj -> C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_common\.\..\..\..\..\lib\ta_common.lib
+       BscMake:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\..\..\..\..\temp\cdd\ta_common/ta_common_cdd.bsc" .\..\..\..\..\temp\cdd\ta_common/ta_global.sbr .\..\..\..\..\temp\cdd\ta_common/ta_retcode.sbr .\..\..\..\..\temp\cdd\ta_common/ta_version.sbr
+       FinalizeBuildStatus:
+         Deleting file ".\..\..\..\..\temp\cdd\ta_common\ta_common.unsuccessfulbuild".
+         Touching ".\..\..\..\..\temp\cdd\ta_common\ta_common.lastbuildstate".
+     1>Done Building Project "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_common\ta_common.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.87

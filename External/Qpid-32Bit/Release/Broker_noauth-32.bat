@@ -1,0 +1,1 @@
+qpidd --auth=no

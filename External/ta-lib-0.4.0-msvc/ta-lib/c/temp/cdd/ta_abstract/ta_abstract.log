@@ -1,0 +1,85 @@
+﻿Build started 4/29/2013 04:23:50 PM.
+     1>Project "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_abstract\ta_abstract.vcxproj" on node 3 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\..\..\..\..\temp\cdd\ta_abstract\ta_abstract.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\..\..\..\..\src\ta_common /I.\..\..\..\..\src\ta_abstract /I.\..\..\..\..\src\ta_abstract\tables /I.\..\..\..\..\src\ta_abstract\frames /I.\..\..\..\..\include /Zi /nologo /W3 /WX /Od /Oy- /D TA_DEBUG /D _DEBUG /D WIN32 /D _MBCS /D _LIB /D QT_THREAD_SUPPORT /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\..\..\..\..\temp\cdd\ta_abstract/" /Fd".\..\..\..\..\temp\cdd\ta_abstract/vc100.pdb" /FR".\..\..\..\..\temp\cdd\ta_abstract/" /Gd /TC /analyze- /errorReport:prompt ..\..\..\..\src\ta_abstract\ta_abstract.c ..\..\..\..\src\ta_abstract\ta_def_ui.c ..\..\..\..\src\ta_abstract\ta_func_api.c ..\..\..\..\src\ta_abstract\ta_group_idx.c ..\..\..\..\src\ta_abstract\frames\ta_frame.c ..\..\..\..\src\ta_abstract\tables\table_a.c ..\..\..\..\src\ta_abstract\tables\table_b.c ..\..\..\..\src\ta_abstract\tables\table_c.c ..\..\..\..\src\ta_abstract\tables\table_d.c ..\..\..\..\src\ta_abstract\tables\table_e.c ..\..\..\..\src\ta_abstract\tables\table_f.c ..\..\..\..\src\ta_abstract\tables\table_g.c ..\..\..\..\src\ta_abstract\tables\table_h.c ..\..\..\..\src\ta_abstract\tables\table_i.c ..\..\..\..\src\ta_abstract\tables\table_j.c ..\..\..\..\src\ta_abstract\tables\table_k.c ..\..\..\..\src\ta_abstract\tables\table_l.c ..\..\..\..\src\ta_abstract\tables\table_m.c ..\..\..\..\src\ta_abstract\tables\table_n.c ..\..\..\..\src\ta_abstract\tables\table_o.c ..\..\..\..\src\ta_abstract\tables\table_p.c ..\..\..\..\src\ta_abstract\tables\table_q.c ..\..\..\..\src\ta_abstract\tables\table_r.c ..\..\..\..\src\ta_abstract\tables\table_s.c ..\..\..\..\src\ta_abstract\tables\table_t.c ..\..\..\..\src\ta_abstract\tables\table_u.c ..\..\..\..\src\ta_abstract\tables\table_v.c ..\..\..\..\src\ta_abstract\tables\table_w.c ..\..\..\..\src\ta_abstract\tables\table_x.c ..\..\..\..\src\ta_abstract\tables\table_y.c ..\..\..\..\src\ta_abstract\tables\table_z.c
+         table_z.c
+         table_y.c
+         table_x.c
+         table_w.c
+         table_v.c
+         table_u.c
+         table_t.c
+         table_s.c
+         table_r.c
+         table_q.c
+         table_p.c
+         table_o.c
+         table_n.c
+         table_m.c
+         table_l.c
+         table_k.c
+         table_j.c
+         table_i.c
+         table_h.c
+         table_g.c
+         Generating Code...
+         Compiling...
+         table_f.c
+         table_e.c
+         table_d.c
+         table_c.c
+         table_b.c
+         table_a.c
+         ta_frame.c
+         ta_group_idx.c
+         ta_func_api.c
+         ta_def_ui.c
+         ta_abstract.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_abstract\.\..\..\..\..\lib\ta_abstract.lib) does not match the Library's OutputFile property value (C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\lib\ta_abstract_cdd.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(ta_abstract) does not match the Library's OutputFile property value (ta_abstract_cdd). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:".\..\..\..\..\lib/ta_abstract_cdd.lib" /NOLOGO .\..\..\..\..\temp\cdd\ta_abstract/ta_abstract.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/ta_def_ui.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/ta_func_api.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/ta_group_idx.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/ta_frame.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_a.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_b.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_c.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_d.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_e.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_f.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_g.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_h.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_i.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_j.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_k.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_l.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_m.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_n.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_o.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_p.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_q.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_r.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_s.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_t.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_u.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_v.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_w.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_x.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_y.obj
+         .\..\..\..\..\temp\cdd\ta_abstract/table_z.obj
+         ta_abstract.vcxproj -> C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_abstract\.\..\..\..\..\lib\ta_abstract.lib
+       BscMake:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\..\..\..\..\temp\cdd\ta_abstract/ta_abstract_cdd.bsc" .\..\..\..\..\temp\cdd\ta_abstract/ta_abstract.sbr .\..\..\..\..\temp\cdd\ta_abstract/ta_def_ui.sbr .\..\..\..\..\temp\cdd\ta_abstract/ta_func_api.sbr .\..\..\..\..\temp\cdd\ta_abstract/ta_group_idx.sbr .\..\..\..\..\temp\cdd\ta_abstract/ta_frame.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_a.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_b.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_c.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_d.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_e.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_f.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_g.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_h.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_i.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_j.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_k.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_l.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_m.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_n.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_o.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_p.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_q.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_r.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_s.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_t.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_u.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_v.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_w.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_x.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_y.sbr .\..\..\..\..\temp\cdd\ta_abstract/table_z.sbr
+       FinalizeBuildStatus:
+         Deleting file ".\..\..\..\..\temp\cdd\ta_abstract\ta_abstract.unsuccessfulbuild".
+         Touching ".\..\..\..\..\temp\cdd\ta_abstract\ta_abstract.lastbuildstate".
+     1>Done Building Project "C:\Users\Hayyan\Downloads\ta-lib-0.4.0-msvc\ta-lib\c\ide\vs2005\lib_proj\ta_abstract\ta_abstract.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.82

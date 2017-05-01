@@ -1,0 +1,3323 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (182a116a).
+//
+// c:\rsquared\framework\testproject\debug\sterling.tli
+//
+// Wrapper implementations for Win32 type library C:\\Windows\SysWOW64\Sti\Sterling.tlb
+// compiler-generated file created 07/11/13 at 17:11:49 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface ISTIOrderUpdateMsg wrapper method implementations
+//
+
+inline _bstr_t ISTIOrderUpdateMsg::GetAction ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Action(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetUserID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_UserID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetAccount ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Account(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIOrderUpdateMsg::GetSeqNo ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SeqNo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetSide ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Side(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetSymbol ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Symbol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIOrderUpdateMsg::GetQuantity ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Quantity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetMinQuantity ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinQuantity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetLvsQuantity ( ) {
+    long _result = 0;
+    HRESULT _hr = get_LvsQuantity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetLmtPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_LmtPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetStpPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_StpPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum STIPriceTypes ISTIOrderUpdateMsg::GetPriceType ( ) {
+    enum STIPriceTypes _result;
+    HRESULT _hr = get_PriceType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetClOrderID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ClOrderID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetExchClOrderID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExchClOrderID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetExchOrderID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExchOrderID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline double ISTIOrderUpdateMsg::GetUrStpdPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_UrStpdPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetTif ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Tif(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetDestination ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Destination(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetExecBroker ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExecBroker(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetExecInst ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExecInst(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline enum STIOrderStatus ISTIOrderUpdateMsg::GetOrderStatus ( ) {
+    enum STIOrderStatus _result;
+    HRESULT _hr = get_OrderStatus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetAvgExecPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_AvgExecPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetCumExecQuantity ( ) {
+    long _result = 0;
+    HRESULT _hr = get_CumExecQuantity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetOrderTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_OrderTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetUpdateTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_UpdateTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetLogMessage ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_LogMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIOrderUpdateMsg::GetOrderRecordID ( ) {
+    long _result = 0;
+    HRESULT _hr = get_OrderRecordID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetDbsNo ( ) {
+    long _result = 0;
+    HRESULT _hr = get_DbsNo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetInstrument ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Instrument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIOrderUpdateMsg::GetDisplay ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Display(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetRefreshQty ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RefreshQty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetDiscretion ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Discretion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetPegDiff ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PegDiff(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIOrderUpdateMsg::GetSvrStpReleased ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SvrStpReleased(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetBatchID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_BatchID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetStrategy ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Strategy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetStartTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StartTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetEndTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_EndTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetPairId ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PairId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIOrderUpdateMsg::GetDuration ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Duration(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetMaxPctVolume ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MaxPctVolume(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetMinPctVolume ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinPctVolume(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetExecAggression ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ExecAggression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetPingInterval ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PingInterval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetRefreshInterval ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RefreshInterval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetPctPerSlice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PctPerSlice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetPremium ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Premium(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetRatio ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Ratio(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetCashComponent ( ) {
+    double _result = 0;
+    HRESULT _hr = get_CashComponent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetUser ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_User(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIOrderUpdateMsg::GetPriceTolerance ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PriceTolerance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetTrailAmt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TrailAmt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetTrailInc ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TrailInc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetTrailId ( ) {
+    long _result = 0;
+    HRESULT _hr = get_TrailId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetQtyToleranceSize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_QtyToleranceSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetMarketStructure ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MarketStructure(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetOrderCompletion ( ) {
+    long _result = 0;
+    HRESULT _hr = get_OrderCompletion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetAuction ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Auction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetQtyTolerancePct ( ) {
+    long _result = 0;
+    HRESULT _hr = get_QtyTolerancePct(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetSizeLow ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SizeLow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderUpdateMsg::GetSizeMax ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SizeMax(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetTilt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Tilt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetTargetPctVolume ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TargetPctVolume(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetTargetPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TargetPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetReactPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ReactPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetMaxHighPctDeviation ( ) {
+    double _result = 0;
+    HRESULT _hr = get_MaxHighPctDeviation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetMaxLowPctDeviation ( ) {
+    double _result = 0;
+    HRESULT _hr = get_MaxLowPctDeviation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetExecPriceLmt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ExecPriceLmt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderUpdateMsg::GetAvgPriceLmt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_AvgPriceLmt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIOrderUpdateMsg::GetMoo ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Moo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIOrderUpdateMsg::GetMoc ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Moc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIOrderUpdateMsg::GetOpportunisticTrade ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_OpportunisticTrade(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIOrderUpdateMsg::GetTakeLiquidity ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_TakeLiquidity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetStrPriceType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StrPriceType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetSorPreference ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SorPreference(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetUnderlying ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Underlying(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetMaturity ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Maturity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline double ISTIOrderUpdateMsg::GetStrikePrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_StrikePrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetOpenClose ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_OpenClose(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetPutCall ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PutCall(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetCoverUncover ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CoverUncover(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetCurrency ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Currency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetSettCurrency ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SettCurrency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderUpdateMsg::GetFutSettDate ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FutSettDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ISTIOrder wrapper method implementations
+//
+
+inline _bstr_t ISTIOrder::GetAccount ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Account(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutAccount ( _bstr_t pVal ) {
+    HRESULT _hr = put_Account(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetSide ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Side(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutSide ( _bstr_t pVal ) {
+    HRESULT _hr = put_Side(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetListingExchange ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ListingExchange(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutListingExchange ( _bstr_t pVal ) {
+    HRESULT _hr = put_ListingExchange(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetSymbol ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Symbol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutSymbol ( _bstr_t pVal ) {
+    HRESULT _hr = put_Symbol(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetQuantity ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Quantity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutQuantity ( long pVal ) {
+    HRESULT _hr = put_Quantity(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetMinQuantity ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinQuantity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutMinQuantity ( long pVal ) {
+    HRESULT _hr = put_MinQuantity(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetLmtPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_LmtPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutLmtPrice ( double pVal ) {
+    HRESULT _hr = put_LmtPrice(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetStpPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_StpPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutStpPrice ( double pVal ) {
+    HRESULT _hr = put_StpPrice(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum STIPriceTypes ISTIOrder::GetPriceType ( ) {
+    enum STIPriceTypes _result;
+    HRESULT _hr = get_PriceType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutPriceType ( enum STIPriceTypes pVal ) {
+    HRESULT _hr = put_PriceType(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetClOrderID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ClOrderID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutClOrderID ( _bstr_t pVal ) {
+    HRESULT _hr = put_ClOrderID(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetTif ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Tif(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutTif ( _bstr_t pVal ) {
+    HRESULT _hr = put_Tif(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetDestination ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Destination(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutDestination ( _bstr_t pVal ) {
+    HRESULT _hr = put_Destination(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::SubmitOrder ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_SubmitOrder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrder::GetExecBroker ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExecBroker(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutExecBroker ( _bstr_t pVal ) {
+    HRESULT _hr = put_ExecBroker(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetExecInst ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExecInst(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutExecInst ( _bstr_t pVal ) {
+    HRESULT _hr = put_ExecInst(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetAccountType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_AccountType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutAccountType ( _bstr_t pVal ) {
+    HRESULT _hr = put_AccountType(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ISTIOrder::GetPossDupe ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PossDupe(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutPossDupe ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_PossDupe(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetDisplay ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Display(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutDisplay ( long pVal ) {
+    HRESULT _hr = put_Display(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ISTIOrder::GetPriceQtyOverride ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PriceQtyOverride(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutPriceQtyOverride ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_PriceQtyOverride(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ISTIOrder::GetPriceCheck ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PriceCheck(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutPriceCheck ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_PriceCheck(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetInstrument ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Instrument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutInstrument ( _bstr_t pVal ) {
+    HRESULT _hr = put_Instrument(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetRefreshQty ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RefreshQty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutRefreshQty ( long pVal ) {
+    HRESULT _hr = put_RefreshQty(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetDiscretion ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Discretion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutDiscretion ( double pVal ) {
+    HRESULT _hr = put_Discretion(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetPegDiff ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PegDiff(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutPegDiff ( double pVal ) {
+    HRESULT _hr = put_PegDiff(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetNxRules ( ) {
+    long _result = 0;
+    HRESULT _hr = get_NxRules(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutNxRules ( long pVal ) {
+    HRESULT _hr = put_NxRules(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ISTIOrder::GetSecurityLocated ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SecurityLocated(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutSecurityLocated ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_SecurityLocated(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetBatchID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_BatchID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutBatchID ( _bstr_t pVal ) {
+    HRESULT _hr = put_BatchID(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetStrategy ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Strategy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutStrategy ( _bstr_t pVal ) {
+    HRESULT _hr = put_Strategy(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetStartTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StartTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutStartTime ( _bstr_t pVal ) {
+    HRESULT _hr = put_StartTime(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetEndTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_EndTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutEndTime ( _bstr_t pVal ) {
+    HRESULT _hr = put_EndTime(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetPairId ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PairId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutPairId ( _bstr_t pVal ) {
+    HRESULT _hr = put_PairId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetDuration ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Duration(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutDuration ( long pVal ) {
+    HRESULT _hr = put_Duration(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetMaxPctVolume ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MaxPctVolume(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutMaxPctVolume ( long pVal ) {
+    HRESULT _hr = put_MaxPctVolume(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetMinPctVolume ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinPctVolume(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutMinPctVolume ( long pVal ) {
+    HRESULT _hr = put_MinPctVolume(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetExecAggression ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ExecAggression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutExecAggression ( long pVal ) {
+    HRESULT _hr = put_ExecAggression(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetPingInterval ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PingInterval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutPingInterval ( long pVal ) {
+    HRESULT _hr = put_PingInterval(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetRefreshInterval ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RefreshInterval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutRefreshInterval ( long pVal ) {
+    HRESULT _hr = put_RefreshInterval(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetPctPerSlice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PctPerSlice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutPctPerSlice ( double pVal ) {
+    HRESULT _hr = put_PctPerSlice(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetPremium ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Premium(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutPremium ( double pVal ) {
+    HRESULT _hr = put_Premium(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetRatio ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Ratio(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutRatio ( double pVal ) {
+    HRESULT _hr = put_Ratio(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetCashComponent ( ) {
+    double _result = 0;
+    HRESULT _hr = get_CashComponent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutCashComponent ( double pVal ) {
+    HRESULT _hr = put_CashComponent(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetUser ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_User(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutUser ( _bstr_t pVal ) {
+    HRESULT _hr = put_User(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetPriceTolerance ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PriceTolerance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutPriceTolerance ( long pVal ) {
+    HRESULT _hr = put_PriceTolerance(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetTrailAmt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TrailAmt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutTrailAmt ( double pVal ) {
+    HRESULT _hr = put_TrailAmt(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetTrailInc ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TrailInc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutTrailInc ( double pVal ) {
+    HRESULT _hr = put_TrailInc(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetLocateBroker ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_LocateBroker(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutLocateBroker ( _bstr_t pVal ) {
+    HRESULT _hr = put_LocateBroker(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetQtyToleranceSize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_QtyToleranceSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutQtyToleranceSize ( long pVal ) {
+    HRESULT _hr = put_QtyToleranceSize(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetMarketStructure ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MarketStructure(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutMarketStructure ( long pVal ) {
+    HRESULT _hr = put_MarketStructure(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetOrderCompletion ( ) {
+    long _result = 0;
+    HRESULT _hr = get_OrderCompletion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutOrderCompletion ( long pVal ) {
+    HRESULT _hr = put_OrderCompletion(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetAuction ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Auction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutAuction ( long pVal ) {
+    HRESULT _hr = put_Auction(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetQtyTolerancePct ( ) {
+    long _result = 0;
+    HRESULT _hr = get_QtyTolerancePct(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutQtyTolerancePct ( long pVal ) {
+    HRESULT _hr = put_QtyTolerancePct(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetSizeLow ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SizeLow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutSizeLow ( long pVal ) {
+    HRESULT _hr = put_SizeLow(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetSizeMax ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SizeMax(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutSizeMax ( long pVal ) {
+    HRESULT _hr = put_SizeMax(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetTilt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Tilt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutTilt ( double pVal ) {
+    HRESULT _hr = put_Tilt(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetTargetPctVolume ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TargetPctVolume(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutTargetPctVolume ( double pVal ) {
+    HRESULT _hr = put_TargetPctVolume(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetTargetPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TargetPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutTargetPrice ( double pVal ) {
+    HRESULT _hr = put_TargetPrice(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetReactPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ReactPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutReactPrice ( double pVal ) {
+    HRESULT _hr = put_ReactPrice(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetMaxHighPctDeviation ( ) {
+    double _result = 0;
+    HRESULT _hr = get_MaxHighPctDeviation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutMaxHighPctDeviation ( double pVal ) {
+    HRESULT _hr = put_MaxHighPctDeviation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetMaxLowPctDeviation ( ) {
+    double _result = 0;
+    HRESULT _hr = get_MaxLowPctDeviation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutMaxLowPctDeviation ( double pVal ) {
+    HRESULT _hr = put_MaxLowPctDeviation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetExecPriceLmt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ExecPriceLmt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutExecPriceLmt ( double pVal ) {
+    HRESULT _hr = put_ExecPriceLmt(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetAvgPriceLmt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_AvgPriceLmt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutAvgPriceLmt ( double pVal ) {
+    HRESULT _hr = put_AvgPriceLmt(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ISTIOrder::GetMoo ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Moo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutMoo ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Moo(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ISTIOrder::GetMoc ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Moc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutMoc ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Moc(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ISTIOrder::GetOpportunisticTrade ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_OpportunisticTrade(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutOpportunisticTrade ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_OpportunisticTrade(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ISTIOrder::GetTakeLiquidity ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_TakeLiquidity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutTakeLiquidity ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_TakeLiquidity(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetStrPriceType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StrPriceType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutStrPriceType ( _bstr_t pVal ) {
+    HRESULT _hr = put_StrPriceType(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetSorPreference ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SorPreference(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutSorPreference ( _bstr_t pVal ) {
+    HRESULT _hr = put_SorPreference(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetUnderlying ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Underlying(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutUnderlying ( _bstr_t pVal ) {
+    HRESULT _hr = put_Underlying(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetMaturity ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Maturity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutMaturity ( _bstr_t pVal ) {
+    HRESULT _hr = put_Maturity(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIOrder::GetStrikePrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_StrikePrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutStrikePrice ( double pVal ) {
+    HRESULT _hr = put_StrikePrice(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetOpenClose ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_OpenClose(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutOpenClose ( _bstr_t pVal ) {
+    HRESULT _hr = put_OpenClose(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetPutCall ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PutCall(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutPutCall ( _bstr_t pVal ) {
+    HRESULT _hr = put_PutCall(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetCoverUncover ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CoverUncover(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutCoverUncover ( _bstr_t pVal ) {
+    HRESULT _hr = put_CoverUncover(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::ReplaceOrder ( long lOldOrderRecId, _bstr_t bstrOldClOrderId ) {
+    long _result = 0;
+    HRESULT _hr = raw_ReplaceOrder(lOldOrderRecId, bstrOldClOrderId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrder::MaintainOrder ( _bstr_t bstrKey, long lOrderRecId, _bstr_t bstrClOrderId ) {
+    long _result = 0;
+    HRESULT _hr = raw_MaintainOrder(bstrKey, lOrderRecId, bstrClOrderId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrder::MaintainTrade ( _bstr_t bstrKey, long lOrderRecId, _bstr_t bstrClOrderId, long lTradeRecId, _bstr_t bstrAction ) {
+    long _result = 0;
+    HRESULT _hr = raw_MaintainTrade(bstrKey, lOrderRecId, bstrClOrderId, lTradeRecId, bstrAction, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrder::GetLvsQty ( ) {
+    long _result = 0;
+    HRESULT _hr = get_LvsQty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutLvsQty ( long pVal ) {
+    HRESULT _hr = put_LvsQty(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetCurrency ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Currency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutCurrency ( _bstr_t pVal ) {
+    HRESULT _hr = put_Currency(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetSettCurrency ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SettCurrency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutSettCurrency ( _bstr_t pVal ) {
+    HRESULT _hr = put_SettCurrency(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetFutSettDate ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FutSettDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutFutSettDate ( _bstr_t pVal ) {
+    HRESULT _hr = put_FutSettDate(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::GetParentRecordId ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ParentRecordId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutParentRecordId ( long pVal ) {
+    HRESULT _hr = put_ParentRecordId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ISTIOrder::SetFlag ( long lFlag ) {
+    HRESULT _hr = raw_SetFlag(lFlag);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ISTIOrder::GetLocateQty ( ) {
+    long _result = 0;
+    HRESULT _hr = get_LocateQty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIOrder::PutLocateQty ( long pVal ) {
+    HRESULT _hr = put_LocateQty(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIOrder::GetLocateTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_LocateTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIOrder::PutLocateTime ( _bstr_t pVal ) {
+    HRESULT _hr = put_LocateTime(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIOrder::SubmitOrderStruct ( struct structSTIOrder * pOrder ) {
+    long _result = 0;
+    HRESULT _hr = raw_SubmitOrderStruct(pOrder, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ISTIOrder::ClearOrderStruct ( struct structSTIOrder * pOrder ) {
+    HRESULT _hr = raw_ClearOrderStruct(pOrder);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ISTIOrder::ReplaceOrderStruct ( struct structSTIOrder * pOrder, long lOldOrderRecId, _bstr_t bstrOldClOrderId ) {
+    long _result = 0;
+    HRESULT _hr = raw_ReplaceOrderStruct(pOrder, lOldOrderRecId, bstrOldClOrderId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ISTITradeUpdateMsg wrapper method implementations
+//
+
+inline _bstr_t ISTITradeUpdateMsg::GetAction ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Action(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetUserID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_UserID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetAccount ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Account(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTITradeUpdateMsg::GetSeqNo ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SeqNo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetSide ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Side(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetSymbol ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Symbol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTITradeUpdateMsg::GetQuantity ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Quantity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTITradeUpdateMsg::GetLvsQuantity ( ) {
+    long _result = 0;
+    HRESULT _hr = get_LvsQuantity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTITradeUpdateMsg::GetExecPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ExecPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTITradeUpdateMsg::GetLmtPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_LmtPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTITradeUpdateMsg::GetStpPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_StpPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum STIPriceTypes ISTITradeUpdateMsg::GetPriceType ( ) {
+    enum STIPriceTypes _result;
+    HRESULT _hr = get_PriceType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetClOrderID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ClOrderID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetExchClOrderID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExchClOrderID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetExchOrderID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExchOrderID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetExchExecID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExchExecID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetTif ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Tif(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetDestination ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Destination(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetExecBroker ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExecBroker(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetExecInst ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExecInst(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetOrderTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_OrderTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetTradeTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_TradeTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetUpdateTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_UpdateTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetLogMessage ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_LogMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTITradeUpdateMsg::GetOrderRecordID ( ) {
+    long _result = 0;
+    HRESULT _hr = get_OrderRecordID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTITradeUpdateMsg::GetTradeRecordID ( ) {
+    long _result = 0;
+    HRESULT _hr = get_TradeRecordID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTITradeUpdateMsg::GetDbsNo ( ) {
+    long _result = 0;
+    HRESULT _hr = get_DbsNo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetAccountType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_AccountType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetSpecialist ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Specialist(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetContra ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Contra(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL ISTITradeUpdateMsg::GetPossDupe ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PossDupe(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTITradeUpdateMsg::GetClearable ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Clearable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTITradeUpdateMsg::GetEcnFee ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_EcnFee(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetInstrument ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Instrument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline double ISTITradeUpdateMsg::GetDiscretion ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Discretion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTITradeUpdateMsg::GetPegDiff ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PegDiff(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetBatchID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_BatchID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetUnderlying ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Underlying(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetMaturity ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Maturity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline double ISTITradeUpdateMsg::GetStrikePrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_StrikePrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetOpenClose ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_OpenClose(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetPutCall ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PutCall(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetCoverUncover ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CoverUncover(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetCurrency ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Currency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetSettCurrency ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SettCurrency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetFutSettDate ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FutSettDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTITradeUpdateMsg::GetLiquidity ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Liquidity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ISTIOrderRejectMsg wrapper method implementations
+//
+
+inline _bstr_t ISTIOrderRejectMsg::GetAccount ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Account(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetSide ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Side(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetListingExchange ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ListingExchange(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetSymbol ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Symbol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIOrderRejectMsg::GetQuantity ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Quantity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetMinQuantity ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinQuantity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetLmtPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_LmtPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetStpPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_StpPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum STIPriceTypes ISTIOrderRejectMsg::GetPriceType ( ) {
+    enum STIPriceTypes _result;
+    HRESULT _hr = get_PriceType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetClOrderID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ClOrderID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetTif ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Tif(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetDestination ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Destination(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetExecBroker ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExecBroker(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetExecInst ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExecInst(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetAccountType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_AccountType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL ISTIOrderRejectMsg::GetPossDupe ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PossDupe(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetDisplay ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Display(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIOrderRejectMsg::GetPriceQtyOverride ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PriceQtyOverride(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIOrderRejectMsg::GetPriceCheck ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PriceCheck(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum STIRejectReason ISTIOrderRejectMsg::GetRejectReason ( ) {
+    enum STIRejectReason _result;
+    HRESULT _hr = get_RejectReason(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetInstrument ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Instrument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIOrderRejectMsg::GetRefreshQty ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RefreshQty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetDiscretion ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Discretion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetPegDiff ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PegDiff(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetBatchID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_BatchID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetStrategy ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Strategy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetStartTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StartTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetEndTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_EndTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetPairId ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PairId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIOrderRejectMsg::GetDuration ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Duration(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetMaxPctVolume ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MaxPctVolume(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetMinPctVolume ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinPctVolume(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetExecAggression ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ExecAggression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetPingInterval ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PingInterval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetRefreshInterval ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RefreshInterval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetPctPerSlice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PctPerSlice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetPremium ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Premium(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetRatio ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Ratio(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetCashComponent ( ) {
+    double _result = 0;
+    HRESULT _hr = get_CashComponent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetUser ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_User(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIOrderRejectMsg::GetPriceTolerance ( ) {
+    long _result = 0;
+    HRESULT _hr = get_PriceTolerance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetTrailAmt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TrailAmt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetTrailInc ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TrailInc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetQtyToleranceSize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_QtyToleranceSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetMarketStructure ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MarketStructure(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetOrderCompletion ( ) {
+    long _result = 0;
+    HRESULT _hr = get_OrderCompletion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetAuction ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Auction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetQtyTolerancePct ( ) {
+    long _result = 0;
+    HRESULT _hr = get_QtyTolerancePct(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetSizeLow ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SizeLow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderRejectMsg::GetSizeMax ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SizeMax(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetTilt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Tilt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetTargetPctVolume ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TargetPctVolume(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetTargetPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TargetPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetReactPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ReactPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetMaxHighPctDeviation ( ) {
+    double _result = 0;
+    HRESULT _hr = get_MaxHighPctDeviation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetMaxLowPctDeviation ( ) {
+    double _result = 0;
+    HRESULT _hr = get_MaxLowPctDeviation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetExecPriceLmt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ExecPriceLmt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ISTIOrderRejectMsg::GetAvgPriceLmt ( ) {
+    double _result = 0;
+    HRESULT _hr = get_AvgPriceLmt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIOrderRejectMsg::GetMoo ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Moo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIOrderRejectMsg::GetMoc ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Moc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIOrderRejectMsg::GetOpportunisticTrade ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_OpportunisticTrade(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIOrderRejectMsg::GetTakeLiquidity ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_TakeLiquidity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetStrPriceType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StrPriceType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetSorPreference ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SorPreference(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetUnderlying ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Underlying(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetMaturity ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Maturity(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline double ISTIOrderRejectMsg::GetStrikePrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_StrikePrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetOpenClose ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_OpenClose(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetPutCall ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PutCall(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetCoverUncover ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CoverUncover(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetCurrency ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Currency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetSettCurrency ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SettCurrency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderRejectMsg::GetFutSettDate ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FutSettDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ISTIOrderConfirmMsg wrapper method implementations
+//
+
+inline _bstr_t ISTIOrderConfirmMsg::GetAccount ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Account(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderConfirmMsg::GetExchClOrderID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExchClOrderID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderConfirmMsg::GetExchOrderID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExchOrderID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIOrderConfirmMsg::GetOrderRecordID ( ) {
+    long _result = 0;
+    HRESULT _hr = get_OrderRecordID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIOrderConfirmMsg::GetMsgConfirm ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_MsgConfirm(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderConfirmMsg::GetClOrderID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ClOrderID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISTIOrderConfirmMsg::GetInstrument ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Instrument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// dispinterface _ISTIPositionEvents wrapper method implementations
+//
+
+inline HRESULT _ISTIPositionEvents::OnSTIPositionUpdate ( struct structSTIPositionUpdate * structPositionUpdate ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4024", structPositionUpdate);
+}
+
+inline HRESULT _ISTIPositionEvents::OnSTIShutdown ( ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT _ISTIPositionEvents::OnSTIPositionUpdateXML ( BSTR * bstrPosition ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4008", bstrPosition);
+}
+
+//
+// dispinterface _ISTIBookEvents wrapper method implementations
+//
+
+inline HRESULT _ISTIBookEvents::OnSTIBookUpdate ( struct structSTIBookUpdate * structBookUpdate ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4024", structBookUpdate);
+}
+
+inline HRESULT _ISTIBookEvents::OnSTIShutdown ( ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT _ISTIBookEvents::OnSTIBookUpdateXML ( BSTR * bstrBook ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4008", bstrBook);
+}
+
+//
+// dispinterface _ISTIQuoteEvents wrapper method implementations
+//
+
+inline HRESULT _ISTIQuoteEvents::OnSTIQuoteUpdate ( struct structSTIQuoteUpdate * structQuoteUpdate ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4024", structQuoteUpdate);
+    return _result;
+}
+
+inline HRESULT _ISTIQuoteEvents::OnSTIQuoteSnap ( struct structSTIQuoteSnap * structQuoteSnap ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4024", structQuoteSnap);
+    return _result;
+}
+
+inline HRESULT _ISTIQuoteEvents::OnSTIShutdown ( ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT _ISTIQuoteEvents::OnSTIQuoteRqst ( struct structSTIQuoteRqst * structQuoteRqst ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4024", structQuoteRqst);
+    return _result;
+}
+
+inline HRESULT _ISTIQuoteEvents::OnSTIGreeksUpdate ( struct structSTIGreeksUpdate * structGreeksUpdate ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4024", structGreeksUpdate);
+    return _result;
+}
+
+inline HRESULT _ISTIQuoteEvents::OnSTINewsUpdate ( struct structSTINewsUpdate * structNewsUpdate ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x6, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4024", structNewsUpdate);
+    return _result;
+}
+
+inline HRESULT _ISTIQuoteEvents::OnSTIQuoteUpdateXML ( BSTR * bstrQuote ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x7, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008", bstrQuote);
+    return _result;
+}
+
+inline HRESULT _ISTIQuoteEvents::OnSTIQuoteSnapXML ( BSTR * bstrQuote ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x8, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008", bstrQuote);
+    return _result;
+}
+
+inline HRESULT _ISTIQuoteEvents::OnSTIQuoteRqstXML ( BSTR * bstrQuote ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x9, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008", bstrQuote);
+    return _result;
+}
+
+inline HRESULT _ISTIQuoteEvents::OnSTIGreeksUpdateXML ( BSTR * bstrQuote ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xa, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008", bstrQuote);
+    return _result;
+}
+
+inline HRESULT _ISTIQuoteEvents::OnSTINewsUpdateXML ( BSTR * bstrQuote ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xb, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008", bstrQuote);
+    return _result;
+}
+
+//
+// dispinterface _ISTIEventsEvents wrapper method implementations
+//
+
+inline HRESULT _ISTIEventsEvents::OnSTITradeUpdateMsg ( struct ISTITradeUpdateMsg * oSTITradeUpdateMsg ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", oSTITradeUpdateMsg);
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTIOrderUpdateMsg ( struct ISTIOrderUpdateMsg * oSTIOrderUpdateMsg ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", oSTIOrderUpdateMsg);
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTIOrderRejectMsg ( struct ISTIOrderRejectMsg * oSTIOrderRejectMsg ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", oSTIOrderRejectMsg);
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTIOrderConfirmMsg ( struct ISTIOrderConfirmMsg * oSTIOrderConfirmMsg ) {
+    return _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", oSTIOrderConfirmMsg);
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTITradeUpdate ( struct structSTITradeUpdate * structTradeUpdate ) {
+    return _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4024", structTradeUpdate);
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTIOrderUpdate ( struct structSTIOrderUpdate * structOrderUpdate ) {
+    return _com_dispatch_method(this, 0x6, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4024", structOrderUpdate);
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTIOrderReject ( struct structSTIOrderReject * structOrderReject ) {
+    return _com_dispatch_method(this, 0x7, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4024", structOrderReject);
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTIOrderConfirm ( struct structSTIOrderConfirm * structOrderConfirm ) {
+    return _com_dispatch_method(this, 0x8, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4024", structOrderConfirm);
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTIShutdown ( ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x9, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTILinkSymChange ( struct structSTILink * structLink ) {
+    return _com_dispatch_method(this, 0xa, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4024", structLink);
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTIDrop ( struct structSTIDrop * structDrop ) {
+    return _com_dispatch_method(this, 0xb, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4024", structDrop);
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTITradeUpdateXML ( BSTR * bstrTrade ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xc, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008", bstrTrade);
+    return _result;
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTIOrderUpdateXML ( BSTR * bstrOrder ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xd, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008", bstrOrder);
+    return _result;
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTIOrderRejectXML ( BSTR * bstrOrder ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xe, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008", bstrOrder);
+    return _result;
+}
+
+inline HRESULT _ISTIEventsEvents::OnSTIOrderConfirmXML ( BSTR * bstrOrder ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xf, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008", bstrOrder);
+    return _result;
+}
+
+//
+// dispinterface _ISTIAcctMaintEvents wrapper method implementations
+//
+
+inline HRESULT _ISTIAcctMaintEvents::OnSTIAcctUpdate ( struct structSTIAcctUpdate * structAcctUpdate ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4024", structAcctUpdate);
+}
+
+inline HRESULT _ISTIAcctMaintEvents::OnSTIShutdown ( ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT _ISTIAcctMaintEvents::OnSTIAcctUpdateXML ( BSTR * bstrAcct ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4008", bstrAcct);
+}
+
+//
+// interface ISTIEvents wrapper method implementations
+//
+
+inline HRESULT ISTIEvents::SetOrderEventsAsStructs ( VARIANT_BOOL bStruct ) {
+    HRESULT _hr = raw_SetOrderEventsAsStructs(bStruct);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ISTIEvents::GetQueueCount ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetQueueCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ISTIEvents::Destroy ( ) {
+    HRESULT _hr = raw_Destroy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISTIOrderMaint wrapper method implementations
+//
+
+inline HRESULT ISTIOrderMaint::CancelOrder ( _bstr_t bstrAccount, long OrderRecordID, _bstr_t bstrOldClOrderId, _bstr_t bstrClOrderId ) {
+    HRESULT _hr = raw_CancelOrder(bstrAccount, OrderRecordID, bstrOldClOrderId, bstrClOrderId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline struct structSTIOrderUpdate ISTIOrderMaint::GetOrderInfo ( _bstr_t bstrClOrderId ) {
+    struct structSTIOrderUpdate _result;
+    HRESULT _hr = raw_GetOrderInfo(bstrClOrderId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderMaint::GetOrderList ( VARIANT_BOOL bOpenOnly, SAFEARRAY * * arrayOrder ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetOrderList(bOpenOnly, arrayOrder, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ISTIOrderMaint::CancelFuturesOrder ( _bstr_t bstrAccount, long OrderRecordID, _bstr_t bstrOldClOrderId, _bstr_t bstrClOrderId ) {
+    HRESULT _hr = raw_CancelFuturesOrder(bstrAccount, OrderRecordID, bstrOldClOrderId, bstrClOrderId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIOrderMaint::CancelOptionsOrder ( _bstr_t bstrAccount, long OrderRecordID, _bstr_t bstrOldClOrderId, _bstr_t bstrClOrderId ) {
+    HRESULT _hr = raw_CancelOptionsOrder(bstrAccount, OrderRecordID, bstrOldClOrderId, bstrClOrderId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIOrderMaint::CancelForexOrder ( _bstr_t bstrAccount, long OrderRecordID, _bstr_t bstrOldClOrderId, _bstr_t bstrClOrderId ) {
+    HRESULT _hr = raw_CancelForexOrder(bstrAccount, OrderRecordID, bstrOldClOrderId, bstrClOrderId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ISTIOrderMaint::GetEquityTradeList ( SAFEARRAY * * arrayTrade ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetEquityTradeList(arrayTrade, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderMaint::GetFuturesTradeList ( SAFEARRAY * * arrayTrade ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetFuturesTradeList(arrayTrade, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderMaint::GetOptionsTradeList ( SAFEARRAY * * arrayTrade ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetOptionsTradeList(arrayTrade, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderMaint::GetForexTradeList ( SAFEARRAY * * arrayTrade ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetForexTradeList(arrayTrade, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderMaint::GetFuturesOrderList ( VARIANT_BOOL bOpenOnly, SAFEARRAY * * arrayOrder ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetFuturesOrderList(bOpenOnly, arrayOrder, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderMaint::GetOptionsOrderList ( VARIANT_BOOL bOpenOnly, SAFEARRAY * * arrayOrder ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetOptionsOrderList(bOpenOnly, arrayOrder, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderMaint::GetForexOrderList ( VARIANT_BOOL bOpenOnly, SAFEARRAY * * arrayOrder ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetForexOrderList(bOpenOnly, arrayOrder, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderMaint::CancelOrderEx ( _bstr_t bstrAccount, long OrderRecordID, _bstr_t bstrOldClOrderId, _bstr_t bstrClOrderId, _bstr_t bstrInst ) {
+    long _result = 0;
+    HRESULT _hr = raw_CancelOrderEx(bstrAccount, OrderRecordID, bstrOldClOrderId, bstrClOrderId, bstrInst, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderMaint::GetOrderListEx ( struct structSTIOrderFilter * pFilter, SAFEARRAY * * arrayOrder ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetOrderListEx(pFilter, arrayOrder, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIOrderMaint::GetTradeListEx ( struct structSTITradeFilter * pFilter, SAFEARRAY * * arrayTrade ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetTradeListEx(pFilter, arrayTrade, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ISTIOrderMaint::CancelAllOrders ( struct structSTICancelAll * pStruct ) {
+    HRESULT _hr = raw_CancelAllOrders(pStruct);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISTIApp wrapper method implementations
+//
+
+inline HRESULT ISTIApp::SwitchLinkGroupSymbol ( long nLinkGroup, _bstr_t bstrSym, _bstr_t bstrExch ) {
+    HRESULT _hr = raw_SwitchLinkGroupSymbol(nLinkGroup, bstrSym, bstrExch);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ISTIApp::GetTraderName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetTraderName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ISTIApp::GetDestinationList ( SAFEARRAY * * arrayDests ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetDestinationList(arrayDests, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISTIApp::IsApiEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsApiEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ISTIApp::SetModeXML ( VARIANT_BOOL bXML ) {
+    HRESULT _hr = raw_SetModeXML(bXML);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ISTIApp::GetServerTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetServerTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ISTIBook wrapper method implementations
+//
+
+inline HRESULT ISTIBook::RegisterForTopOfBookMsgs ( _bstr_t bstrSymbol, _bstr_t bstrBook ) {
+    HRESULT _hr = raw_RegisterForTopOfBookMsgs(bstrSymbol, bstrBook);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIBook::DeRegisterForTopOfBookMsgs ( _bstr_t bstrSymbol, _bstr_t bstrBook ) {
+    HRESULT _hr = raw_DeRegisterForTopOfBookMsgs(bstrSymbol, bstrBook);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIBook::DeRegisterForAllTopOfBookMsgs ( ) {
+    HRESULT _hr = raw_DeRegisterForAllTopOfBookMsgs();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ISTIBook::GetBookInfo ( _bstr_t bstrSymbol, _bstr_t bstrBook ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetBookInfo(bstrSymbol, bstrBook, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline struct structSTIBookUpdate ISTIBook::GetBookInfoStruct ( VARIANT_BOOL bBid, _bstr_t bstrSymbol, _bstr_t bstrBook ) {
+    struct structSTIBookUpdate _result;
+    HRESULT _hr = raw_GetBookInfoStruct(bBid, bstrSymbol, bstrBook, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIBook::GetQueueCount ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetQueueCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ISTIBook::Destroy ( ) {
+    HRESULT _hr = raw_Destroy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISTIPosition wrapper method implementations
+//
+
+inline HRESULT ISTIPosition::RegisterForPositions ( ) {
+    HRESULT _hr = raw_RegisterForPositions();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIPosition::DeRegisterPositions ( ) {
+    HRESULT _hr = raw_DeRegisterPositions();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIPosition::GetCurrentPositions ( ) {
+    HRESULT _hr = raw_GetCurrentPositions();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ISTIPosition::GetPositionInfo ( _bstr_t bstrSymbol, _bstr_t bstrExch, _bstr_t bstrAccount ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetPositionInfo(bstrSymbol, bstrExch, bstrAccount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline struct structSTIPositionUpdate ISTIPosition::GetPositionInfoStruct ( _bstr_t bstrSymbol, _bstr_t bstrExch, _bstr_t bstrAccount ) {
+    struct structSTIPositionUpdate _result;
+    HRESULT _hr = raw_GetPositionInfoStruct(bstrSymbol, bstrExch, bstrAccount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIPosition::GetQueueCount ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetQueueCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIPosition::GetPositionList ( SAFEARRAY * * arrayPos ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetPositionList(arrayPos, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ISTIPosition::Destroy ( ) {
+    HRESULT _hr = raw_Destroy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ISTIPosition::GetOptionsPosList ( _bstr_t bstrUnderlyingSym, SAFEARRAY * * arrayPos ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetOptionsPosList(bstrUnderlyingSym, arrayPos, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIPosition::GetPosListBySym ( _bstr_t bstrSymbol, SAFEARRAY * * arrayPos ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetPosListBySym(bstrSymbol, arrayPos, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ISTIQuote wrapper method implementations
+//
+
+inline HRESULT ISTIQuote::RegisterQuote ( _bstr_t bstrSymbol, _bstr_t bstrExch ) {
+    HRESULT _hr = raw_RegisterQuote(bstrSymbol, bstrExch);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIQuote::DeRegisterQuote ( _bstr_t bstrSymbol, _bstr_t bstrExch ) {
+    HRESULT _hr = raw_DeRegisterQuote(bstrSymbol, bstrExch);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIQuote::DeRegisterAllQuotes ( ) {
+    HRESULT _hr = raw_DeRegisterAllQuotes();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIQuote::RegisterForMdx ( VARIANT_BOOL bMdx ) {
+    HRESULT _hr = raw_RegisterForMdx(bMdx);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIQuote::RegisterForAllMdx ( VARIANT_BOOL bMdx ) {
+    HRESULT _hr = raw_RegisterForAllMdx(bMdx);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ISTIQuote::GetQueueCount ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetQueueCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ISTIQuote::SubmitQuote ( _bstr_t bstrKey ) {
+    long _result = 0;
+    HRESULT _hr = raw_SubmitQuote(bstrKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISTIQuote::GetSymbol ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Symbol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIQuote::PutSymbol ( _bstr_t pVal ) {
+    HRESULT _hr = put_Symbol(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIQuote::GetExch ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Exch(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIQuote::PutExch ( _bstr_t pVal ) {
+    HRESULT _hr = put_Exch(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIQuote::GetBidPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_BidPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIQuote::PutBidPrice ( double pVal ) {
+    HRESULT _hr = put_BidPrice(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIQuote::GetAskPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_AskPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIQuote::PutAskPrice ( double pVal ) {
+    HRESULT _hr = put_AskPrice(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIQuote::GetBidSize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_BidSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIQuote::PutBidSize ( long pVal ) {
+    HRESULT _hr = put_BidSize(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIQuote::GetAskSize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_AskSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIQuote::PutAskSize ( long pVal ) {
+    HRESULT _hr = put_AskSize(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISTIQuote::GetLastPrice ( ) {
+    double _result = 0;
+    HRESULT _hr = get_LastPrice(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIQuote::PutLastPrice ( double pVal ) {
+    HRESULT _hr = put_LastPrice(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ISTIQuote::Destroy ( ) {
+    HRESULT _hr = raw_Destroy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ISTIQuote::GetDefaultQty ( ) {
+    long _result = 0;
+    HRESULT _hr = get_DefaultQty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIQuote::PutDefaultQty ( long pVal ) {
+    HRESULT _hr = put_DefaultQty(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ISTIQuote::GetDefaultAcct ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DefaultAcct(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIQuote::PutDefaultAcct ( _bstr_t pVal ) {
+    HRESULT _hr = put_DefaultAcct(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ISTIQuote::SetTradesOnly ( VARIANT_BOOL bTrades ) {
+    HRESULT _hr = raw_SetTradesOnly(bTrades);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ISTIQuote::GetDefaultDest ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DefaultDest(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ISTIQuote::PutDefaultDest ( _bstr_t pVal ) {
+    HRESULT _hr = put_DefaultDest(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIQuote::GetLastSize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_LastSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIQuote::PutLastSize ( long pVal ) {
+    HRESULT _hr = put_LastSize(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIQuote::GetLevel ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Level(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIQuote::PutLevel ( long pVal ) {
+    HRESULT _hr = put_Level(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISTIQuote::SubmitQuoteStruct ( _bstr_t bstrKey, struct structSTIQuoteUpdate * pQuote ) {
+    long _result = 0;
+    HRESULT _hr = raw_SubmitQuoteStruct(bstrKey, pQuote, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ISTIQuote::RegisterForAllNews ( VARIANT_BOOL bNews ) {
+    HRESULT _hr = raw_RegisterForAllNews(bNews);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIQuote::RegisterForNewMdx ( VARIANT_BOOL bMdx, VARIANT_BOOL bAllSyms ) {
+    HRESULT _hr = raw_RegisterForNewMdx(bMdx, bAllSyms);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISTIQuote::RegisterQuoteEx ( struct structSTIQuoteRegEx * pQuote ) {
+    HRESULT _hr = raw_RegisterQuoteEx(pQuote);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ISTIQuote::GetUpdateID ( ) {
+    long _result = 0;
+    HRESULT _hr = get_UpdateID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISTIQuote::PutUpdateID ( long pVal ) {
+    HRESULT _hr = put_UpdateID(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ISTIQuote::RegisterMdxEx ( struct structSTIMdxRegEx * pMdx ) {
+    HRESULT _hr = raw_RegisterMdxEx(pMdx);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISTIAcctMaint wrapper method implementations
+//
+
+inline long ISTIAcctMaint::MaintainAccount ( struct structSTIAcctUpdate * pAcctUpdate ) {
+    long _result = 0;
+    HRESULT _hr = raw_MaintainAccount(pAcctUpdate, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ISTIAcctMaint::ClearAccountUpdateStruct ( struct structSTIAcctUpdate * pAcctUpdate ) {
+    HRESULT _hr = raw_ClearAccountUpdateStruct(pAcctUpdate);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ISTIAcctMaint::GetQueueCount ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetQueueCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ISTIAcctMaint::Destroy ( ) {
+    HRESULT _hr = raw_Destroy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ISTIAcctMaint::GetAccountList ( SAFEARRAY * * arrayAccts ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetAccountList(arrayAccts, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<structSTIOrderUpdate>
+	<nSeqNo>22</nSeqNo>
+	<nQuantity>500</nQuantity>
+	<nLvsQuantity>500</nLvsQuantity>
+	<nPriceType>5</nPriceType>
+	<nOrderStatus>13</nOrderStatus>
+	<nOrderRecordId>23413872</nOrderRecordId>
+	<nDbsNo>99</nDbsNo>
+	<nDisplay>500</nDisplay>
+	<nMarketStructure>-1</nMarketStructure>
+	<nOrderCompletion>-1</nOrderCompletion>
+	<fTargetPctVolume>-1</fTargetPctVolume>
+	<bstrAction>A</bstrAction>
+	<bstrUserId>DEMO888</bstrUserId>
+	<bstrAccount>DEMO888</bstrAccount>
+	<bstrSide>B</bstrSide>
+	<bstrSymbol>IBM</bstrSymbol>
+	<bstrClOrderId>12112IDHayyan</bstrClOrderId>
+	<bstrTif>E</bstrTif>
+	<bstrDestination>NYSE</bstrDestination>
+	<bstrOrderTime>20130528202405</bstrOrderTime>
+	<bstrUpdateTime>20130528202405</bstrUpdateTime>
+	<bstrLogMessage>BUY 500 IBM 0 EXT (NYSE, DEMO888-22-99)</bstrLogMessage>
+	<bstrInstrument>E</bstrInstrument>
+	<bstrCurrency>USD</bstrCurrency>
+</structSTIOrderUpdate>
